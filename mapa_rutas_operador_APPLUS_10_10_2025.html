@@ -1,0 +1,4726 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ceb9c5d0acb7f1cdc661f7c48d82585 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ceb9c5d0acb7f1cdc661f7c48d82585" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ceb9c5d0acb7f1cdc661f7c48d82585 = L.map(
+                "map_6ceb9c5d0acb7f1cdc661f7c48d82585",
+                {
+                    center: [-12.05, -77.03],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ea5d23e057d1f3c8dfc0968d73fffbe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1ea5d23e057d1f3c8dfc0968d73fffbe.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_8e725a1754e17d67d0edf53f9b1eb12a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_dd2d1658a4bf1dee2aea385ba98f2119 = L.polyline.antPath(
+              [[-12.05938057, -76.9280506], [-12.05660378, -76.94310281], [-12.07073697, -76.94099714], [-12.07155539, -76.94943039], [-12.09493434, -76.94638139], [-12.11240192, -76.93924699], [-12.08089146, -76.91097804], [-12.08655175, -76.87762038], [-12.10177632, -76.88785919], [-12.10208677, -76.88799749], [-12.11783786, -76.86644102], [-12.08639918, -76.88977243], [-12.07647897, -76.95321977], [-12.05647974, -76.95744296], [-12.03306441, -76.95033569], [-12.03420174, -76.95850283], [-12.02819834, -76.96439961], [-12.04765878, -76.94844254], [-12.05301601, -76.95741114], [-12.05236673, -76.9402627], [-12.08472274, -76.90246248]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var marker_84f21ba98a05aa408b5dbaacc7e5a374 = L.marker(
+                [-12.05938057, -76.9280506],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_e09690b430e587b46dfb82b10acfe3c3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_dc7e5786c2a543f5381ce02ef9c6f07b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0aa7a54e2034be23252d23b5170ba1e = $(`<div id="html_e0aa7a54e2034be23252d23b5170ba1e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 06:52:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 2065320         </div>`)[0];
+                popup_dc7e5786c2a543f5381ce02ef9c6f07b.setContent(html_e0aa7a54e2034be23252d23b5170ba1e);
+            
+        
+
+        marker_84f21ba98a05aa408b5dbaacc7e5a374.bindPopup(popup_dc7e5786c2a543f5381ce02ef9c6f07b)
+        ;
+
+        
+    
+    
+            marker_84f21ba98a05aa408b5dbaacc7e5a374.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84f21ba98a05aa408b5dbaacc7e5a374.setIcon(div_icon_e09690b430e587b46dfb82b10acfe3c3);
+            
+    
+            var marker_289fbba27ca00e2a2151f74aa8337228 = L.marker(
+                [-12.05660378, -76.94310281],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_ca32a60ba907294d291b18b54b54e55d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_49d003abe945c46ac94292f2639968c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1673afcf9a67e61f421e55c60c7dcee = $(`<div id="html_f1673afcf9a67e61f421e55c60c7dcee" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 07:26:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1663040         </div>`)[0];
+                popup_49d003abe945c46ac94292f2639968c0.setContent(html_f1673afcf9a67e61f421e55c60c7dcee);
+            
+        
+
+        marker_289fbba27ca00e2a2151f74aa8337228.bindPopup(popup_49d003abe945c46ac94292f2639968c0)
+        ;
+
+        
+    
+    
+            marker_289fbba27ca00e2a2151f74aa8337228.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_289fbba27ca00e2a2151f74aa8337228.setIcon(div_icon_ca32a60ba907294d291b18b54b54e55d);
+            
+    
+            var marker_ffd6903fe73ffce6f6f8a2d99c01964b = L.marker(
+                [-12.07073697, -76.94099714],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_571fd51bbe3543991cfadc73dfee4811 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_32c25ac4a750abb02f4d10bff554798f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_838fa14f2cf9c765c406a503e981c520 = $(`<div id="html_838fa14f2cf9c765c406a503e981c520" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 08:25:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1077398         </div>`)[0];
+                popup_32c25ac4a750abb02f4d10bff554798f.setContent(html_838fa14f2cf9c765c406a503e981c520);
+            
+        
+
+        marker_ffd6903fe73ffce6f6f8a2d99c01964b.bindPopup(popup_32c25ac4a750abb02f4d10bff554798f)
+        ;
+
+        
+    
+    
+            marker_ffd6903fe73ffce6f6f8a2d99c01964b.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ffd6903fe73ffce6f6f8a2d99c01964b.setIcon(div_icon_571fd51bbe3543991cfadc73dfee4811);
+            
+    
+            var marker_185c0c5c74f57c474809d2c2748f0894 = L.marker(
+                [-12.07155539, -76.94943039],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_cd9e0c9b7b25ed19abb3ca4859593434 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cd94ca93ac90dd17e7a58da07f5bb593 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8bd61cf5a542f8152ebcb68b3e53712 = $(`<div id="html_e8bd61cf5a542f8152ebcb68b3e53712" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 08:35:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1363458         </div>`)[0];
+                popup_cd94ca93ac90dd17e7a58da07f5bb593.setContent(html_e8bd61cf5a542f8152ebcb68b3e53712);
+            
+        
+
+        marker_185c0c5c74f57c474809d2c2748f0894.bindPopup(popup_cd94ca93ac90dd17e7a58da07f5bb593)
+        ;
+
+        
+    
+    
+            marker_185c0c5c74f57c474809d2c2748f0894.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_185c0c5c74f57c474809d2c2748f0894.setIcon(div_icon_cd9e0c9b7b25ed19abb3ca4859593434);
+            
+    
+            var marker_9d9f49613335b170438e6c574e668da0 = L.marker(
+                [-12.09493434, -76.94638139],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_14f28891a4acd4b1846837a93bc57167 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a0a9d690b087ceb0286b0d1a16078a3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fefc8c3f41b7faf943518f369490d35b = $(`<div id="html_fefc8c3f41b7faf943518f369490d35b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 08:50:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1499136         </div>`)[0];
+                popup_a0a9d690b087ceb0286b0d1a16078a3d.setContent(html_fefc8c3f41b7faf943518f369490d35b);
+            
+        
+
+        marker_9d9f49613335b170438e6c574e668da0.bindPopup(popup_a0a9d690b087ceb0286b0d1a16078a3d)
+        ;
+
+        
+    
+    
+            marker_9d9f49613335b170438e6c574e668da0.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d9f49613335b170438e6c574e668da0.setIcon(div_icon_14f28891a4acd4b1846837a93bc57167);
+            
+    
+            var marker_45464099ae1c78e307779606c3e620cb = L.marker(
+                [-12.11240192, -76.93924699],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_ad35598467b524b6d8b9629b6406c033 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_934cf95e4c81a56f9cb9f45eb6128adb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1a2c24165475e234e935786fcb3fa7e = $(`<div id="html_f1a2c24165475e234e935786fcb3fa7e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 09:08:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1597549         </div>`)[0];
+                popup_934cf95e4c81a56f9cb9f45eb6128adb.setContent(html_f1a2c24165475e234e935786fcb3fa7e);
+            
+        
+
+        marker_45464099ae1c78e307779606c3e620cb.bindPopup(popup_934cf95e4c81a56f9cb9f45eb6128adb)
+        ;
+
+        
+    
+    
+            marker_45464099ae1c78e307779606c3e620cb.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45464099ae1c78e307779606c3e620cb.setIcon(div_icon_ad35598467b524b6d8b9629b6406c033);
+            
+    
+            var marker_5ed74fecf7d52f92fa5bee7125bf4575 = L.marker(
+                [-12.08089146, -76.91097804],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_207eac051844de1f6195b4f6be67fce2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_90a287faee630aea422b3a4d1a54da18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8c6f0bd1dd5a2da2ed412fd8177a6f0 = $(`<div id="html_d8c6f0bd1dd5a2da2ed412fd8177a6f0" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 09:27:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 720427         </div>`)[0];
+                popup_90a287faee630aea422b3a4d1a54da18.setContent(html_d8c6f0bd1dd5a2da2ed412fd8177a6f0);
+            
+        
+
+        marker_5ed74fecf7d52f92fa5bee7125bf4575.bindPopup(popup_90a287faee630aea422b3a4d1a54da18)
+        ;
+
+        
+    
+    
+            marker_5ed74fecf7d52f92fa5bee7125bf4575.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ed74fecf7d52f92fa5bee7125bf4575.setIcon(div_icon_207eac051844de1f6195b4f6be67fce2);
+            
+    
+            var marker_c10192430eeb6c0bef6dbe5b37fb2810 = L.marker(
+                [-12.08655175, -76.87762038],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_9aa0d6d1983363d67fb4aed9a522ddc0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1ee2e7a393c4a2b7c0483c9609d7c8ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7a8b72d1f405e65d8c6a7b508bb690f = $(`<div id="html_b7a8b72d1f405e65d8c6a7b508bb690f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 09:54:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1564114         </div>`)[0];
+                popup_1ee2e7a393c4a2b7c0483c9609d7c8ac.setContent(html_b7a8b72d1f405e65d8c6a7b508bb690f);
+            
+        
+
+        marker_c10192430eeb6c0bef6dbe5b37fb2810.bindPopup(popup_1ee2e7a393c4a2b7c0483c9609d7c8ac)
+        ;
+
+        
+    
+    
+            marker_c10192430eeb6c0bef6dbe5b37fb2810.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c10192430eeb6c0bef6dbe5b37fb2810.setIcon(div_icon_9aa0d6d1983363d67fb4aed9a522ddc0);
+            
+    
+            var marker_0bee7c709ced3c023981a1b7b5f96c28 = L.marker(
+                [-12.10177632, -76.88785919],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_9cb8cdcbfd9f64303625216bfeea423f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_de3177bc346550c47807783e8c0504c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5faf8d7d04afeb0a73c159bea60009f = $(`<div id="html_b5faf8d7d04afeb0a73c159bea60009f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 10:16:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1717543         </div>`)[0];
+                popup_de3177bc346550c47807783e8c0504c7.setContent(html_b5faf8d7d04afeb0a73c159bea60009f);
+            
+        
+
+        marker_0bee7c709ced3c023981a1b7b5f96c28.bindPopup(popup_de3177bc346550c47807783e8c0504c7)
+        ;
+
+        
+    
+    
+            marker_0bee7c709ced3c023981a1b7b5f96c28.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bee7c709ced3c023981a1b7b5f96c28.setIcon(div_icon_9cb8cdcbfd9f64303625216bfeea423f);
+            
+    
+            var marker_9637f67089c1049cc906029595c44e85 = L.marker(
+                [-12.10208677, -76.88799749],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_32c8758f18eee3086db9aa22189ed327 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_be1d6bed9652fe19d55f70b3c4ce7297 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4b3898605268a0252a9f0a5b44e0533 = $(`<div id="html_d4b3898605268a0252a9f0a5b44e0533" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 10:21:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1717581         </div>`)[0];
+                popup_be1d6bed9652fe19d55f70b3c4ce7297.setContent(html_d4b3898605268a0252a9f0a5b44e0533);
+            
+        
+
+        marker_9637f67089c1049cc906029595c44e85.bindPopup(popup_be1d6bed9652fe19d55f70b3c4ce7297)
+        ;
+
+        
+    
+    
+            marker_9637f67089c1049cc906029595c44e85.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9637f67089c1049cc906029595c44e85.setIcon(div_icon_32c8758f18eee3086db9aa22189ed327);
+            
+    
+            var marker_caa8d83776bb9179665d7d0cbb73444a = L.marker(
+                [-12.11783786, -76.86644102],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_049938a83afecaa5a10315b7bb75f8f1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4cc36624b879be9546e9bebcd0543c58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fe5e19a5662f7cc0da74a36a4ee83da = $(`<div id="html_8fe5e19a5662f7cc0da74a36a4ee83da" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 10:41:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1377677         </div>`)[0];
+                popup_4cc36624b879be9546e9bebcd0543c58.setContent(html_8fe5e19a5662f7cc0da74a36a4ee83da);
+            
+        
+
+        marker_caa8d83776bb9179665d7d0cbb73444a.bindPopup(popup_4cc36624b879be9546e9bebcd0543c58)
+        ;
+
+        
+    
+    
+            marker_caa8d83776bb9179665d7d0cbb73444a.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_caa8d83776bb9179665d7d0cbb73444a.setIcon(div_icon_049938a83afecaa5a10315b7bb75f8f1);
+            
+    
+            var marker_be9fc5fffbf3970db6af192813975db3 = L.marker(
+                [-12.08639918, -76.88977243],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_48a25214e30c40db745e54950624ee9a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_30fcd4e6e26867405c621de34189d680 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b45c01814746fb90be7bdb9578e59659 = $(`<div id="html_b45c01814746fb90be7bdb9578e59659" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 11:07:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 568858         </div>`)[0];
+                popup_30fcd4e6e26867405c621de34189d680.setContent(html_b45c01814746fb90be7bdb9578e59659);
+            
+        
+
+        marker_be9fc5fffbf3970db6af192813975db3.bindPopup(popup_30fcd4e6e26867405c621de34189d680)
+        ;
+
+        
+    
+    
+            marker_be9fc5fffbf3970db6af192813975db3.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be9fc5fffbf3970db6af192813975db3.setIcon(div_icon_48a25214e30c40db745e54950624ee9a);
+            
+    
+            var marker_4bdb1f90556e75903e4344349f6c5943 = L.marker(
+                [-12.07647897, -76.95321977],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_aa130e3507226d4d2c8e189df74ad1f1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6bc16cd73f50b739ea3b7773cb890c18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef9def797a753627993aa6c22d50a1a8 = $(`<div id="html_ef9def797a753627993aa6c22d50a1a8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 11:49:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1129390         </div>`)[0];
+                popup_6bc16cd73f50b739ea3b7773cb890c18.setContent(html_ef9def797a753627993aa6c22d50a1a8);
+            
+        
+
+        marker_4bdb1f90556e75903e4344349f6c5943.bindPopup(popup_6bc16cd73f50b739ea3b7773cb890c18)
+        ;
+
+        
+    
+    
+            marker_4bdb1f90556e75903e4344349f6c5943.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bdb1f90556e75903e4344349f6c5943.setIcon(div_icon_aa130e3507226d4d2c8e189df74ad1f1);
+            
+    
+            var marker_ab53ede9e6ae966d8acb1677a4af8db3 = L.marker(
+                [-12.05647974, -76.95744296],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_fda96200574400ebeb0e754a1bee299f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e241024718670793291cb3e57e6a0a55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86af459db7d136d12def4aa1aac846eb = $(`<div id="html_86af459db7d136d12def4aa1aac846eb" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 12:19:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 983441         </div>`)[0];
+                popup_e241024718670793291cb3e57e6a0a55.setContent(html_86af459db7d136d12def4aa1aac846eb);
+            
+        
+
+        marker_ab53ede9e6ae966d8acb1677a4af8db3.bindPopup(popup_e241024718670793291cb3e57e6a0a55)
+        ;
+
+        
+    
+    
+            marker_ab53ede9e6ae966d8acb1677a4af8db3.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab53ede9e6ae966d8acb1677a4af8db3.setIcon(div_icon_fda96200574400ebeb0e754a1bee299f);
+            
+    
+            var marker_72420b5fd9bd3f89d18415c0516dd533 = L.marker(
+                [-12.03306441, -76.95033569],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_9a091d6f6d3c837d0bac0c56306a917b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2e233d528fcc42c921f4a0630f82dedf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5683ab5769a6fb2ae43238a523341239 = $(`<div id="html_5683ab5769a6fb2ae43238a523341239" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 13:31:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1412455         </div>`)[0];
+                popup_2e233d528fcc42c921f4a0630f82dedf.setContent(html_5683ab5769a6fb2ae43238a523341239);
+            
+        
+
+        marker_72420b5fd9bd3f89d18415c0516dd533.bindPopup(popup_2e233d528fcc42c921f4a0630f82dedf)
+        ;
+
+        
+    
+    
+            marker_72420b5fd9bd3f89d18415c0516dd533.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72420b5fd9bd3f89d18415c0516dd533.setIcon(div_icon_9a091d6f6d3c837d0bac0c56306a917b);
+            
+    
+            var marker_6fbe870d5fd70b29bedefd942ee7cc96 = L.marker(
+                [-12.03420174, -76.95850283],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_d6005fc9c104662e218b1d256f269b3a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_0d7195a278be226a05045032bce70b6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_975247054f8573eb3e531324450bbc16 = $(`<div id="html_975247054f8573eb3e531324450bbc16" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 13:45:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1449049         </div>`)[0];
+                popup_0d7195a278be226a05045032bce70b6b.setContent(html_975247054f8573eb3e531324450bbc16);
+            
+        
+
+        marker_6fbe870d5fd70b29bedefd942ee7cc96.bindPopup(popup_0d7195a278be226a05045032bce70b6b)
+        ;
+
+        
+    
+    
+            marker_6fbe870d5fd70b29bedefd942ee7cc96.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fbe870d5fd70b29bedefd942ee7cc96.setIcon(div_icon_d6005fc9c104662e218b1d256f269b3a);
+            
+    
+            var marker_90fce9f1ea5104dd6174c3b9b988bb0d = L.marker(
+                [-12.02819834, -76.96439961],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_ebb8ebc6c25f7fbb8c62aa81f251a9ad = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ba461de51ef27f71c988d1945ab6ad49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a137c6e12869f466adccda28fc077880 = $(`<div id="html_a137c6e12869f466adccda28fc077880" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 14:43:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1994913         </div>`)[0];
+                popup_ba461de51ef27f71c988d1945ab6ad49.setContent(html_a137c6e12869f466adccda28fc077880);
+            
+        
+
+        marker_90fce9f1ea5104dd6174c3b9b988bb0d.bindPopup(popup_ba461de51ef27f71c988d1945ab6ad49)
+        ;
+
+        
+    
+    
+            marker_90fce9f1ea5104dd6174c3b9b988bb0d.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90fce9f1ea5104dd6174c3b9b988bb0d.setIcon(div_icon_ebb8ebc6c25f7fbb8c62aa81f251a9ad);
+            
+    
+            var marker_2a532d5583e6e11a50f56a4ddc03f0cc = L.marker(
+                [-12.04765878, -76.94844254],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_c29b7014167ad88239f8078ae806dd75 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a94d48155a408bfca94552ecd72ddf82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea052cc4bb318d52a49688c0dbde27f4 = $(`<div id="html_ea052cc4bb318d52a49688c0dbde27f4" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 15:18:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1485201         </div>`)[0];
+                popup_a94d48155a408bfca94552ecd72ddf82.setContent(html_ea052cc4bb318d52a49688c0dbde27f4);
+            
+        
+
+        marker_2a532d5583e6e11a50f56a4ddc03f0cc.bindPopup(popup_a94d48155a408bfca94552ecd72ddf82)
+        ;
+
+        
+    
+    
+            marker_2a532d5583e6e11a50f56a4ddc03f0cc.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a532d5583e6e11a50f56a4ddc03f0cc.setIcon(div_icon_c29b7014167ad88239f8078ae806dd75);
+            
+    
+            var marker_eb97717e19f415225793dfc449e98cba = L.marker(
+                [-12.05301601, -76.95741114],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_392055f255cccfe2892f0404714c14fa = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e19\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b85c1144436144e235b390e7de2a3b10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c130f60dbd225d4465d0f789dc5fb8df = $(`<div id="html_c130f60dbd225d4465d0f789dc5fb8df" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 19<br>         <b>Hora:</b> 15:40:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1358016         </div>`)[0];
+                popup_b85c1144436144e235b390e7de2a3b10.setContent(html_c130f60dbd225d4465d0f789dc5fb8df);
+            
+        
+
+        marker_eb97717e19f415225793dfc449e98cba.bindPopup(popup_b85c1144436144e235b390e7de2a3b10)
+        ;
+
+        
+    
+    
+            marker_eb97717e19f415225793dfc449e98cba.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb97717e19f415225793dfc449e98cba.setIcon(div_icon_392055f255cccfe2892f0404714c14fa);
+            
+    
+            var marker_190168052e9a78b4cecd2a48d091e67b = L.marker(
+                [-12.05236673, -76.9402627],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_dbb35499d9e397ce388e064d5bb58dbb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e20\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c1cf2edbb9193c55ab965a691c64f03b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb9c4f916b13cac8cf7ca6ed1591bca2 = $(`<div id="html_cb9c4f916b13cac8cf7ca6ed1591bca2" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 20<br>         <b>Hora:</b> 16:16:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 193792         </div>`)[0];
+                popup_c1cf2edbb9193c55ab965a691c64f03b.setContent(html_cb9c4f916b13cac8cf7ca6ed1591bca2);
+            
+        
+
+        marker_190168052e9a78b4cecd2a48d091e67b.bindPopup(popup_c1cf2edbb9193c55ab965a691c64f03b)
+        ;
+
+        
+    
+    
+            marker_190168052e9a78b4cecd2a48d091e67b.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_190168052e9a78b4cecd2a48d091e67b.setIcon(div_icon_dbb35499d9e397ce388e064d5bb58dbb);
+            
+    
+            var marker_f54d6542a37ef9603592e15e1bee4dbf = L.marker(
+                [-12.08472274, -76.90246248],
+                {
+}
+            ).addTo(feature_group_8e725a1754e17d67d0edf53f9b1eb12a);
+        
+    
+            var div_icon_95befe3693abb1e6e85344ce5ddb8bd0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e21\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4b441c27cb4f08d3f4cf861ae2c4438e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a627533641ec0cd8bcc6d8ea176ea4b5 = $(`<div id="html_a627533641ec0cd8bcc6d8ea176ea4b5" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ERNESTO ANTONIO ESCALONA BRAVO<br>         <b>Orden:</b> 21<br>         <b>Hora:</b> 16:41:54<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 940143         </div>`)[0];
+                popup_4b441c27cb4f08d3f4cf861ae2c4438e.setContent(html_a627533641ec0cd8bcc6d8ea176ea4b5);
+            
+        
+
+        marker_f54d6542a37ef9603592e15e1bee4dbf.bindPopup(popup_4b441c27cb4f08d3f4cf861ae2c4438e)
+        ;
+
+        
+    
+    
+            marker_f54d6542a37ef9603592e15e1bee4dbf.bindTooltip(
+                `<div>
+                     ERNESTO ANTONIO ESCALONA BRAVO - Orden 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f54d6542a37ef9603592e15e1bee4dbf.setIcon(div_icon_95befe3693abb1e6e85344ce5ddb8bd0);
+            
+    
+            feature_group_8e725a1754e17d67d0edf53f9b1eb12a.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_ea6768953d34b28e18a4fb8b710ce0e6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_04b8bd9085e42b5d5c410c7714236a98 = L.polyline.antPath(
+              [[-12.01329261, -76.87123648], [-12.01531091, -76.88072905], [-12.01685017, -76.88584634], [-12.02904743, -76.88491976], [-12.04559853, -76.87338247], [-12.04342855, -76.89317684], [-12.03885986, -76.90019637], [-12.03698762, -76.89608627], [-12.0370507, -76.89595374], [-12.04083981, -76.89738914], [-12.03203522, -76.89107636], [-12.00416396, -76.92873887], [-12.02904743, -76.88491976], [-11.97803287, -76.92876667]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var marker_d9f231f4d495c265d1a843c20a8a37f6 = L.marker(
+                [-12.01329261, -76.87123648],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_da79cbc65cb296e1585c8df43049255a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b55b28029673f39a111c476dd945d9b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbc5313d6276c9ce4ca2df2cb189318c = $(`<div id="html_bbc5313d6276c9ce4ca2df2cb189318c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:35:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 2012793         </div>`)[0];
+                popup_b55b28029673f39a111c476dd945d9b8.setContent(html_bbc5313d6276c9ce4ca2df2cb189318c);
+            
+        
+
+        marker_d9f231f4d495c265d1a843c20a8a37f6.bindPopup(popup_b55b28029673f39a111c476dd945d9b8)
+        ;
+
+        
+    
+    
+            marker_d9f231f4d495c265d1a843c20a8a37f6.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9f231f4d495c265d1a843c20a8a37f6.setIcon(div_icon_da79cbc65cb296e1585c8df43049255a);
+            
+    
+            var marker_b90561b437bb260d797ac2b0e723c5d6 = L.marker(
+                [-12.01531091, -76.88072905],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_9e5316d8e2bdc5de5fa54f64ccfde9d7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_892f0e1d2f8af9ad64d3df6dd68e91c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c84d9a92b5947ed5083e9ee91681a701 = $(`<div id="html_c84d9a92b5947ed5083e9ee91681a701" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 08:00:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1703778         </div>`)[0];
+                popup_892f0e1d2f8af9ad64d3df6dd68e91c4.setContent(html_c84d9a92b5947ed5083e9ee91681a701);
+            
+        
+
+        marker_b90561b437bb260d797ac2b0e723c5d6.bindPopup(popup_892f0e1d2f8af9ad64d3df6dd68e91c4)
+        ;
+
+        
+    
+    
+            marker_b90561b437bb260d797ac2b0e723c5d6.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b90561b437bb260d797ac2b0e723c5d6.setIcon(div_icon_9e5316d8e2bdc5de5fa54f64ccfde9d7);
+            
+    
+            var marker_7decfd2f0f6f0ebcf8c275d4f1edfb53 = L.marker(
+                [-12.01685017, -76.88584634],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_81c2235809ef24142fb0c6f617acdf5a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e0425d8c21d8e631e8290b3f91350046 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e781ccc9664e2f3c1a5eba6256bf29 = $(`<div id="html_c2e781ccc9664e2f3c1a5eba6256bf29" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 08:18:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1603807         </div>`)[0];
+                popup_e0425d8c21d8e631e8290b3f91350046.setContent(html_c2e781ccc9664e2f3c1a5eba6256bf29);
+            
+        
+
+        marker_7decfd2f0f6f0ebcf8c275d4f1edfb53.bindPopup(popup_e0425d8c21d8e631e8290b3f91350046)
+        ;
+
+        
+    
+    
+            marker_7decfd2f0f6f0ebcf8c275d4f1edfb53.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7decfd2f0f6f0ebcf8c275d4f1edfb53.setIcon(div_icon_81c2235809ef24142fb0c6f617acdf5a);
+            
+    
+            var marker_22ef05d649cae2a81ffbc97dccfa4f30 = L.marker(
+                [-12.02904743, -76.88491976],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_d6914bf821e75c48d1dda72e5aa54ee8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_40c7d0271f5c901bd6acecd116e3a8ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad54735015f117cb3b181b553eab38b0 = $(`<div id="html_ad54735015f117cb3b181b553eab38b0" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 08:53:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1798120         </div>`)[0];
+                popup_40c7d0271f5c901bd6acecd116e3a8ff.setContent(html_ad54735015f117cb3b181b553eab38b0);
+            
+        
+
+        marker_22ef05d649cae2a81ffbc97dccfa4f30.bindPopup(popup_40c7d0271f5c901bd6acecd116e3a8ff)
+        ;
+
+        
+    
+    
+            marker_22ef05d649cae2a81ffbc97dccfa4f30.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22ef05d649cae2a81ffbc97dccfa4f30.setIcon(div_icon_d6914bf821e75c48d1dda72e5aa54ee8);
+            
+    
+            var marker_e9deb12193d3b4d6f0355130d2b2d56a = L.marker(
+                [-12.04559853, -76.87338247],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_eb0f4e03923823a331db0ac60508abdc = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_80c85e468e2c7634955abd12382ef559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f01d0e6d16d53b077a19da0d99a46fb = $(`<div id="html_5f01d0e6d16d53b077a19da0d99a46fb" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 09:08:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 2046613         </div>`)[0];
+                popup_80c85e468e2c7634955abd12382ef559.setContent(html_5f01d0e6d16d53b077a19da0d99a46fb);
+            
+        
+
+        marker_e9deb12193d3b4d6f0355130d2b2d56a.bindPopup(popup_80c85e468e2c7634955abd12382ef559)
+        ;
+
+        
+    
+    
+            marker_e9deb12193d3b4d6f0355130d2b2d56a.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9deb12193d3b4d6f0355130d2b2d56a.setIcon(div_icon_eb0f4e03923823a331db0ac60508abdc);
+            
+    
+            var marker_908f9323b7f9c64e21009b004db0d2d5 = L.marker(
+                [-12.04342855, -76.89317684],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_6031551fd87e7926bbd1c0132db7bdda = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_18a0d79b5f66d7b70ebbcc3f23829f0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28d2eaa46a295036b0be20bc0d3fc9d6 = $(`<div id="html_28d2eaa46a295036b0be20bc0d3fc9d6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 09:34:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1185455         </div>`)[0];
+                popup_18a0d79b5f66d7b70ebbcc3f23829f0d.setContent(html_28d2eaa46a295036b0be20bc0d3fc9d6);
+            
+        
+
+        marker_908f9323b7f9c64e21009b004db0d2d5.bindPopup(popup_18a0d79b5f66d7b70ebbcc3f23829f0d)
+        ;
+
+        
+    
+    
+            marker_908f9323b7f9c64e21009b004db0d2d5.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_908f9323b7f9c64e21009b004db0d2d5.setIcon(div_icon_6031551fd87e7926bbd1c0132db7bdda);
+            
+    
+            var marker_4ce60fd263ec723cb666115f44ca9586 = L.marker(
+                [-12.03885986, -76.90019637],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_5d8fb3eebf0f5db616c5aed3773257a4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_396c95cc866c3631aa83aac2747c76c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f347e46f9aaf42a57172e3589e63783c = $(`<div id="html_f347e46f9aaf42a57172e3589e63783c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 10:48:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1234669         </div>`)[0];
+                popup_396c95cc866c3631aa83aac2747c76c0.setContent(html_f347e46f9aaf42a57172e3589e63783c);
+            
+        
+
+        marker_4ce60fd263ec723cb666115f44ca9586.bindPopup(popup_396c95cc866c3631aa83aac2747c76c0)
+        ;
+
+        
+    
+    
+            marker_4ce60fd263ec723cb666115f44ca9586.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ce60fd263ec723cb666115f44ca9586.setIcon(div_icon_5d8fb3eebf0f5db616c5aed3773257a4);
+            
+    
+            var marker_bdef93eb16220ad3eaea54546b5ed287 = L.marker(
+                [-12.03698762, -76.89608627],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_533d1a73789fa8dff95b95227d36413b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3b109a86a76a286566737870c5b4c5cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e34460d6ca9da16927c60fd1530c541c = $(`<div id="html_e34460d6ca9da16927c60fd1530c541c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 11:20:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 2043254         </div>`)[0];
+                popup_3b109a86a76a286566737870c5b4c5cf.setContent(html_e34460d6ca9da16927c60fd1530c541c);
+            
+        
+
+        marker_bdef93eb16220ad3eaea54546b5ed287.bindPopup(popup_3b109a86a76a286566737870c5b4c5cf)
+        ;
+
+        
+    
+    
+            marker_bdef93eb16220ad3eaea54546b5ed287.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bdef93eb16220ad3eaea54546b5ed287.setIcon(div_icon_533d1a73789fa8dff95b95227d36413b);
+            
+    
+            var marker_a210280f0fdabcf0a9c31f890c6ae936 = L.marker(
+                [-12.0370507, -76.89595374],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_6c31ee569ec40ce7401c1f85e40f9dd3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_aba9cf0d733d723a67d34787871ba266 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f117e504cd6e5c7f95a902a22567bc8 = $(`<div id="html_8f117e504cd6e5c7f95a902a22567bc8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 11:28:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1603297         </div>`)[0];
+                popup_aba9cf0d733d723a67d34787871ba266.setContent(html_8f117e504cd6e5c7f95a902a22567bc8);
+            
+        
+
+        marker_a210280f0fdabcf0a9c31f890c6ae936.bindPopup(popup_aba9cf0d733d723a67d34787871ba266)
+        ;
+
+        
+    
+    
+            marker_a210280f0fdabcf0a9c31f890c6ae936.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a210280f0fdabcf0a9c31f890c6ae936.setIcon(div_icon_6c31ee569ec40ce7401c1f85e40f9dd3);
+            
+    
+            var marker_55d1201caab8c597e12368a00fd55a9a = L.marker(
+                [-12.04083981, -76.89738914],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_3be78575e829b24c97058726c3dc15f6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c1b877e3e37947476ec2eb8999f554d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e4c3df301af7d907731a8aee7d0a6be = $(`<div id="html_7e4c3df301af7d907731a8aee7d0a6be" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 12:03:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1760124         </div>`)[0];
+                popup_c1b877e3e37947476ec2eb8999f554d0.setContent(html_7e4c3df301af7d907731a8aee7d0a6be);
+            
+        
+
+        marker_55d1201caab8c597e12368a00fd55a9a.bindPopup(popup_c1b877e3e37947476ec2eb8999f554d0)
+        ;
+
+        
+    
+    
+            marker_55d1201caab8c597e12368a00fd55a9a.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55d1201caab8c597e12368a00fd55a9a.setIcon(div_icon_3be78575e829b24c97058726c3dc15f6);
+            
+    
+            var marker_28eabee3c2cd3a61ddedd55a7e44df1d = L.marker(
+                [-12.03203522, -76.89107636],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_013cd3f3e59cb9f26e318d8077dba14c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_09782ff8f43c450a098037a832bdd967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71f5437aaa9fc7babe9b5ba883078f40 = $(`<div id="html_71f5437aaa9fc7babe9b5ba883078f40" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 13:19:25<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1472107         </div>`)[0];
+                popup_09782ff8f43c450a098037a832bdd967.setContent(html_71f5437aaa9fc7babe9b5ba883078f40);
+            
+        
+
+        marker_28eabee3c2cd3a61ddedd55a7e44df1d.bindPopup(popup_09782ff8f43c450a098037a832bdd967)
+        ;
+
+        
+    
+    
+            marker_28eabee3c2cd3a61ddedd55a7e44df1d.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28eabee3c2cd3a61ddedd55a7e44df1d.setIcon(div_icon_013cd3f3e59cb9f26e318d8077dba14c);
+            
+    
+            var marker_394df942f52c73b167314d7f5fb4d218 = L.marker(
+                [-12.00416396, -76.92873887],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_6a5d582eefc27119132db80381c95b17 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8a9554ee10c54a20a8a8f1372a993f30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7934c06a9f80fcb3c10af49403c3405 = $(`<div id="html_c7934c06a9f80fcb3c10af49403c3405" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 15:53:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1748467         </div>`)[0];
+                popup_8a9554ee10c54a20a8a8f1372a993f30.setContent(html_c7934c06a9f80fcb3c10af49403c3405);
+            
+        
+
+        marker_394df942f52c73b167314d7f5fb4d218.bindPopup(popup_8a9554ee10c54a20a8a8f1372a993f30)
+        ;
+
+        
+    
+    
+            marker_394df942f52c73b167314d7f5fb4d218.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_394df942f52c73b167314d7f5fb4d218.setIcon(div_icon_6a5d582eefc27119132db80381c95b17);
+            
+    
+            var marker_417bd4e092cffe825c1eb3f255c438cd = L.marker(
+                [-12.02904743, -76.88491976],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_de9e82143edea93097b93c77d8e98bbf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3f4485f34fc9a0800853716084e3eedc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81c3362c976e1ee418e62ba5397e4008 = $(`<div id="html_81c3362c976e1ee418e62ba5397e4008" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 17:30:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1798120         </div>`)[0];
+                popup_3f4485f34fc9a0800853716084e3eedc.setContent(html_81c3362c976e1ee418e62ba5397e4008);
+            
+        
+
+        marker_417bd4e092cffe825c1eb3f255c438cd.bindPopup(popup_3f4485f34fc9a0800853716084e3eedc)
+        ;
+
+        
+    
+    
+            marker_417bd4e092cffe825c1eb3f255c438cd.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_417bd4e092cffe825c1eb3f255c438cd.setIcon(div_icon_de9e82143edea93097b93c77d8e98bbf);
+            
+    
+            var marker_69c2ecbf135858872649603c789cea34 = L.marker(
+                [-11.97803287, -76.92876667],
+                {
+}
+            ).addTo(feature_group_ea6768953d34b28e18a4fb8b710ce0e6);
+        
+    
+            var div_icon_5021e0479f6ccaa35ff05e003d79ab1c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_010c6f016ac64bc5b2f7aefb3bfb8dff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12d3c5e5f6442f80e4bb34cfc4d14057 = $(`<div id="html_12d3c5e5f6442f80e4bb34cfc4d14057" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MORALES MENDIVIL ALEXANDER<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 19:44:39<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1316605         </div>`)[0];
+                popup_010c6f016ac64bc5b2f7aefb3bfb8dff.setContent(html_12d3c5e5f6442f80e4bb34cfc4d14057);
+            
+        
+
+        marker_69c2ecbf135858872649603c789cea34.bindPopup(popup_010c6f016ac64bc5b2f7aefb3bfb8dff)
+        ;
+
+        
+    
+    
+            marker_69c2ecbf135858872649603c789cea34.bindTooltip(
+                `<div>
+                     MORALES MENDIVIL ALEXANDER - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69c2ecbf135858872649603c789cea34.setIcon(div_icon_5021e0479f6ccaa35ff05e003d79ab1c);
+            
+    
+            feature_group_ea6768953d34b28e18a4fb8b710ce0e6.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_31ac86cf8935ffdf19c3ac3b1d270be7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_22d351058f73d7ee81cabb7b28154745 = L.polyline.antPath(
+              [[-12.10621738, -77.00991662], [-12.10907549, -77.01985189], [-12.10994202, -77.02448199], [-12.10903402, -77.02597516], [-12.10792892, -77.0256688], [-12.11718349, -77.01394942], [-12.11602433, -77.02424595], [-12.11596575, -77.02746622], [-12.11547883, -77.02849785], [-12.10977353, -77.03153461], [-12.10907549, -77.01985189], [-12.11885304, -77.03692255], [-12.11732033, -77.03593422], [-12.11699572, -77.04066326], [-12.11588049, -77.04161486], [-12.11431885, -77.04689863], [-12.10982525, -77.04650115], [-12.10820743, -77.04828318], [-12.10607338, -77.03373293]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var marker_5bf947f1559b7728fd95808387f4b6c7 = L.marker(
+                [-12.10621738, -77.00991662],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_cb9e0d55c98603319039a66476fda109 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8f9419e248ce19b20613f7f531ccd5ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57b998a0f3f7c63bce01956bf684bd8f = $(`<div id="html_57b998a0f3f7c63bce01956bf684bd8f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 08:11:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 719986         </div>`)[0];
+                popup_8f9419e248ce19b20613f7f531ccd5ca.setContent(html_57b998a0f3f7c63bce01956bf684bd8f);
+            
+        
+
+        marker_5bf947f1559b7728fd95808387f4b6c7.bindPopup(popup_8f9419e248ce19b20613f7f531ccd5ca)
+        ;
+
+        
+    
+    
+            marker_5bf947f1559b7728fd95808387f4b6c7.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5bf947f1559b7728fd95808387f4b6c7.setIcon(div_icon_cb9e0d55c98603319039a66476fda109);
+            
+    
+            var marker_a19461dbdb411fcdcb032307f31238d6 = L.marker(
+                [-12.10907549, -77.01985189],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_10bb5ad9cec0478544b2416af39a52b7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2688d822beda7059f2839f07c0623129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e923ff42092d300907bb003dfd7d6cd = $(`<div id="html_8e923ff42092d300907bb003dfd7d6cd" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 09:02:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 1469360         </div>`)[0];
+                popup_2688d822beda7059f2839f07c0623129.setContent(html_8e923ff42092d300907bb003dfd7d6cd);
+            
+        
+
+        marker_a19461dbdb411fcdcb032307f31238d6.bindPopup(popup_2688d822beda7059f2839f07c0623129)
+        ;
+
+        
+    
+    
+            marker_a19461dbdb411fcdcb032307f31238d6.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a19461dbdb411fcdcb032307f31238d6.setIcon(div_icon_10bb5ad9cec0478544b2416af39a52b7);
+            
+    
+            var marker_364545850df395d4410b14e53570cb9e = L.marker(
+                [-12.10994202, -77.02448199],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_be637ed07019e6e098ad7caa2dadfdaf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_aaaa2a6f6e1111cf81129d908ed38665 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99aa6fd476fa7d34a8e1d1b65cca7f60 = $(`<div id="html_99aa6fd476fa7d34a8e1d1b65cca7f60" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 09:46:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 1476075         </div>`)[0];
+                popup_aaaa2a6f6e1111cf81129d908ed38665.setContent(html_99aa6fd476fa7d34a8e1d1b65cca7f60);
+            
+        
+
+        marker_364545850df395d4410b14e53570cb9e.bindPopup(popup_aaaa2a6f6e1111cf81129d908ed38665)
+        ;
+
+        
+    
+    
+            marker_364545850df395d4410b14e53570cb9e.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_364545850df395d4410b14e53570cb9e.setIcon(div_icon_be637ed07019e6e098ad7caa2dadfdaf);
+            
+    
+            var marker_f98398ca7452c09f8f8425fc1dae2478 = L.marker(
+                [-12.10903402, -77.02597516],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_e40f183a5358b1c091b75f959c5ecf24 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_57a1b9b3b1b7149a71d903ddab5105d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_993a64e4cbd44157a3cc27044a9d6b60 = $(`<div id="html_993a64e4cbd44157a3cc27044a9d6b60" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 09:56:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 923520         </div>`)[0];
+                popup_57a1b9b3b1b7149a71d903ddab5105d0.setContent(html_993a64e4cbd44157a3cc27044a9d6b60);
+            
+        
+
+        marker_f98398ca7452c09f8f8425fc1dae2478.bindPopup(popup_57a1b9b3b1b7149a71d903ddab5105d0)
+        ;
+
+        
+    
+    
+            marker_f98398ca7452c09f8f8425fc1dae2478.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f98398ca7452c09f8f8425fc1dae2478.setIcon(div_icon_e40f183a5358b1c091b75f959c5ecf24);
+            
+    
+            var marker_1db39d7a7bdc91f77b16829de56d9dca = L.marker(
+                [-12.10792892, -77.0256688],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_98a24bbc3a399319f6475141831697ac = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_509e400370585a463826daba656ffe86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_689b079c910dedc873a538260389938e = $(`<div id="html_689b079c910dedc873a538260389938e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 10:12:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 838876         </div>`)[0];
+                popup_509e400370585a463826daba656ffe86.setContent(html_689b079c910dedc873a538260389938e);
+            
+        
+
+        marker_1db39d7a7bdc91f77b16829de56d9dca.bindPopup(popup_509e400370585a463826daba656ffe86)
+        ;
+
+        
+    
+    
+            marker_1db39d7a7bdc91f77b16829de56d9dca.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1db39d7a7bdc91f77b16829de56d9dca.setIcon(div_icon_98a24bbc3a399319f6475141831697ac);
+            
+    
+            var marker_b2ab18c7915c00ea6503f02044b51a76 = L.marker(
+                [-12.11718349, -77.01394942],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_ba1f784fedbcf37921f66cfb480c45fd = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_afcf534743a535e11f0a2916076a4336 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3036125ac675b4e4e071273eee9d0b71 = $(`<div id="html_3036125ac675b4e4e071273eee9d0b71" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 10:44:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 695962         </div>`)[0];
+                popup_afcf534743a535e11f0a2916076a4336.setContent(html_3036125ac675b4e4e071273eee9d0b71);
+            
+        
+
+        marker_b2ab18c7915c00ea6503f02044b51a76.bindPopup(popup_afcf534743a535e11f0a2916076a4336)
+        ;
+
+        
+    
+    
+            marker_b2ab18c7915c00ea6503f02044b51a76.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2ab18c7915c00ea6503f02044b51a76.setIcon(div_icon_ba1f784fedbcf37921f66cfb480c45fd);
+            
+    
+            var marker_9843823e9a983b20abb20e60d40417f4 = L.marker(
+                [-12.11602433, -77.02424595],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_14d8484c2d8deaf46d4ad2ea356c8ca1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ff37d3b769b3556e88d2cc44d5ad1c24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db9af8623ab55d8c6217e9d290b30413 = $(`<div id="html_db9af8623ab55d8c6217e9d290b30413" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 11:02:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 1365480         </div>`)[0];
+                popup_ff37d3b769b3556e88d2cc44d5ad1c24.setContent(html_db9af8623ab55d8c6217e9d290b30413);
+            
+        
+
+        marker_9843823e9a983b20abb20e60d40417f4.bindPopup(popup_ff37d3b769b3556e88d2cc44d5ad1c24)
+        ;
+
+        
+    
+    
+            marker_9843823e9a983b20abb20e60d40417f4.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9843823e9a983b20abb20e60d40417f4.setIcon(div_icon_14d8484c2d8deaf46d4ad2ea356c8ca1);
+            
+    
+            var marker_d909f2e135c3b39e8f318a9aee0b9742 = L.marker(
+                [-12.11596575, -77.02746622],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_4c76f0c6f8726fe110efa99ca470d9d4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2c7f6f81d2bfa3e830b19cbd61ce94bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e646163dd46cde48a71e0f61f001c88d = $(`<div id="html_e646163dd46cde48a71e0f61f001c88d" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 11:15:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 90035         </div>`)[0];
+                popup_2c7f6f81d2bfa3e830b19cbd61ce94bf.setContent(html_e646163dd46cde48a71e0f61f001c88d);
+            
+        
+
+        marker_d909f2e135c3b39e8f318a9aee0b9742.bindPopup(popup_2c7f6f81d2bfa3e830b19cbd61ce94bf)
+        ;
+
+        
+    
+    
+            marker_d909f2e135c3b39e8f318a9aee0b9742.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d909f2e135c3b39e8f318a9aee0b9742.setIcon(div_icon_4c76f0c6f8726fe110efa99ca470d9d4);
+            
+    
+            var marker_cec6e8ee6b3790859864cc0faec4d1e4 = L.marker(
+                [-12.11547883, -77.02849785],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_bcef43fbbd6c3ae18f7a07610ab02483 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cf88942a01aa85fe6f7b94973c5a5679 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_581b94c3c50f6cdbe40071c164912f62 = $(`<div id="html_581b94c3c50f6cdbe40071c164912f62" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 11:34:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 1490009         </div>`)[0];
+                popup_cf88942a01aa85fe6f7b94973c5a5679.setContent(html_581b94c3c50f6cdbe40071c164912f62);
+            
+        
+
+        marker_cec6e8ee6b3790859864cc0faec4d1e4.bindPopup(popup_cf88942a01aa85fe6f7b94973c5a5679)
+        ;
+
+        
+    
+    
+            marker_cec6e8ee6b3790859864cc0faec4d1e4.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cec6e8ee6b3790859864cc0faec4d1e4.setIcon(div_icon_bcef43fbbd6c3ae18f7a07610ab02483);
+            
+    
+            var marker_5cd47df7da8fd9edcd7ef22cb36c933b = L.marker(
+                [-12.10977353, -77.03153461],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_95ddf09ee7d5f48db7b6b8a2d4f82f58 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_00bdb982b4a17964f3ed4567e07b8ffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bda978b167cb6dc60beb988dc686089 = $(`<div id="html_0bda978b167cb6dc60beb988dc686089" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 11:51:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 93625         </div>`)[0];
+                popup_00bdb982b4a17964f3ed4567e07b8ffb.setContent(html_0bda978b167cb6dc60beb988dc686089);
+            
+        
+
+        marker_5cd47df7da8fd9edcd7ef22cb36c933b.bindPopup(popup_00bdb982b4a17964f3ed4567e07b8ffb)
+        ;
+
+        
+    
+    
+            marker_5cd47df7da8fd9edcd7ef22cb36c933b.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cd47df7da8fd9edcd7ef22cb36c933b.setIcon(div_icon_95ddf09ee7d5f48db7b6b8a2d4f82f58);
+            
+    
+            var marker_81d10f456220375e4b79881a09349256 = L.marker(
+                [-12.10907549, -77.01985189],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_8cb768008b131357a9d1fd60ec704a45 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d3224152e579754956ae0deafd3da057 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8b22272c0f6f3d2b52184d613e39250 = $(`<div id="html_e8b22272c0f6f3d2b52184d613e39250" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 13:14:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 1469360         </div>`)[0];
+                popup_d3224152e579754956ae0deafd3da057.setContent(html_e8b22272c0f6f3d2b52184d613e39250);
+            
+        
+
+        marker_81d10f456220375e4b79881a09349256.bindPopup(popup_d3224152e579754956ae0deafd3da057)
+        ;
+
+        
+    
+    
+            marker_81d10f456220375e4b79881a09349256.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81d10f456220375e4b79881a09349256.setIcon(div_icon_8cb768008b131357a9d1fd60ec704a45);
+            
+    
+            var marker_6b37fc952432949ecb55b265813615c0 = L.marker(
+                [-12.11885304, -77.03692255],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_57fce065fc1b550691169ed4805c94a4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_20bc4ec8eee48873bb32912d6afb22a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bafdcaea6c9f8bbee1f7d46f0272373 = $(`<div id="html_9bafdcaea6c9f8bbee1f7d46f0272373" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 14:32:00<br>         <b>Acción:</b> MU=MEDIDOR NO UBICADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 97865         </div>`)[0];
+                popup_20bc4ec8eee48873bb32912d6afb22a4.setContent(html_9bafdcaea6c9f8bbee1f7d46f0272373);
+            
+        
+
+        marker_6b37fc952432949ecb55b265813615c0.bindPopup(popup_20bc4ec8eee48873bb32912d6afb22a4)
+        ;
+
+        
+    
+    
+            marker_6b37fc952432949ecb55b265813615c0.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b37fc952432949ecb55b265813615c0.setIcon(div_icon_57fce065fc1b550691169ed4805c94a4);
+            
+    
+            var marker_3bdeeaa892ea2d158c754789ab2c1a58 = L.marker(
+                [-12.11732033, -77.03593422],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_1e2ab5feca637db723c0d366015e166d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_0ce6c113b515422aaf2092478d5675fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51f119ee04c3203de4ac9a933a50e08e = $(`<div id="html_51f119ee04c3203de4ac9a933a50e08e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 14:50:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 278719         </div>`)[0];
+                popup_0ce6c113b515422aaf2092478d5675fb.setContent(html_51f119ee04c3203de4ac9a933a50e08e);
+            
+        
+
+        marker_3bdeeaa892ea2d158c754789ab2c1a58.bindPopup(popup_0ce6c113b515422aaf2092478d5675fb)
+        ;
+
+        
+    
+    
+            marker_3bdeeaa892ea2d158c754789ab2c1a58.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bdeeaa892ea2d158c754789ab2c1a58.setIcon(div_icon_1e2ab5feca637db723c0d366015e166d);
+            
+    
+            var marker_1a7e9d1a46c514cd897c17a8a78f1325 = L.marker(
+                [-12.11699572, -77.04066326],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_29f604d037d6ec3c182d8ea2bc913320 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cf9d2667b7e0ee7950b4a94a651f89d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ef5e50cf01752b1c40d3f1b216dc5a5 = $(`<div id="html_2ef5e50cf01752b1c40d3f1b216dc5a5" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 15:10:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 339933         </div>`)[0];
+                popup_cf9d2667b7e0ee7950b4a94a651f89d0.setContent(html_2ef5e50cf01752b1c40d3f1b216dc5a5);
+            
+        
+
+        marker_1a7e9d1a46c514cd897c17a8a78f1325.bindPopup(popup_cf9d2667b7e0ee7950b4a94a651f89d0)
+        ;
+
+        
+    
+    
+            marker_1a7e9d1a46c514cd897c17a8a78f1325.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a7e9d1a46c514cd897c17a8a78f1325.setIcon(div_icon_29f604d037d6ec3c182d8ea2bc913320);
+            
+    
+            var marker_9dea3efc669b0432d3b195af7ccd8d3d = L.marker(
+                [-12.11588049, -77.04161486],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_e9bb8f9d693f8459b362a9e39519f548 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_70e18163b3f2196cfba97bf72e2301ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_851f32168c4c901c806deb8a4aeb938d = $(`<div id="html_851f32168c4c901c806deb8a4aeb938d" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 15:18:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 188842         </div>`)[0];
+                popup_70e18163b3f2196cfba97bf72e2301ea.setContent(html_851f32168c4c901c806deb8a4aeb938d);
+            
+        
+
+        marker_9dea3efc669b0432d3b195af7ccd8d3d.bindPopup(popup_70e18163b3f2196cfba97bf72e2301ea)
+        ;
+
+        
+    
+    
+            marker_9dea3efc669b0432d3b195af7ccd8d3d.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dea3efc669b0432d3b195af7ccd8d3d.setIcon(div_icon_e9bb8f9d693f8459b362a9e39519f548);
+            
+    
+            var marker_587236bd42cd625b705abaea356759cc = L.marker(
+                [-12.11431885, -77.04689863],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_d4b064d589ed2dd5c74231d81d7f9c6e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_78346f579c55cb0f223295d0d8c29e38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59dc677caec0be1f07e9ae5672f02660 = $(`<div id="html_59dc677caec0be1f07e9ae5672f02660" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 15:39:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 365351         </div>`)[0];
+                popup_78346f579c55cb0f223295d0d8c29e38.setContent(html_59dc677caec0be1f07e9ae5672f02660);
+            
+        
+
+        marker_587236bd42cd625b705abaea356759cc.bindPopup(popup_78346f579c55cb0f223295d0d8c29e38)
+        ;
+
+        
+    
+    
+            marker_587236bd42cd625b705abaea356759cc.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_587236bd42cd625b705abaea356759cc.setIcon(div_icon_d4b064d589ed2dd5c74231d81d7f9c6e);
+            
+    
+            var marker_dc6cb1921c3b1a471a21bb95089e55f4 = L.marker(
+                [-12.10982525, -77.04650115],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_e4340f90f0ae4eb71b1525298390fae8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cbfdab73842fea5f4463750fc6f56c6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ed82d5750a7a63e8363ba94c5b3cfbc = $(`<div id="html_1ed82d5750a7a63e8363ba94c5b3cfbc" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 16:01:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 337402         </div>`)[0];
+                popup_cbfdab73842fea5f4463750fc6f56c6f.setContent(html_1ed82d5750a7a63e8363ba94c5b3cfbc);
+            
+        
+
+        marker_dc6cb1921c3b1a471a21bb95089e55f4.bindPopup(popup_cbfdab73842fea5f4463750fc6f56c6f)
+        ;
+
+        
+    
+    
+            marker_dc6cb1921c3b1a471a21bb95089e55f4.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc6cb1921c3b1a471a21bb95089e55f4.setIcon(div_icon_e4340f90f0ae4eb71b1525298390fae8);
+            
+    
+            var marker_02751e35cadda9f571818c46011649d7 = L.marker(
+                [-12.10820743, -77.04828318],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_0f1c85c1e83133828a3c6ab7da373d0c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e11b1e6822536fec467b38a85ed6697e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95829bc5c0cf7a0e47414b0757ba2b42 = $(`<div id="html_95829bc5c0cf7a0e47414b0757ba2b42" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 16:10:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 310697         </div>`)[0];
+                popup_e11b1e6822536fec467b38a85ed6697e.setContent(html_95829bc5c0cf7a0e47414b0757ba2b42);
+            
+        
+
+        marker_02751e35cadda9f571818c46011649d7.bindPopup(popup_e11b1e6822536fec467b38a85ed6697e)
+        ;
+
+        
+    
+    
+            marker_02751e35cadda9f571818c46011649d7.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02751e35cadda9f571818c46011649d7.setIcon(div_icon_0f1c85c1e83133828a3c6ab7da373d0c);
+            
+    
+            var marker_38fa676ebfca9470a6bd1ccad73dbec9 = L.marker(
+                [-12.10607338, -77.03373293],
+                {
+}
+            ).addTo(feature_group_31ac86cf8935ffdf19c3ac3b1d270be7);
+        
+    
+            var div_icon_701621264efa741df0d643323b2557d2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e19\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_546549d06368f3612741309bf3f4b65c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f082b647b0e9bef44766aa37028f017c = $(`<div id="html_f082b647b0e9bef44766aa37028f017c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SACSI GONZALES HECTOR DANIEL<br>         <b>Orden:</b> 19<br>         <b>Hora:</b> 16:33:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 87318         </div>`)[0];
+                popup_546549d06368f3612741309bf3f4b65c.setContent(html_f082b647b0e9bef44766aa37028f017c);
+            
+        
+
+        marker_38fa676ebfca9470a6bd1ccad73dbec9.bindPopup(popup_546549d06368f3612741309bf3f4b65c)
+        ;
+
+        
+    
+    
+            marker_38fa676ebfca9470a6bd1ccad73dbec9.bindTooltip(
+                `<div>
+                     SACSI GONZALES HECTOR DANIEL - Orden 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38fa676ebfca9470a6bd1ccad73dbec9.setIcon(div_icon_701621264efa741df0d643323b2557d2);
+            
+    
+            feature_group_31ac86cf8935ffdf19c3ac3b1d270be7.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_ea7fdc56bfc5979f0b38aab184fc2f30 = L.polyline.antPath(
+              [[-12.06240765, -77.03292018], [-12.07888391, -77.031198], [-12.06530987, -77.01301014], [-12.08596571, -77.03270747], [-12.08347702, -77.03558537], [-12.08532461, -77.03531878], [-12.08361542, -77.03719813], [-12.08559468, -77.03646538], [-12.08832334, -77.03658749], [-12.084125, -77.02018767], [-12.07351892, -77.02031514]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var marker_b625cf3006e45057a4c47c85bbdc749d = L.marker(
+                [-12.06240765, -77.03292018],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_a902d6f86fe4debc10639948f719a674 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b2ad7c3de65576e2ecc280003fd56f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf10968ed2f7e4c99f196a2c65bd94e2 = $(`<div id="html_cf10968ed2f7e4c99f196a2c65bd94e2" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 08:39:35<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 1459500         </div>`)[0];
+                popup_b2ad7c3de65576e2ecc280003fd56f9b.setContent(html_cf10968ed2f7e4c99f196a2c65bd94e2);
+            
+        
+
+        marker_b625cf3006e45057a4c47c85bbdc749d.bindPopup(popup_b2ad7c3de65576e2ecc280003fd56f9b)
+        ;
+
+        
+    
+    
+            marker_b625cf3006e45057a4c47c85bbdc749d.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b625cf3006e45057a4c47c85bbdc749d.setIcon(div_icon_a902d6f86fe4debc10639948f719a674);
+            
+    
+            var marker_54694dee427fa02e68d4d2b3f6e4086b = L.marker(
+                [-12.07888391, -77.031198],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_fdf4aa9c44b700713e5b29c941b16da8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a4afc4858f7223fc585cdcce98179810 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb94f9a72d5d78d8f65d49dad28212de = $(`<div id="html_fb94f9a72d5d78d8f65d49dad28212de" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 09:16:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 41879         </div>`)[0];
+                popup_a4afc4858f7223fc585cdcce98179810.setContent(html_fb94f9a72d5d78d8f65d49dad28212de);
+            
+        
+
+        marker_54694dee427fa02e68d4d2b3f6e4086b.bindPopup(popup_a4afc4858f7223fc585cdcce98179810)
+        ;
+
+        
+    
+    
+            marker_54694dee427fa02e68d4d2b3f6e4086b.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54694dee427fa02e68d4d2b3f6e4086b.setIcon(div_icon_fdf4aa9c44b700713e5b29c941b16da8);
+            
+    
+            var marker_253771965a4dc1100e5bdd18e39ddff2 = L.marker(
+                [-12.06530987, -77.01301014],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_366aac47b8504d71194661e7e8edd98f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_227649e705926acaee30b89a040d7943 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73f088f4a47bc885800e2e7dbf22238e = $(`<div id="html_73f088f4a47bc885800e2e7dbf22238e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 10:07:57<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 136370         </div>`)[0];
+                popup_227649e705926acaee30b89a040d7943.setContent(html_73f088f4a47bc885800e2e7dbf22238e);
+            
+        
+
+        marker_253771965a4dc1100e5bdd18e39ddff2.bindPopup(popup_227649e705926acaee30b89a040d7943)
+        ;
+
+        
+    
+    
+            marker_253771965a4dc1100e5bdd18e39ddff2.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_253771965a4dc1100e5bdd18e39ddff2.setIcon(div_icon_366aac47b8504d71194661e7e8edd98f);
+            
+    
+            var marker_9acd4f633cdf034f7d179100171f5f68 = L.marker(
+                [-12.08596571, -77.03270747],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_cfe636a6ca141512b6a160824508b743 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ad29a6d1bbe6821b4e980c754f2f4abe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d65e2f9a89641f3d159621af19f308 = $(`<div id="html_85d65e2f9a89641f3d159621af19f308" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 10:59:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 205139         </div>`)[0];
+                popup_ad29a6d1bbe6821b4e980c754f2f4abe.setContent(html_85d65e2f9a89641f3d159621af19f308);
+            
+        
+
+        marker_9acd4f633cdf034f7d179100171f5f68.bindPopup(popup_ad29a6d1bbe6821b4e980c754f2f4abe)
+        ;
+
+        
+    
+    
+            marker_9acd4f633cdf034f7d179100171f5f68.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9acd4f633cdf034f7d179100171f5f68.setIcon(div_icon_cfe636a6ca141512b6a160824508b743);
+            
+    
+            var marker_e1ff61777ab400e793ab6b8b296ad06f = L.marker(
+                [-12.08347702, -77.03558537],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_dee3dfcef4c4bf0d21177bf782a08c58 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_076eac05f166a8dc269693217b479a9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c843c246602216f707788bed1fb62a04 = $(`<div id="html_c843c246602216f707788bed1fb62a04" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 11:27:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 242902         </div>`)[0];
+                popup_076eac05f166a8dc269693217b479a9b.setContent(html_c843c246602216f707788bed1fb62a04);
+            
+        
+
+        marker_e1ff61777ab400e793ab6b8b296ad06f.bindPopup(popup_076eac05f166a8dc269693217b479a9b)
+        ;
+
+        
+    
+    
+            marker_e1ff61777ab400e793ab6b8b296ad06f.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1ff61777ab400e793ab6b8b296ad06f.setIcon(div_icon_dee3dfcef4c4bf0d21177bf782a08c58);
+            
+    
+            var marker_57ea887d21f44aafa25ebb4ae80a5429 = L.marker(
+                [-12.08532461, -77.03531878],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_590ab9e6576ffd2692e7d4f59d6e7142 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_f28a524e2ac0e262dc4a53bb995d86ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebae188b9ccb3e25bc86dfae98fe126d = $(`<div id="html_ebae188b9ccb3e25bc86dfae98fe126d" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 11:44:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 1352092         </div>`)[0];
+                popup_f28a524e2ac0e262dc4a53bb995d86ce.setContent(html_ebae188b9ccb3e25bc86dfae98fe126d);
+            
+        
+
+        marker_57ea887d21f44aafa25ebb4ae80a5429.bindPopup(popup_f28a524e2ac0e262dc4a53bb995d86ce)
+        ;
+
+        
+    
+    
+            marker_57ea887d21f44aafa25ebb4ae80a5429.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57ea887d21f44aafa25ebb4ae80a5429.setIcon(div_icon_590ab9e6576ffd2692e7d4f59d6e7142);
+            
+    
+            var marker_a1c3eee1a80522fb3ba036b4279ef6ac = L.marker(
+                [-12.08361542, -77.03719813],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_c679858224046b3036bd44b4e9539839 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_89017b57c5ccd2a6a8dfb8e9aa0793fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48339af0430c15fdd0ab57735d587fe7 = $(`<div id="html_48339af0430c15fdd0ab57735d587fe7" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 12:03:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 1773997         </div>`)[0];
+                popup_89017b57c5ccd2a6a8dfb8e9aa0793fc.setContent(html_48339af0430c15fdd0ab57735d587fe7);
+            
+        
+
+        marker_a1c3eee1a80522fb3ba036b4279ef6ac.bindPopup(popup_89017b57c5ccd2a6a8dfb8e9aa0793fc)
+        ;
+
+        
+    
+    
+            marker_a1c3eee1a80522fb3ba036b4279ef6ac.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1c3eee1a80522fb3ba036b4279ef6ac.setIcon(div_icon_c679858224046b3036bd44b4e9539839);
+            
+    
+            var marker_5407aa98978083dd02b3cef2fb31a06d = L.marker(
+                [-12.08559468, -77.03646538],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_ae0fcab70450605644ffe4d5c2c2eaae = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_56d1736fdcd98e343df2b2016f2dd5be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b743b096d28767e7c680cc81723cdf80 = $(`<div id="html_b743b096d28767e7c680cc81723cdf80" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 12:23:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 203397         </div>`)[0];
+                popup_56d1736fdcd98e343df2b2016f2dd5be.setContent(html_b743b096d28767e7c680cc81723cdf80);
+            
+        
+
+        marker_5407aa98978083dd02b3cef2fb31a06d.bindPopup(popup_56d1736fdcd98e343df2b2016f2dd5be)
+        ;
+
+        
+    
+    
+            marker_5407aa98978083dd02b3cef2fb31a06d.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5407aa98978083dd02b3cef2fb31a06d.setIcon(div_icon_ae0fcab70450605644ffe4d5c2c2eaae);
+            
+    
+            var marker_8a086e1f2a05fc2ddc91c313fe1f2d34 = L.marker(
+                [-12.08832334, -77.03658749],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_95a6662c83c2a5bb035eac7c5509542d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_820dae74d41bd1167dfb096cd8ca14ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_661707396663b16e0d4f5815300c6453 = $(`<div id="html_661707396663b16e0d4f5815300c6453" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 12:33:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 71015         </div>`)[0];
+                popup_820dae74d41bd1167dfb096cd8ca14ff.setContent(html_661707396663b16e0d4f5815300c6453);
+            
+        
+
+        marker_8a086e1f2a05fc2ddc91c313fe1f2d34.bindPopup(popup_820dae74d41bd1167dfb096cd8ca14ff)
+        ;
+
+        
+    
+    
+            marker_8a086e1f2a05fc2ddc91c313fe1f2d34.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a086e1f2a05fc2ddc91c313fe1f2d34.setIcon(div_icon_95a6662c83c2a5bb035eac7c5509542d);
+            
+    
+            var marker_1b0ee78d93c66667c7839464007c24e7 = L.marker(
+                [-12.084125, -77.02018767],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_e19a31084ead397c8e0d661391dfe5bf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8e2d182e3ccfc749ba35a4c8bb999819 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67a85f9d0acdcf62a075892e09fb4f3e = $(`<div id="html_67a85f9d0acdcf62a075892e09fb4f3e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 13:09:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 300054         </div>`)[0];
+                popup_8e2d182e3ccfc749ba35a4c8bb999819.setContent(html_67a85f9d0acdcf62a075892e09fb4f3e);
+            
+        
+
+        marker_1b0ee78d93c66667c7839464007c24e7.bindPopup(popup_8e2d182e3ccfc749ba35a4c8bb999819)
+        ;
+
+        
+    
+    
+            marker_1b0ee78d93c66667c7839464007c24e7.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b0ee78d93c66667c7839464007c24e7.setIcon(div_icon_e19a31084ead397c8e0d661391dfe5bf);
+            
+    
+            var marker_00091dca56887b19411141f3fa122e21 = L.marker(
+                [-12.07351892, -77.02031514],
+                {
+}
+            ).addTo(feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e);
+        
+    
+            var div_icon_8708fc15de2c81182061ec18079a1f3b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_888c9de9d4dd582116cc58662601b2af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4067266b03747cf5654ef47074ee527b = $(`<div id="html_4067266b03747cf5654ef47074ee527b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> EDDY GARCIA TRIGOSO<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 13:40:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> La República<br>         <b>Suministro:</b> 352586         </div>`)[0];
+                popup_888c9de9d4dd582116cc58662601b2af.setContent(html_4067266b03747cf5654ef47074ee527b);
+            
+        
+
+        marker_00091dca56887b19411141f3fa122e21.bindPopup(popup_888c9de9d4dd582116cc58662601b2af)
+        ;
+
+        
+    
+    
+            marker_00091dca56887b19411141f3fa122e21.bindTooltip(
+                `<div>
+                     EDDY GARCIA TRIGOSO - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00091dca56887b19411141f3fa122e21.setIcon(div_icon_8708fc15de2c81182061ec18079a1f3b);
+            
+    
+            feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_4d777285562c40496608c427f45738b3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_f88dd20419fce8e641fe7760af86f21b = L.polyline.antPath(
+              [[-11.94430189, -76.71464222], [-11.92966777, -76.70158533], [-11.93416529, -76.70207274], [-11.93405248, -76.69386253], [-11.91527556, -76.66835879], [-11.90411494, -76.66709252], [-11.88885283, -76.65455492], [-11.92684275, -76.6640089], [-11.91558226, -76.61062381], [-11.91758425, -76.61094277], [-11.92041159, -76.61045509], [-11.91464533, -76.61010577], [-11.91907478, -76.55725827], [-11.91514868, -76.55175392], [-11.90921433, -76.53917982], [-11.91023519, -76.54063132], [-11.90965282, -76.57862493], [-11.91045136, -76.579202], [-11.91076402, -76.58277173], [-11.91096199, -76.58330393], [-11.93493051, -76.69201469], [-11.97614243, -76.76004247]],
+              {
+  "stroke": true,
+  "color": "purple",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var marker_4c6232fb707e77f333248fc69347693f = L.marker(
+                [-11.94430189, -76.71464222],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_35183a3f367063d019a5a93c168d041e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_431cb59319a05d8318c9bd90c7c14cec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d3c4be172eaf3c9f74e0805105eae45 = $(`<div id="html_8d3c4be172eaf3c9f74e0805105eae45" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 09:05:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 317495         </div>`)[0];
+                popup_431cb59319a05d8318c9bd90c7c14cec.setContent(html_8d3c4be172eaf3c9f74e0805105eae45);
+            
+        
+
+        marker_4c6232fb707e77f333248fc69347693f.bindPopup(popup_431cb59319a05d8318c9bd90c7c14cec)
+        ;
+
+        
+    
+    
+            marker_4c6232fb707e77f333248fc69347693f.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c6232fb707e77f333248fc69347693f.setIcon(div_icon_35183a3f367063d019a5a93c168d041e);
+            
+    
+            var marker_3204a7d55dfe163437272d0989950994 = L.marker(
+                [-11.92966777, -76.70158533],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_146d0aa3341b70b28010959270fbcb79 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_831e93b4e746691538c59cb6601c3811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2914c75f993fc64e581405734ccd91f = $(`<div id="html_b2914c75f993fc64e581405734ccd91f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 09:53:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1502107         </div>`)[0];
+                popup_831e93b4e746691538c59cb6601c3811.setContent(html_b2914c75f993fc64e581405734ccd91f);
+            
+        
+
+        marker_3204a7d55dfe163437272d0989950994.bindPopup(popup_831e93b4e746691538c59cb6601c3811)
+        ;
+
+        
+    
+    
+            marker_3204a7d55dfe163437272d0989950994.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3204a7d55dfe163437272d0989950994.setIcon(div_icon_146d0aa3341b70b28010959270fbcb79);
+            
+    
+            var marker_a81608f9f797388f44aa694e3dea6968 = L.marker(
+                [-11.93416529, -76.70207274],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_68c00d6a440f5e37f20a9566d1419c0e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ec431b8564c85f9c0fbb5a0e3a14d5bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc475852474f52886cb22bb197d958f8 = $(`<div id="html_cc475852474f52886cb22bb197d958f8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 10:09:00<br>         <b>Acción:</b> MU=MEDIDOR NO UBICADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 671349         </div>`)[0];
+                popup_ec431b8564c85f9c0fbb5a0e3a14d5bb.setContent(html_cc475852474f52886cb22bb197d958f8);
+            
+        
+
+        marker_a81608f9f797388f44aa694e3dea6968.bindPopup(popup_ec431b8564c85f9c0fbb5a0e3a14d5bb)
+        ;
+
+        
+    
+    
+            marker_a81608f9f797388f44aa694e3dea6968.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a81608f9f797388f44aa694e3dea6968.setIcon(div_icon_68c00d6a440f5e37f20a9566d1419c0e);
+            
+    
+            var marker_17ebb76a7603a7e2c23972ab296c0619 = L.marker(
+                [-11.93405248, -76.69386253],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_f2295e02c13dda80ec2273f41fc5ecf2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_311be7b4d9a6755e6d627c3f1ed194b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_035ecb8d26a5b247945b2b7d839825e7 = $(`<div id="html_035ecb8d26a5b247945b2b7d839825e7" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 10:27:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1910197         </div>`)[0];
+                popup_311be7b4d9a6755e6d627c3f1ed194b6.setContent(html_035ecb8d26a5b247945b2b7d839825e7);
+            
+        
+
+        marker_17ebb76a7603a7e2c23972ab296c0619.bindPopup(popup_311be7b4d9a6755e6d627c3f1ed194b6)
+        ;
+
+        
+    
+    
+            marker_17ebb76a7603a7e2c23972ab296c0619.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17ebb76a7603a7e2c23972ab296c0619.setIcon(div_icon_f2295e02c13dda80ec2273f41fc5ecf2);
+            
+    
+            var marker_56f1e3016165d92b0c57f9dc7deaf442 = L.marker(
+                [-11.91527556, -76.66835879],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_0e125e087d395941ccafa7aeea4989cd = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e0a5818ff43a555c56cdc7c7bb99ff54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6562a461b7048c93382ad8e42411afee = $(`<div id="html_6562a461b7048c93382ad8e42411afee" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 10:47:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 919564         </div>`)[0];
+                popup_e0a5818ff43a555c56cdc7c7bb99ff54.setContent(html_6562a461b7048c93382ad8e42411afee);
+            
+        
+
+        marker_56f1e3016165d92b0c57f9dc7deaf442.bindPopup(popup_e0a5818ff43a555c56cdc7c7bb99ff54)
+        ;
+
+        
+    
+    
+            marker_56f1e3016165d92b0c57f9dc7deaf442.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56f1e3016165d92b0c57f9dc7deaf442.setIcon(div_icon_0e125e087d395941ccafa7aeea4989cd);
+            
+    
+            var marker_97ff722640f2deb2153bdb7d73e4abfe = L.marker(
+                [-11.90411494, -76.66709252],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_76adb34d7f593002f6a95eabd4622a36 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_55146cf2a9a654a906f8fd7d25fb284f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c008d56590ae7d55b9ef4d4d76654584 = $(`<div id="html_c008d56590ae7d55b9ef4d4d76654584" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 11:01:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 2052255         </div>`)[0];
+                popup_55146cf2a9a654a906f8fd7d25fb284f.setContent(html_c008d56590ae7d55b9ef4d4d76654584);
+            
+        
+
+        marker_97ff722640f2deb2153bdb7d73e4abfe.bindPopup(popup_55146cf2a9a654a906f8fd7d25fb284f)
+        ;
+
+        
+    
+    
+            marker_97ff722640f2deb2153bdb7d73e4abfe.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97ff722640f2deb2153bdb7d73e4abfe.setIcon(div_icon_76adb34d7f593002f6a95eabd4622a36);
+            
+    
+            var marker_991a19e13bc3bd991a64d138cda76121 = L.marker(
+                [-11.88885283, -76.65455492],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_d4564ef3f1bf54e5baec76a0945765de = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_032639d8c6bc7d4f8a2975a0395abb19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87fca4f3cfb41cf4cebee97494142dd4 = $(`<div id="html_87fca4f3cfb41cf4cebee97494142dd4" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 11:15:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 2101043         </div>`)[0];
+                popup_032639d8c6bc7d4f8a2975a0395abb19.setContent(html_87fca4f3cfb41cf4cebee97494142dd4);
+            
+        
+
+        marker_991a19e13bc3bd991a64d138cda76121.bindPopup(popup_032639d8c6bc7d4f8a2975a0395abb19)
+        ;
+
+        
+    
+    
+            marker_991a19e13bc3bd991a64d138cda76121.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_991a19e13bc3bd991a64d138cda76121.setIcon(div_icon_d4564ef3f1bf54e5baec76a0945765de);
+            
+    
+            var marker_34b90b1e22447abb7402e4cc4de41521 = L.marker(
+                [-11.92684275, -76.6640089],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_8b99be31c76d8728812ee0cfbf567098 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6c324c9af57bbc23ad566a152824abb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9778fc170029d635f242f05c665a8b6 = $(`<div id="html_e9778fc170029d635f242f05c665a8b6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 11:32:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 873305         </div>`)[0];
+                popup_6c324c9af57bbc23ad566a152824abb8.setContent(html_e9778fc170029d635f242f05c665a8b6);
+            
+        
+
+        marker_34b90b1e22447abb7402e4cc4de41521.bindPopup(popup_6c324c9af57bbc23ad566a152824abb8)
+        ;
+
+        
+    
+    
+            marker_34b90b1e22447abb7402e4cc4de41521.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34b90b1e22447abb7402e4cc4de41521.setIcon(div_icon_8b99be31c76d8728812ee0cfbf567098);
+            
+    
+            var marker_996661753cfde9e4aaf3437f82c3f3dd = L.marker(
+                [-11.91558226, -76.61062381],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_1de2037f9168f9a8f50cff90d16f3a23 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_83863695b34a4526678de22245d5a339 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7155c2f02d7a737c1a8af04e9c14c041 = $(`<div id="html_7155c2f02d7a737c1a8af04e9c14c041" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 11:53:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1481563         </div>`)[0];
+                popup_83863695b34a4526678de22245d5a339.setContent(html_7155c2f02d7a737c1a8af04e9c14c041);
+            
+        
+
+        marker_996661753cfde9e4aaf3437f82c3f3dd.bindPopup(popup_83863695b34a4526678de22245d5a339)
+        ;
+
+        
+    
+    
+            marker_996661753cfde9e4aaf3437f82c3f3dd.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_996661753cfde9e4aaf3437f82c3f3dd.setIcon(div_icon_1de2037f9168f9a8f50cff90d16f3a23);
+            
+    
+            var marker_9fa7f9764b6076546077f0ee5c34acf9 = L.marker(
+                [-11.91758425, -76.61094277],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_29303334668c588f4b23e9c1f2d8d62c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c43caaa5a7e2b7b7d770a747305fcb3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1947a860c7f83b47ff0b3b57f5952df8 = $(`<div id="html_1947a860c7f83b47ff0b3b57f5952df8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 12:01:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1913026         </div>`)[0];
+                popup_c43caaa5a7e2b7b7d770a747305fcb3a.setContent(html_1947a860c7f83b47ff0b3b57f5952df8);
+            
+        
+
+        marker_9fa7f9764b6076546077f0ee5c34acf9.bindPopup(popup_c43caaa5a7e2b7b7d770a747305fcb3a)
+        ;
+
+        
+    
+    
+            marker_9fa7f9764b6076546077f0ee5c34acf9.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fa7f9764b6076546077f0ee5c34acf9.setIcon(div_icon_29303334668c588f4b23e9c1f2d8d62c);
+            
+    
+            var marker_4363d6e422913a487bcf68d5bb5c72e6 = L.marker(
+                [-11.92041159, -76.61045509],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_a9076f4833e528b941c9f5d388e9ce3e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4bb3d84a79a15f0a0b4f0939ead0cc56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc0e7663a868d51e0458d05db8a0617a = $(`<div id="html_dc0e7663a868d51e0458d05db8a0617a" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 12:10:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 2171719         </div>`)[0];
+                popup_4bb3d84a79a15f0a0b4f0939ead0cc56.setContent(html_dc0e7663a868d51e0458d05db8a0617a);
+            
+        
+
+        marker_4363d6e422913a487bcf68d5bb5c72e6.bindPopup(popup_4bb3d84a79a15f0a0b4f0939ead0cc56)
+        ;
+
+        
+    
+    
+            marker_4363d6e422913a487bcf68d5bb5c72e6.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4363d6e422913a487bcf68d5bb5c72e6.setIcon(div_icon_a9076f4833e528b941c9f5d388e9ce3e);
+            
+    
+            var marker_8a90f74f0acb166e94a51fff37d94d7b = L.marker(
+                [-11.91464533, -76.61010577],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_13c359377c6dafd5da6c4efe4ed4c935 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_566e1ffb0ece626a8bdfc6515eb6ce53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9894c77c3fa6f92731279313039fc7c9 = $(`<div id="html_9894c77c3fa6f92731279313039fc7c9" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 12:16:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1924275         </div>`)[0];
+                popup_566e1ffb0ece626a8bdfc6515eb6ce53.setContent(html_9894c77c3fa6f92731279313039fc7c9);
+            
+        
+
+        marker_8a90f74f0acb166e94a51fff37d94d7b.bindPopup(popup_566e1ffb0ece626a8bdfc6515eb6ce53)
+        ;
+
+        
+    
+    
+            marker_8a90f74f0acb166e94a51fff37d94d7b.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a90f74f0acb166e94a51fff37d94d7b.setIcon(div_icon_13c359377c6dafd5da6c4efe4ed4c935);
+            
+    
+            var marker_79a84c38e6bdc3a64f35ab9c7b47fcd8 = L.marker(
+                [-11.91907478, -76.55725827],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_9771a2aa312fb4feda04a38671cf8535 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_88bed59f63c54a003eb8e3fef5f6e4b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a141b29bf5086eb5ea6f8ba28961423c = $(`<div id="html_a141b29bf5086eb5ea6f8ba28961423c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 13:16:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 2059129         </div>`)[0];
+                popup_88bed59f63c54a003eb8e3fef5f6e4b2.setContent(html_a141b29bf5086eb5ea6f8ba28961423c);
+            
+        
+
+        marker_79a84c38e6bdc3a64f35ab9c7b47fcd8.bindPopup(popup_88bed59f63c54a003eb8e3fef5f6e4b2)
+        ;
+
+        
+    
+    
+            marker_79a84c38e6bdc3a64f35ab9c7b47fcd8.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79a84c38e6bdc3a64f35ab9c7b47fcd8.setIcon(div_icon_9771a2aa312fb4feda04a38671cf8535);
+            
+    
+            var marker_097eb4f06f202e95889b4266239aa5c1 = L.marker(
+                [-11.91514868, -76.55175392],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_3953749372d24013c3c364630cfeafd6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6bed63bbb574f4a90e12c73012505e76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebdad7980ad21d6f31a31f8cc988c0c9 = $(`<div id="html_ebdad7980ad21d6f31a31f8cc988c0c9" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 13:24:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1498487         </div>`)[0];
+                popup_6bed63bbb574f4a90e12c73012505e76.setContent(html_ebdad7980ad21d6f31a31f8cc988c0c9);
+            
+        
+
+        marker_097eb4f06f202e95889b4266239aa5c1.bindPopup(popup_6bed63bbb574f4a90e12c73012505e76)
+        ;
+
+        
+    
+    
+            marker_097eb4f06f202e95889b4266239aa5c1.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_097eb4f06f202e95889b4266239aa5c1.setIcon(div_icon_3953749372d24013c3c364630cfeafd6);
+            
+    
+            var marker_9ca9bdecb07d5a9faab4e6061920b301 = L.marker(
+                [-11.90921433, -76.53917982],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_49fff308ce466d64c72dce4ad3231cb1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_bc0d7cd891a55262654da405142c5d62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef01ef222b37ff8931b62cc9406a90b7 = $(`<div id="html_ef01ef222b37ff8931b62cc9406a90b7" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 13:34:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 673045         </div>`)[0];
+                popup_bc0d7cd891a55262654da405142c5d62.setContent(html_ef01ef222b37ff8931b62cc9406a90b7);
+            
+        
+
+        marker_9ca9bdecb07d5a9faab4e6061920b301.bindPopup(popup_bc0d7cd891a55262654da405142c5d62)
+        ;
+
+        
+    
+    
+            marker_9ca9bdecb07d5a9faab4e6061920b301.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ca9bdecb07d5a9faab4e6061920b301.setIcon(div_icon_49fff308ce466d64c72dce4ad3231cb1);
+            
+    
+            var marker_8ea17ce462270ea6a7d29fb485bd6fe9 = L.marker(
+                [-11.91023519, -76.54063132],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_c76ee8ea373adb1a0ffba4676c066708 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_80c44d5a43bd3ca594e3777dd0201190 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6d4639bfa7013309e8016eec1f78942 = $(`<div id="html_e6d4639bfa7013309e8016eec1f78942" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 13:46:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1491614         </div>`)[0];
+                popup_80c44d5a43bd3ca594e3777dd0201190.setContent(html_e6d4639bfa7013309e8016eec1f78942);
+            
+        
+
+        marker_8ea17ce462270ea6a7d29fb485bd6fe9.bindPopup(popup_80c44d5a43bd3ca594e3777dd0201190)
+        ;
+
+        
+    
+    
+            marker_8ea17ce462270ea6a7d29fb485bd6fe9.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ea17ce462270ea6a7d29fb485bd6fe9.setIcon(div_icon_c76ee8ea373adb1a0ffba4676c066708);
+            
+    
+            var marker_9177a2c0e22e60aa5465128c1a28f778 = L.marker(
+                [-11.90965282, -76.57862493],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_846b3044ee6c50354a848913c0befd07 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3baa88403fe77c33603f80066e72ad83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dc648400ce8c38ce9fcc164169d69d9 = $(`<div id="html_5dc648400ce8c38ce9fcc164169d69d9" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 14:07:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1240780         </div>`)[0];
+                popup_3baa88403fe77c33603f80066e72ad83.setContent(html_5dc648400ce8c38ce9fcc164169d69d9);
+            
+        
+
+        marker_9177a2c0e22e60aa5465128c1a28f778.bindPopup(popup_3baa88403fe77c33603f80066e72ad83)
+        ;
+
+        
+    
+    
+            marker_9177a2c0e22e60aa5465128c1a28f778.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9177a2c0e22e60aa5465128c1a28f778.setIcon(div_icon_846b3044ee6c50354a848913c0befd07);
+            
+    
+            var marker_61b21b1918825b2d09ba2496a4bbedf6 = L.marker(
+                [-11.91045136, -76.579202],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_ddbba6fd567c79d2af756a42b422cf57 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_eb75fe54bc3de06580e3274039a404ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06e04f540c4a8f34eb003c726f6b8413 = $(`<div id="html_06e04f540c4a8f34eb003c726f6b8413" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 14:21:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1156148         </div>`)[0];
+                popup_eb75fe54bc3de06580e3274039a404ce.setContent(html_06e04f540c4a8f34eb003c726f6b8413);
+            
+        
+
+        marker_61b21b1918825b2d09ba2496a4bbedf6.bindPopup(popup_eb75fe54bc3de06580e3274039a404ce)
+        ;
+
+        
+    
+    
+            marker_61b21b1918825b2d09ba2496a4bbedf6.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61b21b1918825b2d09ba2496a4bbedf6.setIcon(div_icon_ddbba6fd567c79d2af756a42b422cf57);
+            
+    
+            var marker_632b9819a0782c6eb53d05306f937fda = L.marker(
+                [-11.91076402, -76.58277173],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_55515edbf67188ebb0b22ad8da6ccd31 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e19\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_f94306e1c6383170f3abda129c365e53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37d5db8179fcb6e1e888daffbf7fe7df = $(`<div id="html_37d5db8179fcb6e1e888daffbf7fe7df" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 19<br>         <b>Hora:</b> 15:08:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1664716         </div>`)[0];
+                popup_f94306e1c6383170f3abda129c365e53.setContent(html_37d5db8179fcb6e1e888daffbf7fe7df);
+            
+        
+
+        marker_632b9819a0782c6eb53d05306f937fda.bindPopup(popup_f94306e1c6383170f3abda129c365e53)
+        ;
+
+        
+    
+    
+            marker_632b9819a0782c6eb53d05306f937fda.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_632b9819a0782c6eb53d05306f937fda.setIcon(div_icon_55515edbf67188ebb0b22ad8da6ccd31);
+            
+    
+            var marker_696041566c8fdb1f7c66834a4133d325 = L.marker(
+                [-11.91096199, -76.58330393],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_7959c1a9abcc9d196370e801313f7751 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e20\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3a5cb63c2b0ea2efe1f5a238cdf55b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31e802cc6fc7b7ead71b78410f9d3aff = $(`<div id="html_31e802cc6fc7b7ead71b78410f9d3aff" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 20<br>         <b>Hora:</b> 15:09:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 1665908         </div>`)[0];
+                popup_3a5cb63c2b0ea2efe1f5a238cdf55b9a.setContent(html_31e802cc6fc7b7ead71b78410f9d3aff);
+            
+        
+
+        marker_696041566c8fdb1f7c66834a4133d325.bindPopup(popup_3a5cb63c2b0ea2efe1f5a238cdf55b9a)
+        ;
+
+        
+    
+    
+            marker_696041566c8fdb1f7c66834a4133d325.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_696041566c8fdb1f7c66834a4133d325.setIcon(div_icon_7959c1a9abcc9d196370e801313f7751);
+            
+    
+            var marker_8a38ae09aab247c5ba46bb3976bb9664 = L.marker(
+                [-11.93493051, -76.69201469],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_2b0adf01b976faf36f5c8e09140a24f5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e21\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_665c41bf61f7a905f059c5d3bd97916c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d0e331d21b2dd5c3df09bfa9f691f76 = $(`<div id="html_7d0e331d21b2dd5c3df09bfa9f691f76" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 21<br>         <b>Hora:</b> 15:57:30<br>         <b>Acción:</b> Retiro<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 461716         </div>`)[0];
+                popup_665c41bf61f7a905f059c5d3bd97916c.setContent(html_7d0e331d21b2dd5c3df09bfa9f691f76);
+            
+        
+
+        marker_8a38ae09aab247c5ba46bb3976bb9664.bindPopup(popup_665c41bf61f7a905f059c5d3bd97916c)
+        ;
+
+        
+    
+    
+            marker_8a38ae09aab247c5ba46bb3976bb9664.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a38ae09aab247c5ba46bb3976bb9664.setIcon(div_icon_2b0adf01b976faf36f5c8e09140a24f5);
+            
+    
+            var marker_0b1168d55572bc488252f0966da47c3a = L.marker(
+                [-11.97614243, -76.76004247],
+                {
+}
+            ).addTo(feature_group_4d777285562c40496608c427f45738b3);
+        
+    
+            var div_icon_e196b8477c134756b56c06629fa55879 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e22\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_fcdc29a4809bd2db00857cd322d33136 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16c8ed4200747a360ad3a9b93ba05cce = $(`<div id="html_16c8ed4200747a360ad3a9b93ba05cce" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> GUZMAN POVIS LUIS<br>         <b>Orden:</b> 22<br>         <b>Hora:</b> 17:00:00<br>         <b>Acción:</b> RS=RIESGO / SEGURIDAD<br>         <b>Sucursal:</b> Chosica<br>         <b>Suministro:</b> 185685         </div>`)[0];
+                popup_fcdc29a4809bd2db00857cd322d33136.setContent(html_16c8ed4200747a360ad3a9b93ba05cce);
+            
+        
+
+        marker_0b1168d55572bc488252f0966da47c3a.bindPopup(popup_fcdc29a4809bd2db00857cd322d33136)
+        ;
+
+        
+    
+    
+            marker_0b1168d55572bc488252f0966da47c3a.bindTooltip(
+                `<div>
+                     GUZMAN POVIS LUIS - Orden 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b1168d55572bc488252f0966da47c3a.setIcon(div_icon_e196b8477c134756b56c06629fa55879);
+            
+    
+            feature_group_4d777285562c40496608c427f45738b3.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var feature_group_6c32782be2a61f3a446d9578ec4cfa44 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_29a1314ad2166caa925d7bdbd750bf34 = L.polyline.antPath(
+              [[-12.09931883, -76.94792058], [-12.0733044, -76.95530735], [-12.0733044, -76.95530735], [-12.05252919, -76.94334577], [-12.05201896, -76.9446683], [-12.04986167, -76.93716383], [-12.09850253, -77.02394858], [-12.09850253, -77.02394858], [-12.09896495, -77.0238943], [-12.09788782, -77.02242665]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var marker_973d9068833797790de1424ff57c2fd0 = L.marker(
+                [-12.09931883, -76.94792058],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_975d6ec363a4e1ef5c76744edb80d61f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cead71951923ea57ba1884c9e539dc42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6712879c415300bdd465b5bf6b006903 = $(`<div id="html_6712879c415300bdd465b5bf6b006903" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 11:45:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 814183         </div>`)[0];
+                popup_cead71951923ea57ba1884c9e539dc42.setContent(html_6712879c415300bdd465b5bf6b006903);
+            
+        
+
+        marker_973d9068833797790de1424ff57c2fd0.bindPopup(popup_cead71951923ea57ba1884c9e539dc42)
+        ;
+
+        
+    
+    
+            marker_973d9068833797790de1424ff57c2fd0.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_973d9068833797790de1424ff57c2fd0.setIcon(div_icon_975d6ec363a4e1ef5c76744edb80d61f);
+            
+    
+            var marker_90d8193841337a20c35fe648d45d47d8 = L.marker(
+                [-12.0733044, -76.95530735],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_c303998b45ccb0da8fd7a6c943698f3a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_911e1b4f3b2f3dac89acf2de207dc595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab9e04c64fe7a23cd84347c717afdaec = $(`<div id="html_ab9e04c64fe7a23cd84347c717afdaec" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 12:19:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1150355         </div>`)[0];
+                popup_911e1b4f3b2f3dac89acf2de207dc595.setContent(html_ab9e04c64fe7a23cd84347c717afdaec);
+            
+        
+
+        marker_90d8193841337a20c35fe648d45d47d8.bindPopup(popup_911e1b4f3b2f3dac89acf2de207dc595)
+        ;
+
+        
+    
+    
+            marker_90d8193841337a20c35fe648d45d47d8.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90d8193841337a20c35fe648d45d47d8.setIcon(div_icon_c303998b45ccb0da8fd7a6c943698f3a);
+            
+    
+            var marker_cfa4ebeb7887eb0af564d1bf275c365b = L.marker(
+                [-12.0733044, -76.95530735],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_e49d9455c953cd662a73deffcf6ccd07 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4a5fdc4c4808087e8665562baaae8701 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_175587885652a3ff4fcd9418bad44e11 = $(`<div id="html_175587885652a3ff4fcd9418bad44e11" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 12:20:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1150347         </div>`)[0];
+                popup_4a5fdc4c4808087e8665562baaae8701.setContent(html_175587885652a3ff4fcd9418bad44e11);
+            
+        
+
+        marker_cfa4ebeb7887eb0af564d1bf275c365b.bindPopup(popup_4a5fdc4c4808087e8665562baaae8701)
+        ;
+
+        
+    
+    
+            marker_cfa4ebeb7887eb0af564d1bf275c365b.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfa4ebeb7887eb0af564d1bf275c365b.setIcon(div_icon_e49d9455c953cd662a73deffcf6ccd07);
+            
+    
+            var marker_75ea5e152728231897dd85b66acddf93 = L.marker(
+                [-12.05252919, -76.94334577],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_add6662e731d8e370de0180cc5665619 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9ccd41f4851b9dd49fed23d544d5ae5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c34d765e694a7ea3cebc6a0104df0b4 = $(`<div id="html_9c34d765e694a7ea3cebc6a0104df0b4" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 12:30:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1508281         </div>`)[0];
+                popup_9ccd41f4851b9dd49fed23d544d5ae5c.setContent(html_9c34d765e694a7ea3cebc6a0104df0b4);
+            
+        
+
+        marker_75ea5e152728231897dd85b66acddf93.bindPopup(popup_9ccd41f4851b9dd49fed23d544d5ae5c)
+        ;
+
+        
+    
+    
+            marker_75ea5e152728231897dd85b66acddf93.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75ea5e152728231897dd85b66acddf93.setIcon(div_icon_add6662e731d8e370de0180cc5665619);
+            
+    
+            var marker_3f7054129fe6d0d09937380fa43566eb = L.marker(
+                [-12.05201896, -76.9446683],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_56aabf11cb040008cb4e362d876cbe60 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5550ba5f3ec7de54508b3d76a1cad910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83b1e968b676fc86ca5ae69a2fb04be6 = $(`<div id="html_83b1e968b676fc86ca5ae69a2fb04be6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 12:39:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 534528         </div>`)[0];
+                popup_5550ba5f3ec7de54508b3d76a1cad910.setContent(html_83b1e968b676fc86ca5ae69a2fb04be6);
+            
+        
+
+        marker_3f7054129fe6d0d09937380fa43566eb.bindPopup(popup_5550ba5f3ec7de54508b3d76a1cad910)
+        ;
+
+        
+    
+    
+            marker_3f7054129fe6d0d09937380fa43566eb.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f7054129fe6d0d09937380fa43566eb.setIcon(div_icon_56aabf11cb040008cb4e362d876cbe60);
+            
+    
+            var marker_1fd39a7ba6850d08af254b5da67456f8 = L.marker(
+                [-12.04986167, -76.93716383],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_7611a4602095b6febda40dc7eefea85c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_93a510a9ad38e584dba7b4b14dd56ecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_089217d20e3c569e1e0323395a63acf3 = $(`<div id="html_089217d20e3c569e1e0323395a63acf3" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 13:57:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Santa Anita<br>         <b>Suministro:</b> 1934883         </div>`)[0];
+                popup_93a510a9ad38e584dba7b4b14dd56ecf.setContent(html_089217d20e3c569e1e0323395a63acf3);
+            
+        
+
+        marker_1fd39a7ba6850d08af254b5da67456f8.bindPopup(popup_93a510a9ad38e584dba7b4b14dd56ecf)
+        ;
+
+        
+    
+    
+            marker_1fd39a7ba6850d08af254b5da67456f8.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fd39a7ba6850d08af254b5da67456f8.setIcon(div_icon_7611a4602095b6febda40dc7eefea85c);
+            
+    
+            var marker_6bd20a54169a3274e8e0bca49cc3c4fd = L.marker(
+                [-12.09850253, -77.02394858],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_b7e6f682d74a12de9a6f6e4fe4c725d8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e2b6bf76d9073f4bfbe4252d824c8a4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_867cbb449f5048891de6152ab01150ea = $(`<div id="html_867cbb449f5048891de6152ab01150ea" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 15:47:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 2044321         </div>`)[0];
+                popup_e2b6bf76d9073f4bfbe4252d824c8a4b.setContent(html_867cbb449f5048891de6152ab01150ea);
+            
+        
+
+        marker_6bd20a54169a3274e8e0bca49cc3c4fd.bindPopup(popup_e2b6bf76d9073f4bfbe4252d824c8a4b)
+        ;
+
+        
+    
+    
+            marker_6bd20a54169a3274e8e0bca49cc3c4fd.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bd20a54169a3274e8e0bca49cc3c4fd.setIcon(div_icon_b7e6f682d74a12de9a6f6e4fe4c725d8);
+            
+    
+            var marker_98bd1444581b2f35542dc8cd0b23177c = L.marker(
+                [-12.09850253, -77.02394858],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_e65b32f3710aa628c4e4172cce8f896d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_763182ea4324c1d56bbd735d12c57d9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_968ea6befdecf4657d8cda2b98d07153 = $(`<div id="html_968ea6befdecf4657d8cda2b98d07153" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 15:48:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 2044323         </div>`)[0];
+                popup_763182ea4324c1d56bbd735d12c57d9c.setContent(html_968ea6befdecf4657d8cda2b98d07153);
+            
+        
+
+        marker_98bd1444581b2f35542dc8cd0b23177c.bindPopup(popup_763182ea4324c1d56bbd735d12c57d9c)
+        ;
+
+        
+    
+    
+            marker_98bd1444581b2f35542dc8cd0b23177c.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98bd1444581b2f35542dc8cd0b23177c.setIcon(div_icon_e65b32f3710aa628c4e4172cce8f896d);
+            
+    
+            var marker_3d8e223d9712107982edb0ab748a8491 = L.marker(
+                [-12.09896495, -77.0238943],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_ea9f4183f9da07b810bdff24ce1ac842 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ad6b527595657b82e5e782f401ba8c59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b39e2a84b4dac9bf8ca964b65a8d749e = $(`<div id="html_b39e2a84b4dac9bf8ca964b65a8d749e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 16:03:00<br>         <b>Acción:</b> ML=MEDIDOR CON LLAVE<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 2293983         </div>`)[0];
+                popup_ad6b527595657b82e5e782f401ba8c59.setContent(html_b39e2a84b4dac9bf8ca964b65a8d749e);
+            
+        
+
+        marker_3d8e223d9712107982edb0ab748a8491.bindPopup(popup_ad6b527595657b82e5e782f401ba8c59)
+        ;
+
+        
+    
+    
+            marker_3d8e223d9712107982edb0ab748a8491.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d8e223d9712107982edb0ab748a8491.setIcon(div_icon_ea9f4183f9da07b810bdff24ce1ac842);
+            
+    
+            var marker_9a346168c388fbbd791a75b11eeb0b0b = L.marker(
+                [-12.09788782, -77.02242665],
+                {
+}
+            ).addTo(feature_group_6c32782be2a61f3a446d9578ec4cfa44);
+        
+    
+            var div_icon_fb02e8e9f57783bd99919358c7a90a83 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5157293b1becab191b6dd2e79b9a8bde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fed2c2040da37142218c11e2d52129f = $(`<div id="html_2fed2c2040da37142218c11e2d52129f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> MUÑOZ VILLAFUERTE JUAN JOSE<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 16:19:00<br>         <b>Acción:</b> 10=RCNX FUSIBLE<br>         <b>Sucursal:</b> Miraflores<br>         <b>Suministro:</b> 343395         </div>`)[0];
+                popup_5157293b1becab191b6dd2e79b9a8bde.setContent(html_2fed2c2040da37142218c11e2d52129f);
+            
+        
+
+        marker_9a346168c388fbbd791a75b11eeb0b0b.bindPopup(popup_5157293b1becab191b6dd2e79b9a8bde)
+        ;
+
+        
+    
+    
+            marker_9a346168c388fbbd791a75b11eeb0b0b.bindTooltip(
+                `<div>
+                     MUÑOZ VILLAFUERTE JUAN JOSE - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a346168c388fbbd791a75b11eeb0b0b.setIcon(div_icon_fb02e8e9f57783bd99919358c7a90a83);
+            
+    
+            feature_group_6c32782be2a61f3a446d9578ec4cfa44.addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+        
+    
+            var layer_control_6a55922385c4d6871a1c8d674ec3ade1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1ea5d23e057d1f3c8dfc0968d73fffbe,
+                },
+                overlays :  {
+                    "ERNESTO ANTONIO ESCALONA BRAVO" : feature_group_8e725a1754e17d67d0edf53f9b1eb12a,
+                    "MORALES MENDIVIL ALEXANDER" : feature_group_ea6768953d34b28e18a4fb8b710ce0e6,
+                    "SACSI GONZALES HECTOR DANIEL" : feature_group_31ac86cf8935ffdf19c3ac3b1d270be7,
+                    "EDDY GARCIA TRIGOSO" : feature_group_2dc5520f3c4cb85f9fd30a641c2e9e5e,
+                    "GUZMAN POVIS LUIS" : feature_group_4d777285562c40496608c427f45738b3,
+                    "MU\u00d1OZ VILLAFUERTE JUAN JOSE" : feature_group_6c32782be2a61f3a446d9578ec4cfa44,
+                },
+            };
+            let layer_control_6a55922385c4d6871a1c8d674ec3ade1 = L.control.layers(
+                layer_control_6a55922385c4d6871a1c8d674ec3ade1_layers.base_layers,
+                layer_control_6a55922385c4d6871a1c8d674ec3ade1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_6ceb9c5d0acb7f1cdc661f7c48d82585);
+
+        
+</script>
+</html>
