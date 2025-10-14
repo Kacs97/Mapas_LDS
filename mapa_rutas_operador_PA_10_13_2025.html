@@ -1,0 +1,4946 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c45fe0d8d28ef016506899e5e63fbad1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c45fe0d8d28ef016506899e5e63fbad1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c45fe0d8d28ef016506899e5e63fbad1 = L.map(
+                "map_c45fe0d8d28ef016506899e5e63fbad1",
+                {
+                    center: [-12.05, -77.03],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5919ccff4cf90e8469e9844bc030489 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e5919ccff4cf90e8469e9844bc030489.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_315a36f32962d30583049cf58080f94f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_d01b5d214256d49480c722b7dbe45a19 = L.polyline.antPath(
+              [[-12.15806928, -76.99008055], [-12.16386698, -76.98729182], [-12.1681864, -76.99171012], [-12.17786473, -76.99262055], [-12.1796736, -76.99186058], [-12.1804092, -76.99958645], [-12.18026861, -77.0049749], [-12.18019527, -77.00515441], [-12.18442245, -77.00836197], [-12.18843375, -77.0146407], [-12.18967074, -77.0172179], [-12.19042012, -77.01749661], [-12.1870279, -77.01006743], [-12.19975951, -77.01215965], [-12.21122276, -77.00889474], [-12.19585553, -76.99666004], [-12.19829176, -76.99193631], [-12.1950215, -76.98745368], [-12.19987834, -76.98293455], [-12.18818148, -76.99409594], [-12.16739498, -76.99190422], [-12.15879081, -76.99219878]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var marker_5ca9fcd4aab9656c28c64da8e6e78da2 = L.marker(
+                [-12.15806928, -76.99008055],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_73bd62015fc4ee26ce4193075fe76d70 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_e2f20fc791eff452a088807cfcddb6e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b783c99498ac455aee8b063d38bae052 = $(`<div id="html_b783c99498ac455aee8b063d38bae052" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:32:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1574304         </div>`)[0];
+                popup_e2f20fc791eff452a088807cfcddb6e0.setContent(html_b783c99498ac455aee8b063d38bae052);
+            
+        
+
+        marker_5ca9fcd4aab9656c28c64da8e6e78da2.bindPopup(popup_e2f20fc791eff452a088807cfcddb6e0)
+        ;
+
+        
+    
+    
+            marker_5ca9fcd4aab9656c28c64da8e6e78da2.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ca9fcd4aab9656c28c64da8e6e78da2.setIcon(div_icon_73bd62015fc4ee26ce4193075fe76d70);
+            
+    
+            var marker_f70d8b4e1cb86164f6ad870ef6fd132d = L.marker(
+                [-12.16386698, -76.98729182],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_74b04dc9cd19410ec59160c7fad69d79 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5d2545bfe3d0f909862f679670b73322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bec73eeace571bb1f7cf657112740e45 = $(`<div id="html_bec73eeace571bb1f7cf657112740e45" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 07:44:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1825727         </div>`)[0];
+                popup_5d2545bfe3d0f909862f679670b73322.setContent(html_bec73eeace571bb1f7cf657112740e45);
+            
+        
+
+        marker_f70d8b4e1cb86164f6ad870ef6fd132d.bindPopup(popup_5d2545bfe3d0f909862f679670b73322)
+        ;
+
+        
+    
+    
+            marker_f70d8b4e1cb86164f6ad870ef6fd132d.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f70d8b4e1cb86164f6ad870ef6fd132d.setIcon(div_icon_74b04dc9cd19410ec59160c7fad69d79);
+            
+    
+            var marker_be43ff92375e26d97a887130ad8299c5 = L.marker(
+                [-12.1681864, -76.99171012],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_d436a56d285cc12a0b1373fda7fac10b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6c326d068cbfb477a64b136d80c38d63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_992166e2dab04b11108eab4d292b580f = $(`<div id="html_992166e2dab04b11108eab4d292b580f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 07:56:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1482730         </div>`)[0];
+                popup_6c326d068cbfb477a64b136d80c38d63.setContent(html_992166e2dab04b11108eab4d292b580f);
+            
+        
+
+        marker_be43ff92375e26d97a887130ad8299c5.bindPopup(popup_6c326d068cbfb477a64b136d80c38d63)
+        ;
+
+        
+    
+    
+            marker_be43ff92375e26d97a887130ad8299c5.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be43ff92375e26d97a887130ad8299c5.setIcon(div_icon_d436a56d285cc12a0b1373fda7fac10b);
+            
+    
+            var marker_11e7e8b5449b390dd17b9df9911a9495 = L.marker(
+                [-12.17786473, -76.99262055],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_cf8d13074dfdf1a53cf676ba4e80c5ba = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_7d4a3b9a53a9cf9b8e077fcd7f7d93cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0455c7187d9866797b4dba950c36639b = $(`<div id="html_0455c7187d9866797b4dba950c36639b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 08:10:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1574759         </div>`)[0];
+                popup_7d4a3b9a53a9cf9b8e077fcd7f7d93cf.setContent(html_0455c7187d9866797b4dba950c36639b);
+            
+        
+
+        marker_11e7e8b5449b390dd17b9df9911a9495.bindPopup(popup_7d4a3b9a53a9cf9b8e077fcd7f7d93cf)
+        ;
+
+        
+    
+    
+            marker_11e7e8b5449b390dd17b9df9911a9495.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11e7e8b5449b390dd17b9df9911a9495.setIcon(div_icon_cf8d13074dfdf1a53cf676ba4e80c5ba);
+            
+    
+            var marker_42f15e67340050b27813bbc54d75994b = L.marker(
+                [-12.1796736, -76.99186058],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_7e863a20505fb4b40daf1c98166f76b6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1a1b8efab3307a1187c8f40364d9fe8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7673e7940612df5225526cf49430a83 = $(`<div id="html_b7673e7940612df5225526cf49430a83" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 08:17:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 2061753         </div>`)[0];
+                popup_1a1b8efab3307a1187c8f40364d9fe8e.setContent(html_b7673e7940612df5225526cf49430a83);
+            
+        
+
+        marker_42f15e67340050b27813bbc54d75994b.bindPopup(popup_1a1b8efab3307a1187c8f40364d9fe8e)
+        ;
+
+        
+    
+    
+            marker_42f15e67340050b27813bbc54d75994b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42f15e67340050b27813bbc54d75994b.setIcon(div_icon_7e863a20505fb4b40daf1c98166f76b6);
+            
+    
+            var marker_37d19d230e3b5d1022054233dbbe0903 = L.marker(
+                [-12.1804092, -76.99958645],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_f5e098aa8bdfd9e43f2689e09f7f582d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_596520a8700817014cc8de4bd41c323d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aecd56c85782591106b7e8953f2e0ab = $(`<div id="html_2aecd56c85782591106b7e8953f2e0ab" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 08:28:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1760037         </div>`)[0];
+                popup_596520a8700817014cc8de4bd41c323d.setContent(html_2aecd56c85782591106b7e8953f2e0ab);
+            
+        
+
+        marker_37d19d230e3b5d1022054233dbbe0903.bindPopup(popup_596520a8700817014cc8de4bd41c323d)
+        ;
+
+        
+    
+    
+            marker_37d19d230e3b5d1022054233dbbe0903.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37d19d230e3b5d1022054233dbbe0903.setIcon(div_icon_f5e098aa8bdfd9e43f2689e09f7f582d);
+            
+    
+            var marker_ab61271530308c4f55e5f53209d7ba6c = L.marker(
+                [-12.18026861, -77.0049749],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_18755b9989ee5d2142e2e2c5fae5a59e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1d361dbf991a0a10b8e5467069bc53fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cbc849c7d33f91016d6a4be7b757a42 = $(`<div id="html_6cbc849c7d33f91016d6a4be7b757a42" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 08:42:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1755557         </div>`)[0];
+                popup_1d361dbf991a0a10b8e5467069bc53fd.setContent(html_6cbc849c7d33f91016d6a4be7b757a42);
+            
+        
+
+        marker_ab61271530308c4f55e5f53209d7ba6c.bindPopup(popup_1d361dbf991a0a10b8e5467069bc53fd)
+        ;
+
+        
+    
+    
+            marker_ab61271530308c4f55e5f53209d7ba6c.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab61271530308c4f55e5f53209d7ba6c.setIcon(div_icon_18755b9989ee5d2142e2e2c5fae5a59e);
+            
+    
+            var marker_f9da81c629722bdc25cacfe8b14e4b8a = L.marker(
+                [-12.18019527, -77.00515441],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_1c10f93ee471e418d76654b637fb4e97 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8071eac1521603c0ab7192f5687c5295 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da2e57b441d93aa6322e88f38f030ff1 = $(`<div id="html_da2e57b441d93aa6322e88f38f030ff1" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 08:43:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1755535         </div>`)[0];
+                popup_8071eac1521603c0ab7192f5687c5295.setContent(html_da2e57b441d93aa6322e88f38f030ff1);
+            
+        
+
+        marker_f9da81c629722bdc25cacfe8b14e4b8a.bindPopup(popup_8071eac1521603c0ab7192f5687c5295)
+        ;
+
+        
+    
+    
+            marker_f9da81c629722bdc25cacfe8b14e4b8a.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9da81c629722bdc25cacfe8b14e4b8a.setIcon(div_icon_1c10f93ee471e418d76654b637fb4e97);
+            
+    
+            var marker_db34eb170d87306969256ecb9ae0e6e2 = L.marker(
+                [-12.18442245, -77.00836197],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_e60ec3702796c83cad203c0500e16788 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2682959f12cb610b64a0abd025adf185 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06d9e6874ef86033f313d96a9801c086 = $(`<div id="html_06d9e6874ef86033f313d96a9801c086" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 09:20:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 520057         </div>`)[0];
+                popup_2682959f12cb610b64a0abd025adf185.setContent(html_06d9e6874ef86033f313d96a9801c086);
+            
+        
+
+        marker_db34eb170d87306969256ecb9ae0e6e2.bindPopup(popup_2682959f12cb610b64a0abd025adf185)
+        ;
+
+        
+    
+    
+            marker_db34eb170d87306969256ecb9ae0e6e2.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db34eb170d87306969256ecb9ae0e6e2.setIcon(div_icon_e60ec3702796c83cad203c0500e16788);
+            
+    
+            var marker_106ff07b0c1db00e98a5c9be3e956e2b = L.marker(
+                [-12.18843375, -77.0146407],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_303817e99057966344017fb87586197b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_68e879c46a80d85cdf56cd63cbb92139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69961bb9a66f7edfaa4deeea4dc2a4a0 = $(`<div id="html_69961bb9a66f7edfaa4deeea4dc2a4a0" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 09:34:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 760177         </div>`)[0];
+                popup_68e879c46a80d85cdf56cd63cbb92139.setContent(html_69961bb9a66f7edfaa4deeea4dc2a4a0);
+            
+        
+
+        marker_106ff07b0c1db00e98a5c9be3e956e2b.bindPopup(popup_68e879c46a80d85cdf56cd63cbb92139)
+        ;
+
+        
+    
+    
+            marker_106ff07b0c1db00e98a5c9be3e956e2b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_106ff07b0c1db00e98a5c9be3e956e2b.setIcon(div_icon_303817e99057966344017fb87586197b);
+            
+    
+            var marker_cdf068294a8c2d0517a821d133b9424b = L.marker(
+                [-12.18967074, -77.0172179],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_a16a6de277c830ae3f462c1340913b65 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d5a03a602081233a9dca9a55aad85495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaf11f4ccd50ab5275131d19f052cecf = $(`<div id="html_aaf11f4ccd50ab5275131d19f052cecf" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 09:55:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1717075         </div>`)[0];
+                popup_d5a03a602081233a9dca9a55aad85495.setContent(html_aaf11f4ccd50ab5275131d19f052cecf);
+            
+        
+
+        marker_cdf068294a8c2d0517a821d133b9424b.bindPopup(popup_d5a03a602081233a9dca9a55aad85495)
+        ;
+
+        
+    
+    
+            marker_cdf068294a8c2d0517a821d133b9424b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdf068294a8c2d0517a821d133b9424b.setIcon(div_icon_a16a6de277c830ae3f462c1340913b65);
+            
+    
+            var marker_08d10d66f9041c062a2aa40fce7583f3 = L.marker(
+                [-12.19042012, -77.01749661],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_baf6647673ad314c3cd8a5869acf59f3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3e80ae8b3e8d3abbd8e4ada69cb1b71a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622ea019bce8ab5ec7830ab984ae9c6e = $(`<div id="html_622ea019bce8ab5ec7830ab984ae9c6e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 10:04:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1048060         </div>`)[0];
+                popup_3e80ae8b3e8d3abbd8e4ada69cb1b71a.setContent(html_622ea019bce8ab5ec7830ab984ae9c6e);
+            
+        
+
+        marker_08d10d66f9041c062a2aa40fce7583f3.bindPopup(popup_3e80ae8b3e8d3abbd8e4ada69cb1b71a)
+        ;
+
+        
+    
+    
+            marker_08d10d66f9041c062a2aa40fce7583f3.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_08d10d66f9041c062a2aa40fce7583f3.setIcon(div_icon_baf6647673ad314c3cd8a5869acf59f3);
+            
+    
+            var marker_0bea60bba4a1dd8e571994d5cc2a98fb = L.marker(
+                [-12.1870279, -77.01006743],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_a934a1cfc4cc1a6d9d498462c5a79762 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d8e98c60a5f23b38c245cdb8c0899ef2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bb2f2870ea2e1d8b1bdb267b371368a = $(`<div id="html_3bb2f2870ea2e1d8b1bdb267b371368a" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 10:19:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 957110         </div>`)[0];
+                popup_d8e98c60a5f23b38c245cdb8c0899ef2.setContent(html_3bb2f2870ea2e1d8b1bdb267b371368a);
+            
+        
+
+        marker_0bea60bba4a1dd8e571994d5cc2a98fb.bindPopup(popup_d8e98c60a5f23b38c245cdb8c0899ef2)
+        ;
+
+        
+    
+    
+            marker_0bea60bba4a1dd8e571994d5cc2a98fb.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bea60bba4a1dd8e571994d5cc2a98fb.setIcon(div_icon_a934a1cfc4cc1a6d9d498462c5a79762);
+            
+    
+            var marker_019cebc91c796caaebcfee3dd2df326b = L.marker(
+                [-12.19975951, -77.01215965],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_060747638a55d9bc87a4112afe80fd22 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_cd835530422f6762fc07d10635e7644d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f669289c678ad0e672ec6db1f13169fe = $(`<div id="html_f669289c678ad0e672ec6db1f13169fe" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 11:00:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1509661         </div>`)[0];
+                popup_cd835530422f6762fc07d10635e7644d.setContent(html_f669289c678ad0e672ec6db1f13169fe);
+            
+        
+
+        marker_019cebc91c796caaebcfee3dd2df326b.bindPopup(popup_cd835530422f6762fc07d10635e7644d)
+        ;
+
+        
+    
+    
+            marker_019cebc91c796caaebcfee3dd2df326b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_019cebc91c796caaebcfee3dd2df326b.setIcon(div_icon_060747638a55d9bc87a4112afe80fd22);
+            
+    
+            var marker_6e88d3c483ed995e0a8afdb52355ad7d = L.marker(
+                [-12.21122276, -77.00889474],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_1823a5ad897e8bf1c064183050bf2a9e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6a2f19779696031d051dd095066ba3cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_454b27e853c48ec2e106a8a85b25c974 = $(`<div id="html_454b27e853c48ec2e106a8a85b25c974" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 11:23:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 909991         </div>`)[0];
+                popup_6a2f19779696031d051dd095066ba3cc.setContent(html_454b27e853c48ec2e106a8a85b25c974);
+            
+        
+
+        marker_6e88d3c483ed995e0a8afdb52355ad7d.bindPopup(popup_6a2f19779696031d051dd095066ba3cc)
+        ;
+
+        
+    
+    
+            marker_6e88d3c483ed995e0a8afdb52355ad7d.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e88d3c483ed995e0a8afdb52355ad7d.setIcon(div_icon_1823a5ad897e8bf1c064183050bf2a9e);
+            
+    
+            var marker_416c3e472e4454d3ecf1d97cd0b51623 = L.marker(
+                [-12.19585553, -76.99666004],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_f56cd790ac09583f454c2d3f6e8ed517 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_80b2c898f0337a34f160174514705b86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04acd0c6d3c4ab1ebb5f12c5beb5bf1e = $(`<div id="html_04acd0c6d3c4ab1ebb5f12c5beb5bf1e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 12:05:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1052412         </div>`)[0];
+                popup_80b2c898f0337a34f160174514705b86.setContent(html_04acd0c6d3c4ab1ebb5f12c5beb5bf1e);
+            
+        
+
+        marker_416c3e472e4454d3ecf1d97cd0b51623.bindPopup(popup_80b2c898f0337a34f160174514705b86)
+        ;
+
+        
+    
+    
+            marker_416c3e472e4454d3ecf1d97cd0b51623.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_416c3e472e4454d3ecf1d97cd0b51623.setIcon(div_icon_f56cd790ac09583f454c2d3f6e8ed517);
+            
+    
+            var marker_a23a0b0db6cf62a8e6ba9c6a8aa1d321 = L.marker(
+                [-12.19829176, -76.99193631],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_cae3f62db96bcf4a7c12fa76fe3a2973 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5518ea86d054efb9d7489a7eddbce520 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61b2d77fb28468033d4ef7a2f5950d6e = $(`<div id="html_61b2d77fb28468033d4ef7a2f5950d6e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 14:35:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1894957         </div>`)[0];
+                popup_5518ea86d054efb9d7489a7eddbce520.setContent(html_61b2d77fb28468033d4ef7a2f5950d6e);
+            
+        
+
+        marker_a23a0b0db6cf62a8e6ba9c6a8aa1d321.bindPopup(popup_5518ea86d054efb9d7489a7eddbce520)
+        ;
+
+        
+    
+    
+            marker_a23a0b0db6cf62a8e6ba9c6a8aa1d321.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a23a0b0db6cf62a8e6ba9c6a8aa1d321.setIcon(div_icon_cae3f62db96bcf4a7c12fa76fe3a2973);
+            
+    
+            var marker_01aaf90c0e25c53ef953eb43b427e00b = L.marker(
+                [-12.1950215, -76.98745368],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_4f606f67835848ca3d15cc3774c4356d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_780fb8687e3a92050c0fc3329c334188 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c90c34b8a0f9f0ad6770ad28f372da84 = $(`<div id="html_c90c34b8a0f9f0ad6770ad28f372da84" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 14:46:00<br>         <b>Acción:</b> PT=PROBLEMA TECNICO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1865580         </div>`)[0];
+                popup_780fb8687e3a92050c0fc3329c334188.setContent(html_c90c34b8a0f9f0ad6770ad28f372da84);
+            
+        
+
+        marker_01aaf90c0e25c53ef953eb43b427e00b.bindPopup(popup_780fb8687e3a92050c0fc3329c334188)
+        ;
+
+        
+    
+    
+            marker_01aaf90c0e25c53ef953eb43b427e00b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01aaf90c0e25c53ef953eb43b427e00b.setIcon(div_icon_4f606f67835848ca3d15cc3774c4356d);
+            
+    
+            var marker_839fbc6a3e1fc937318658afb68c9a4d = L.marker(
+                [-12.19987834, -76.98293455],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_8229a6f5c03f766405cbe6635388b609 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e19\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6d0ee9476c047ce9a86c46df8d4f5046 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f02e95eeb84c0909bec8e1c659c1bbf = $(`<div id="html_4f02e95eeb84c0909bec8e1c659c1bbf" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 19<br>         <b>Hora:</b> 14:54:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1545242         </div>`)[0];
+                popup_6d0ee9476c047ce9a86c46df8d4f5046.setContent(html_4f02e95eeb84c0909bec8e1c659c1bbf);
+            
+        
+
+        marker_839fbc6a3e1fc937318658afb68c9a4d.bindPopup(popup_6d0ee9476c047ce9a86c46df8d4f5046)
+        ;
+
+        
+    
+    
+            marker_839fbc6a3e1fc937318658afb68c9a4d.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_839fbc6a3e1fc937318658afb68c9a4d.setIcon(div_icon_8229a6f5c03f766405cbe6635388b609);
+            
+    
+            var marker_962f20f6561964968ea838408410e33b = L.marker(
+                [-12.18818148, -76.99409594],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_83da413034c7b11f1cafac44fd646a92 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e20\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_aa7ef76e12580dbe669d81e2ae184b02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc5de603bfc84992799e5d3414d683f = $(`<div id="html_bcc5de603bfc84992799e5d3414d683f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 20<br>         <b>Hora:</b> 15:17:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 569988         </div>`)[0];
+                popup_aa7ef76e12580dbe669d81e2ae184b02.setContent(html_bcc5de603bfc84992799e5d3414d683f);
+            
+        
+
+        marker_962f20f6561964968ea838408410e33b.bindPopup(popup_aa7ef76e12580dbe669d81e2ae184b02)
+        ;
+
+        
+    
+    
+            marker_962f20f6561964968ea838408410e33b.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_962f20f6561964968ea838408410e33b.setIcon(div_icon_83da413034c7b11f1cafac44fd646a92);
+            
+    
+            var marker_e4cb8eb268428952cda6c65dc200d444 = L.marker(
+                [-12.16739498, -76.99190422],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_a3b92cd041eecab69b85cde41eafd332 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e21\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_da651dfc3ef922f25642ee8088f69ef3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34ee11a250b935a5e796922aedb33578 = $(`<div id="html_34ee11a250b935a5e796922aedb33578" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 21<br>         <b>Hora:</b> 16:10:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 2068992         </div>`)[0];
+                popup_da651dfc3ef922f25642ee8088f69ef3.setContent(html_34ee11a250b935a5e796922aedb33578);
+            
+        
+
+        marker_e4cb8eb268428952cda6c65dc200d444.bindPopup(popup_da651dfc3ef922f25642ee8088f69ef3)
+        ;
+
+        
+    
+    
+            marker_e4cb8eb268428952cda6c65dc200d444.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4cb8eb268428952cda6c65dc200d444.setIcon(div_icon_a3b92cd041eecab69b85cde41eafd332);
+            
+    
+            var marker_344bdda842091c9a3a5396c881de42b5 = L.marker(
+                [-12.15879081, -76.99219878],
+                {
+}
+            ).addTo(feature_group_315a36f32962d30583049cf58080f94f);
+        
+    
+            var div_icon_1c27078ba87ce930a4a29a8f61db40f7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : blue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid blue;\"\u003e22\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_f1d06002f7a030feda559d74f17cb367 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f35bc2d09a00ec6c615b4aba7980aa54 = $(`<div id="html_f35bc2d09a00ec6c615b4aba7980aa54" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> CARLO MAGNO NOGUERIA TORRES<br>         <b>Orden:</b> 22<br>         <b>Hora:</b> 17:15:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1837074         </div>`)[0];
+                popup_f1d06002f7a030feda559d74f17cb367.setContent(html_f35bc2d09a00ec6c615b4aba7980aa54);
+            
+        
+
+        marker_344bdda842091c9a3a5396c881de42b5.bindPopup(popup_f1d06002f7a030feda559d74f17cb367)
+        ;
+
+        
+    
+    
+            marker_344bdda842091c9a3a5396c881de42b5.bindTooltip(
+                `<div>
+                     CARLO MAGNO NOGUERIA TORRES - Orden 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_344bdda842091c9a3a5396c881de42b5.setIcon(div_icon_1c27078ba87ce930a4a29a8f61db40f7);
+            
+    
+            feature_group_315a36f32962d30583049cf58080f94f.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_1f350e298bf414378dd52db047c6c800 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_966acc449dd33156b856055561aa914c = L.polyline.antPath(
+              [[-12.13543365, -76.96689116], [-12.12066556, -76.95893496], [-12.14927402, -76.96348546], [-12.15167327, -76.96393885], [-12.17521221, -76.94315232]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var marker_7094ee4e9413e90ed1f7e9c59a15a752 = L.marker(
+                [-12.13543365, -76.96689116],
+                {
+}
+            ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var div_icon_277f66e79d406d496d269c40e9707b07 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c1bca27f624a18a91222e4e0dc29b092 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_995ec6d20d61e238bc7a716aefab67e4 = $(`<div id="html_995ec6d20d61e238bc7a716aefab67e4" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> FÉLIX CABRAL LENNIN<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:32:00<br>         <b>Acción:</b> PT=PROBLEMA TECNICO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1089934         </div>`)[0];
+                popup_c1bca27f624a18a91222e4e0dc29b092.setContent(html_995ec6d20d61e238bc7a716aefab67e4);
+            
+        
+
+        marker_7094ee4e9413e90ed1f7e9c59a15a752.bindPopup(popup_c1bca27f624a18a91222e4e0dc29b092)
+        ;
+
+        
+    
+    
+            marker_7094ee4e9413e90ed1f7e9c59a15a752.bindTooltip(
+                `<div>
+                     FÉLIX CABRAL LENNIN - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7094ee4e9413e90ed1f7e9c59a15a752.setIcon(div_icon_277f66e79d406d496d269c40e9707b07);
+            
+    
+            var marker_8e8fb53492ab9dc01cde39369b6799ae = L.marker(
+                [-12.12066556, -76.95893496],
+                {
+}
+            ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var div_icon_75d4821a2d9f253373d3bdcd692c9202 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1e2aa3e29c0b34988ccc3b24aee14354 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89f1d6529eb9e74914c05de0b2a83cf6 = $(`<div id="html_89f1d6529eb9e74914c05de0b2a83cf6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> FÉLIX CABRAL LENNIN<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 08:16:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1860103         </div>`)[0];
+                popup_1e2aa3e29c0b34988ccc3b24aee14354.setContent(html_89f1d6529eb9e74914c05de0b2a83cf6);
+            
+        
+
+        marker_8e8fb53492ab9dc01cde39369b6799ae.bindPopup(popup_1e2aa3e29c0b34988ccc3b24aee14354)
+        ;
+
+        
+    
+    
+            marker_8e8fb53492ab9dc01cde39369b6799ae.bindTooltip(
+                `<div>
+                     FÉLIX CABRAL LENNIN - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e8fb53492ab9dc01cde39369b6799ae.setIcon(div_icon_75d4821a2d9f253373d3bdcd692c9202);
+            
+    
+            var marker_69772cf191e32ad0dfc6e5db692c99d2 = L.marker(
+                [-12.14927402, -76.96348546],
+                {
+}
+            ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var div_icon_f20e66f9d8d470883badd109b59bd97e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b46f14a57669962fdde429789b412f40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a31a824fbb2a59a1299bf4b360cfa711 = $(`<div id="html_a31a824fbb2a59a1299bf4b360cfa711" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> FÉLIX CABRAL LENNIN<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 08:59:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1612313         </div>`)[0];
+                popup_b46f14a57669962fdde429789b412f40.setContent(html_a31a824fbb2a59a1299bf4b360cfa711);
+            
+        
+
+        marker_69772cf191e32ad0dfc6e5db692c99d2.bindPopup(popup_b46f14a57669962fdde429789b412f40)
+        ;
+
+        
+    
+    
+            marker_69772cf191e32ad0dfc6e5db692c99d2.bindTooltip(
+                `<div>
+                     FÉLIX CABRAL LENNIN - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69772cf191e32ad0dfc6e5db692c99d2.setIcon(div_icon_f20e66f9d8d470883badd109b59bd97e);
+            
+    
+            var marker_863d9d419b1ed9014a480b6ca8b2305a = L.marker(
+                [-12.15167327, -76.96393885],
+                {
+}
+            ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var div_icon_c7c270b0519e83dc5998eee33a81f5a6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_53a05a3c409d3da382e46532a4399775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0880dc241f6cd4ebc1a275876c53c563 = $(`<div id="html_0880dc241f6cd4ebc1a275876c53c563" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> FÉLIX CABRAL LENNIN<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 09:29:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1248529         </div>`)[0];
+                popup_53a05a3c409d3da382e46532a4399775.setContent(html_0880dc241f6cd4ebc1a275876c53c563);
+            
+        
+
+        marker_863d9d419b1ed9014a480b6ca8b2305a.bindPopup(popup_53a05a3c409d3da382e46532a4399775)
+        ;
+
+        
+    
+    
+            marker_863d9d419b1ed9014a480b6ca8b2305a.bindTooltip(
+                `<div>
+                     FÉLIX CABRAL LENNIN - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_863d9d419b1ed9014a480b6ca8b2305a.setIcon(div_icon_c7c270b0519e83dc5998eee33a81f5a6);
+            
+    
+            var marker_936de55c832d572b634d1113ade08e9b = L.marker(
+                [-12.17521221, -76.94315232],
+                {
+}
+            ).addTo(feature_group_1f350e298bf414378dd52db047c6c800);
+        
+    
+            var div_icon_30b27489646186e70864314cf87937ac = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : green; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid green;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c5febdfe7ac024cd3a5b40ef473c1f00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72c2a5f0f29dfa245a7ac4d22506c3eb = $(`<div id="html_72c2a5f0f29dfa245a7ac4d22506c3eb" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> FÉLIX CABRAL LENNIN<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 09:45:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1347155         </div>`)[0];
+                popup_c5febdfe7ac024cd3a5b40ef473c1f00.setContent(html_72c2a5f0f29dfa245a7ac4d22506c3eb);
+            
+        
+
+        marker_936de55c832d572b634d1113ade08e9b.bindPopup(popup_c5febdfe7ac024cd3a5b40ef473c1f00)
+        ;
+
+        
+    
+    
+            marker_936de55c832d572b634d1113ade08e9b.bindTooltip(
+                `<div>
+                     FÉLIX CABRAL LENNIN - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_936de55c832d572b634d1113ade08e9b.setIcon(div_icon_30b27489646186e70864314cf87937ac);
+            
+    
+            feature_group_1f350e298bf414378dd52db047c6c800.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_f9e5435195e1e0baae4650a07da15a5e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_d87e4ffdd874a90e02a63a7133ff0cf6 = L.polyline.antPath(
+              [[-12.2088285, -76.96870707], [-12.2088285, -76.96870707], [-12.19817876, -76.966718], [-12.19026774, -76.94686308], [-12.19329773, -76.93886193], [-12.20151886, -76.94037772], [-12.20909255, -76.93561383], [-12.19329773, -76.93886193], [-12.21181424, -76.94699053], [-12.38653559, -76.7806299], [-12.70588382, -76.63968345], [-12.79453312, -76.5568871], [-12.23175156, -76.9450191], [-13.10847454, -76.32911284], [-12.94262474, -76.12791835], [-12.94321912, -76.12851723], [-12.94602868, -76.1387786], [-12.96511463, -76.14583669]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var marker_25722a03383535b92cbdab3a8a83eb6c = L.marker(
+                [-12.2088285, -76.96870707],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_f75e682f0f70310b7972758fea41db3f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_76453760841efdc4d8f515a4de8a15c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c28e3d930774db5fda37bd2d830918b = $(`<div id="html_7c28e3d930774db5fda37bd2d830918b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:32:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1845304         </div>`)[0];
+                popup_76453760841efdc4d8f515a4de8a15c7.setContent(html_7c28e3d930774db5fda37bd2d830918b);
+            
+        
+
+        marker_25722a03383535b92cbdab3a8a83eb6c.bindPopup(popup_76453760841efdc4d8f515a4de8a15c7)
+        ;
+
+        
+    
+    
+            marker_25722a03383535b92cbdab3a8a83eb6c.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25722a03383535b92cbdab3a8a83eb6c.setIcon(div_icon_f75e682f0f70310b7972758fea41db3f);
+            
+    
+            var marker_411e72dd969bf1b2690e22579eca18e3 = L.marker(
+                [-12.2088285, -76.96870707],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_13229130a696f72301ee79d32550e077 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_063927112944bbbf2bcb1c280ace9503 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf5a88ca861480c4c9b1a1351940e503 = $(`<div id="html_bf5a88ca861480c4c9b1a1351940e503" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 07:34:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1845294         </div>`)[0];
+                popup_063927112944bbbf2bcb1c280ace9503.setContent(html_bf5a88ca861480c4c9b1a1351940e503);
+            
+        
+
+        marker_411e72dd969bf1b2690e22579eca18e3.bindPopup(popup_063927112944bbbf2bcb1c280ace9503)
+        ;
+
+        
+    
+    
+            marker_411e72dd969bf1b2690e22579eca18e3.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_411e72dd969bf1b2690e22579eca18e3.setIcon(div_icon_13229130a696f72301ee79d32550e077);
+            
+    
+            var marker_74c2e1bb62bb7eba77ca3ad42999dd09 = L.marker(
+                [-12.19817876, -76.966718],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_346aa43ec9ef3d5a18061d1a5968d6ca = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9efedfe6f7ee590dfa10df756f67ca3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83b4694893a0cb3f5c752e5bcb3a3664 = $(`<div id="html_83b4694893a0cb3f5c752e5bcb3a3664" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 07:49:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1686938         </div>`)[0];
+                popup_9efedfe6f7ee590dfa10df756f67ca3d.setContent(html_83b4694893a0cb3f5c752e5bcb3a3664);
+            
+        
+
+        marker_74c2e1bb62bb7eba77ca3ad42999dd09.bindPopup(popup_9efedfe6f7ee590dfa10df756f67ca3d)
+        ;
+
+        
+    
+    
+            marker_74c2e1bb62bb7eba77ca3ad42999dd09.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74c2e1bb62bb7eba77ca3ad42999dd09.setIcon(div_icon_346aa43ec9ef3d5a18061d1a5968d6ca);
+            
+    
+            var marker_f428a3919b3a0f36299a31c801235e8e = L.marker(
+                [-12.19026774, -76.94686308],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_50729e0654c10b362aa38ab31117b84d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5a761dd9078cf84e597b54eb7aa133db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6e2b965aa7004e7238a4a02af5dd5b8 = $(`<div id="html_c6e2b965aa7004e7238a4a02af5dd5b8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 08:11:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 2120011         </div>`)[0];
+                popup_5a761dd9078cf84e597b54eb7aa133db.setContent(html_c6e2b965aa7004e7238a4a02af5dd5b8);
+            
+        
+
+        marker_f428a3919b3a0f36299a31c801235e8e.bindPopup(popup_5a761dd9078cf84e597b54eb7aa133db)
+        ;
+
+        
+    
+    
+            marker_f428a3919b3a0f36299a31c801235e8e.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f428a3919b3a0f36299a31c801235e8e.setIcon(div_icon_50729e0654c10b362aa38ab31117b84d);
+            
+    
+            var marker_e8ecd9394f14ee933ad590434367b162 = L.marker(
+                [-12.19329773, -76.93886193],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_f5e2c9269b332addf8d4064eedbbf300 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4e91bd0d2b71bbe9f69d79f33097076e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c0d6b27bac846c66314d37dfee6c6a9 = $(`<div id="html_0c0d6b27bac846c66314d37dfee6c6a9" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 08:28:00<br>         <b>Acción:</b> PT=PROBLEMA TECNICO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1040258         </div>`)[0];
+                popup_4e91bd0d2b71bbe9f69d79f33097076e.setContent(html_0c0d6b27bac846c66314d37dfee6c6a9);
+            
+        
+
+        marker_e8ecd9394f14ee933ad590434367b162.bindPopup(popup_4e91bd0d2b71bbe9f69d79f33097076e)
+        ;
+
+        
+    
+    
+            marker_e8ecd9394f14ee933ad590434367b162.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8ecd9394f14ee933ad590434367b162.setIcon(div_icon_f5e2c9269b332addf8d4064eedbbf300);
+            
+    
+            var marker_3688751d60b86ab604432ff095c68ce1 = L.marker(
+                [-12.20151886, -76.94037772],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_35905ba99ae36b57c7cac609733195e6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_09ba7c4c9b1c40f2edbe8e97eba21d22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97e0af6d76480966956751985b92fe05 = $(`<div id="html_97e0af6d76480966956751985b92fe05" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 08:48:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1831356         </div>`)[0];
+                popup_09ba7c4c9b1c40f2edbe8e97eba21d22.setContent(html_97e0af6d76480966956751985b92fe05);
+            
+        
+
+        marker_3688751d60b86ab604432ff095c68ce1.bindPopup(popup_09ba7c4c9b1c40f2edbe8e97eba21d22)
+        ;
+
+        
+    
+    
+            marker_3688751d60b86ab604432ff095c68ce1.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3688751d60b86ab604432ff095c68ce1.setIcon(div_icon_35905ba99ae36b57c7cac609733195e6);
+            
+    
+            var marker_b61b0ce81e6b067661f274bdae5f7a94 = L.marker(
+                [-12.20909255, -76.93561383],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_242672fdd117b901f0330b5fbdc74ce4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_62dbc60ac5ebf8010744648c6ca23e51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f87acf0345dfe40e62ebdcf723cdca3 = $(`<div id="html_2f87acf0345dfe40e62ebdcf723cdca3" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 09:13:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 2200307         </div>`)[0];
+                popup_62dbc60ac5ebf8010744648c6ca23e51.setContent(html_2f87acf0345dfe40e62ebdcf723cdca3);
+            
+        
+
+        marker_b61b0ce81e6b067661f274bdae5f7a94.bindPopup(popup_62dbc60ac5ebf8010744648c6ca23e51)
+        ;
+
+        
+    
+    
+            marker_b61b0ce81e6b067661f274bdae5f7a94.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b61b0ce81e6b067661f274bdae5f7a94.setIcon(div_icon_242672fdd117b901f0330b5fbdc74ce4);
+            
+    
+            var marker_d6e03b680a06ab7c761372ab9fd6d73c = L.marker(
+                [-12.19329773, -76.93886193],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_be4a52c58d38495efa5b2f6b408c48b4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4e40d2297ef8ec385ac2dd0c87137a78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dc745bce8e15f1b57a547bf5c2c90d9 = $(`<div id="html_8dc745bce8e15f1b57a547bf5c2c90d9" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 09:39:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1040258         </div>`)[0];
+                popup_4e40d2297ef8ec385ac2dd0c87137a78.setContent(html_8dc745bce8e15f1b57a547bf5c2c90d9);
+            
+        
+
+        marker_d6e03b680a06ab7c761372ab9fd6d73c.bindPopup(popup_4e40d2297ef8ec385ac2dd0c87137a78)
+        ;
+
+        
+    
+    
+            marker_d6e03b680a06ab7c761372ab9fd6d73c.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6e03b680a06ab7c761372ab9fd6d73c.setIcon(div_icon_be4a52c58d38495efa5b2f6b408c48b4);
+            
+    
+            var marker_4a44510409fa4cf0aca8fa22e2977c17 = L.marker(
+                [-12.21181424, -76.94699053],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_cf9bb1333f9078d06206af4f37b11326 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5dba1b184ad4999cf94676ed3dbeb79f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ca1222fcc4e40d7d6880859d953c108 = $(`<div id="html_2ca1222fcc4e40d7d6880859d953c108" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 10:07:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 2124771         </div>`)[0];
+                popup_5dba1b184ad4999cf94676ed3dbeb79f.setContent(html_2ca1222fcc4e40d7d6880859d953c108);
+            
+        
+
+        marker_4a44510409fa4cf0aca8fa22e2977c17.bindPopup(popup_5dba1b184ad4999cf94676ed3dbeb79f)
+        ;
+
+        
+    
+    
+            marker_4a44510409fa4cf0aca8fa22e2977c17.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a44510409fa4cf0aca8fa22e2977c17.setIcon(div_icon_cf9bb1333f9078d06206af4f37b11326);
+            
+    
+            var marker_8344929b27fc08e2340b2112f7e19793 = L.marker(
+                [-12.38653559, -76.7806299],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_f6bd8b9b3c79481b6c308d7d239df739 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_4e82bef78f6e11aaf3d9b1a9152b4a9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67b31da0bc183c5903dde757840d0185 = $(`<div id="html_67b31da0bc183c5903dde757840d0185" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 11:53:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> San Bartolo<br>         <b>Suministro:</b> 1867791         </div>`)[0];
+                popup_4e82bef78f6e11aaf3d9b1a9152b4a9d.setContent(html_67b31da0bc183c5903dde757840d0185);
+            
+        
+
+        marker_8344929b27fc08e2340b2112f7e19793.bindPopup(popup_4e82bef78f6e11aaf3d9b1a9152b4a9d)
+        ;
+
+        
+    
+    
+            marker_8344929b27fc08e2340b2112f7e19793.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8344929b27fc08e2340b2112f7e19793.setIcon(div_icon_f6bd8b9b3c79481b6c308d7d239df739);
+            
+    
+            var marker_272649e5549bb02aa9b7582d06e741e4 = L.marker(
+                [-12.70588382, -76.63968345],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_04e6b663aea86519a227a7be94e3b102 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9d080a5be478c39ead15b25834bcd4b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f679b05592ffee35589dcbf2dd8784e = $(`<div id="html_7f679b05592ffee35589dcbf2dd8784e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 12:55:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> San Bartolo<br>         <b>Suministro:</b> 1567439         </div>`)[0];
+                popup_9d080a5be478c39ead15b25834bcd4b2.setContent(html_7f679b05592ffee35589dcbf2dd8784e);
+            
+        
+
+        marker_272649e5549bb02aa9b7582d06e741e4.bindPopup(popup_9d080a5be478c39ead15b25834bcd4b2)
+        ;
+
+        
+    
+    
+            marker_272649e5549bb02aa9b7582d06e741e4.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_272649e5549bb02aa9b7582d06e741e4.setIcon(div_icon_04e6b663aea86519a227a7be94e3b102);
+            
+    
+            var marker_c16db3a92d82df572a4fe090bfa362fc = L.marker(
+                [-12.79453312, -76.5568871],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_50739885e8e1544855ab41820ae25ea3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2254bef44c75ac444b0616180d4099b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04b3d5d43fb7a6b457a7d16dc34f8d18 = $(`<div id="html_04b3d5d43fb7a6b457a7d16dc34f8d18" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 13:41:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> San Bartolo<br>         <b>Suministro:</b> 2189878         </div>`)[0];
+                popup_2254bef44c75ac444b0616180d4099b6.setContent(html_04b3d5d43fb7a6b457a7d16dc34f8d18);
+            
+        
+
+        marker_c16db3a92d82df572a4fe090bfa362fc.bindPopup(popup_2254bef44c75ac444b0616180d4099b6)
+        ;
+
+        
+    
+    
+            marker_c16db3a92d82df572a4fe090bfa362fc.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c16db3a92d82df572a4fe090bfa362fc.setIcon(div_icon_50739885e8e1544855ab41820ae25ea3);
+            
+    
+            var marker_aaa5e00a36772be46ddcadb9f1fd008c = L.marker(
+                [-12.23175156, -76.9450191],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_777a48151a872a5e958e91e859f21f97 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3804fadc25f03e9cc7755639f935bb65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1573c72968a5ba30bb7c28b50b57e017 = $(`<div id="html_1573c72968a5ba30bb7c28b50b57e017" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 14:17:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1726081         </div>`)[0];
+                popup_3804fadc25f03e9cc7755639f935bb65.setContent(html_1573c72968a5ba30bb7c28b50b57e017);
+            
+        
+
+        marker_aaa5e00a36772be46ddcadb9f1fd008c.bindPopup(popup_3804fadc25f03e9cc7755639f935bb65)
+        ;
+
+        
+    
+    
+            marker_aaa5e00a36772be46ddcadb9f1fd008c.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aaa5e00a36772be46ddcadb9f1fd008c.setIcon(div_icon_777a48151a872a5e958e91e859f21f97);
+            
+    
+            var marker_cde56bbd29e40ce4a286b8eda6b89141 = L.marker(
+                [-13.10847454, -76.32911284],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_989942da92d6777349b328bd1fecc8d3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_7af8cf001c2733e25809135647eee1bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ff316c9ab66f432af2271b3f840d29a = $(`<div id="html_6ff316c9ab66f432af2271b3f840d29a" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 14:55:00<br>         <b>Acción:</b> 31=RCNX AEREO<br>         <b>Sucursal:</b> Cañete<br>         <b>Suministro:</b> 1825654         </div>`)[0];
+                popup_7af8cf001c2733e25809135647eee1bb.setContent(html_6ff316c9ab66f432af2271b3f840d29a);
+            
+        
+
+        marker_cde56bbd29e40ce4a286b8eda6b89141.bindPopup(popup_7af8cf001c2733e25809135647eee1bb)
+        ;
+
+        
+    
+    
+            marker_cde56bbd29e40ce4a286b8eda6b89141.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cde56bbd29e40ce4a286b8eda6b89141.setIcon(div_icon_989942da92d6777349b328bd1fecc8d3);
+            
+    
+            var marker_8758ecaf7a795da2046fc6032feac856 = L.marker(
+                [-12.94262474, -76.12791835],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_cf5909164ed74dbe832438f01f751ccf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_12eb241e988f326e2c8555ac6a22509d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df4d7214931a0751aec35084469f9ae8 = $(`<div id="html_df4d7214931a0751aec35084469f9ae8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 16:08:00<br>         <b>Acción:</b> 31=RCNX AEREO<br>         <b>Sucursal:</b> Cañete<br>         <b>Suministro:</b> 4019419         </div>`)[0];
+                popup_12eb241e988f326e2c8555ac6a22509d.setContent(html_df4d7214931a0751aec35084469f9ae8);
+            
+        
+
+        marker_8758ecaf7a795da2046fc6032feac856.bindPopup(popup_12eb241e988f326e2c8555ac6a22509d)
+        ;
+
+        
+    
+    
+            marker_8758ecaf7a795da2046fc6032feac856.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8758ecaf7a795da2046fc6032feac856.setIcon(div_icon_cf5909164ed74dbe832438f01f751ccf);
+            
+    
+            var marker_2c67d384b2a5c1dc2745aa1d4c9539a1 = L.marker(
+                [-12.94321912, -76.12851723],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_57bf15a7227166ac71e59e00e0b471aa = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9f60e919beef4382f04ba4b0ddbc5f0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0ac3f69d388c556525fef88bac499d3 = $(`<div id="html_e0ac3f69d388c556525fef88bac499d3" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 16:15:00<br>         <b>Acción:</b> 31=RCNX AEREO<br>         <b>Sucursal:</b> Cañete<br>         <b>Suministro:</b> 2067492         </div>`)[0];
+                popup_9f60e919beef4382f04ba4b0ddbc5f0a.setContent(html_e0ac3f69d388c556525fef88bac499d3);
+            
+        
+
+        marker_2c67d384b2a5c1dc2745aa1d4c9539a1.bindPopup(popup_9f60e919beef4382f04ba4b0ddbc5f0a)
+        ;
+
+        
+    
+    
+            marker_2c67d384b2a5c1dc2745aa1d4c9539a1.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c67d384b2a5c1dc2745aa1d4c9539a1.setIcon(div_icon_57bf15a7227166ac71e59e00e0b471aa);
+            
+    
+            var marker_a7dbaa72c753e20dd750b3ab5fff616f = L.marker(
+                [-12.94602868, -76.1387786],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_5c3ce0313d400f9df93deda1c16b9b7e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_12fdf123a57e53a515469c45a99e0082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baf39eb4d33f601e51cefdfff6d3f055 = $(`<div id="html_baf39eb4d33f601e51cefdfff6d3f055" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 16:29:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Cañete<br>         <b>Suministro:</b> 4019306         </div>`)[0];
+                popup_12fdf123a57e53a515469c45a99e0082.setContent(html_baf39eb4d33f601e51cefdfff6d3f055);
+            
+        
+
+        marker_a7dbaa72c753e20dd750b3ab5fff616f.bindPopup(popup_12fdf123a57e53a515469c45a99e0082)
+        ;
+
+        
+    
+    
+            marker_a7dbaa72c753e20dd750b3ab5fff616f.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7dbaa72c753e20dd750b3ab5fff616f.setIcon(div_icon_5c3ce0313d400f9df93deda1c16b9b7e);
+            
+    
+            var marker_7552054679374d008889de9bc1065cab = L.marker(
+                [-12.96511463, -76.14583669],
+                {
+}
+            ).addTo(feature_group_f9e5435195e1e0baae4650a07da15a5e);
+        
+    
+            var div_icon_3b95189c8a25a01fd8f864d2a02734c9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : red; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid red;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9e840d0ec60a2ee28e33f343cb184e02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_145356a92d5e805e1d1a809e2f88c755 = $(`<div id="html_145356a92d5e805e1d1a809e2f88c755" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> ABAD HUARINGA MIGUEL ANGEL<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 16:48:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Cañete<br>         <b>Suministro:</b> 4035388         </div>`)[0];
+                popup_9e840d0ec60a2ee28e33f343cb184e02.setContent(html_145356a92d5e805e1d1a809e2f88c755);
+            
+        
+
+        marker_7552054679374d008889de9bc1065cab.bindPopup(popup_9e840d0ec60a2ee28e33f343cb184e02)
+        ;
+
+        
+    
+    
+            marker_7552054679374d008889de9bc1065cab.bindTooltip(
+                `<div>
+                     ABAD HUARINGA MIGUEL ANGEL - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7552054679374d008889de9bc1065cab.setIcon(div_icon_3b95189c8a25a01fd8f864d2a02734c9);
+            
+    
+            feature_group_f9e5435195e1e0baae4650a07da15a5e.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_2b402ff78063f6624daf24b3ec9d0616 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_46e53db2b9651872f902c4dc1c03cd26 = L.polyline.antPath(
+              [[-12.14905067, -77.01803838], [-12.14928517, -77.01813072], [-12.14953255, -77.01703863], [-12.14972437, -77.01713331], [-12.14323413, -77.02097918], [-12.14331535, -77.01851802], [-12.13828877, -77.02149146], [-12.13725422, -77.01933177], [-12.14192242, -77.01019568], [-12.1430456, -77.01032995], [-12.14326625, -77.00974096], [-12.14275274, -77.00961191], [-12.14273497, -77.00960746], [-12.14247195, -77.00955827], [-12.1399588, -77.01136664], [-12.14245537, -77.01397841], [-12.14738368, -77.01046768], [-12.15168906, -77.00362782], [-12.14911448, -77.00503524], [-12.14233776, -77.00379515], [-12.14381541, -77.00094509], [-12.14190037, -76.99454007], [-12.14156627, -77.00204666], [-12.13156098, -76.99952111], [-12.13567394, -77.00477411], [-12.13530566, -77.00887544], [-12.13715641, -77.00859748], [-12.13614764, -77.00989674]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var marker_c068dcb27cfedd407a1f03a67b41585e = L.marker(
+                [-12.14905067, -77.01803838],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_f37695472e02a19d9261bc2676128dda = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2c18e69dc86e550bf648b4da1c876bec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04c1fb0a8c836b270ca954f3da408e8f = $(`<div id="html_04c1fb0a8c836b270ca954f3da408e8f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:53:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 2004796         </div>`)[0];
+                popup_2c18e69dc86e550bf648b4da1c876bec.setContent(html_04c1fb0a8c836b270ca954f3da408e8f);
+            
+        
+
+        marker_c068dcb27cfedd407a1f03a67b41585e.bindPopup(popup_2c18e69dc86e550bf648b4da1c876bec)
+        ;
+
+        
+    
+    
+            marker_c068dcb27cfedd407a1f03a67b41585e.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c068dcb27cfedd407a1f03a67b41585e.setIcon(div_icon_f37695472e02a19d9261bc2676128dda);
+            
+    
+            var marker_5a6ef1546d1ac62514c5e97f25f65249 = L.marker(
+                [-12.14928517, -77.01813072],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_a4398d9672ba90b8b7a799256230bff9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_99cae355383a923f995084ac0f6f8f82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b436faf54d2e9d0e2264ed4c5d6a550 = $(`<div id="html_4b436faf54d2e9d0e2264ed4c5d6a550" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 08:02:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 976689         </div>`)[0];
+                popup_99cae355383a923f995084ac0f6f8f82.setContent(html_4b436faf54d2e9d0e2264ed4c5d6a550);
+            
+        
+
+        marker_5a6ef1546d1ac62514c5e97f25f65249.bindPopup(popup_99cae355383a923f995084ac0f6f8f82)
+        ;
+
+        
+    
+    
+            marker_5a6ef1546d1ac62514c5e97f25f65249.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a6ef1546d1ac62514c5e97f25f65249.setIcon(div_icon_a4398d9672ba90b8b7a799256230bff9);
+            
+    
+            var marker_63f9ada940b7c84a1fbe40376d17e4be = L.marker(
+                [-12.14953255, -77.01703863],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_460e6094733f32e4e1006854388da7e4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2c5a96daff940ac5165ab8fdd47f3a28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a95d48963dd5d9f18259946738ae91d = $(`<div id="html_8a95d48963dd5d9f18259946738ae91d" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 08:18:00<br>         <b>Acción:</b> PT=PROBLEMA TECNICO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1791120         </div>`)[0];
+                popup_2c5a96daff940ac5165ab8fdd47f3a28.setContent(html_8a95d48963dd5d9f18259946738ae91d);
+            
+        
+
+        marker_63f9ada940b7c84a1fbe40376d17e4be.bindPopup(popup_2c5a96daff940ac5165ab8fdd47f3a28)
+        ;
+
+        
+    
+    
+            marker_63f9ada940b7c84a1fbe40376d17e4be.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63f9ada940b7c84a1fbe40376d17e4be.setIcon(div_icon_460e6094733f32e4e1006854388da7e4);
+            
+    
+            var marker_7044885745a30a75aff5da80c8f9e6f6 = L.marker(
+                [-12.14972437, -77.01713331],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_e5c86589d107c74fa0ff17aaa3c5c87b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_fe8d6cb249bbef843d1f64355dc87052 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a2a56aff38e7009ba21c42904e3a47d = $(`<div id="html_5a2a56aff38e7009ba21c42904e3a47d" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 08:25:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 102951         </div>`)[0];
+                popup_fe8d6cb249bbef843d1f64355dc87052.setContent(html_5a2a56aff38e7009ba21c42904e3a47d);
+            
+        
+
+        marker_7044885745a30a75aff5da80c8f9e6f6.bindPopup(popup_fe8d6cb249bbef843d1f64355dc87052)
+        ;
+
+        
+    
+    
+            marker_7044885745a30a75aff5da80c8f9e6f6.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7044885745a30a75aff5da80c8f9e6f6.setIcon(div_icon_e5c86589d107c74fa0ff17aaa3c5c87b);
+            
+    
+            var marker_e0864d16702e7ffb3be87a1356c0aa85 = L.marker(
+                [-12.14323413, -77.02097918],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_2acdb554b3b3f57e522780028eeb6358 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_00c7a5640c10f585b3f9198a262c6559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b3212380c9865da2b3258d8050c63ed = $(`<div id="html_1b3212380c9865da2b3258d8050c63ed" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 08:43:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 100806         </div>`)[0];
+                popup_00c7a5640c10f585b3f9198a262c6559.setContent(html_1b3212380c9865da2b3258d8050c63ed);
+            
+        
+
+        marker_e0864d16702e7ffb3be87a1356c0aa85.bindPopup(popup_00c7a5640c10f585b3f9198a262c6559)
+        ;
+
+        
+    
+    
+            marker_e0864d16702e7ffb3be87a1356c0aa85.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0864d16702e7ffb3be87a1356c0aa85.setIcon(div_icon_2acdb554b3b3f57e522780028eeb6358);
+            
+    
+            var marker_136b7cdb8238d2970294dcb7dab35d55 = L.marker(
+                [-12.14331535, -77.01851802],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_a48aa9acacd11075e0af93ba71315540 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_434519253519a73296d63ac27587f43a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_922c5307b4149ac56c95d11c30efdc61 = $(`<div id="html_922c5307b4149ac56c95d11c30efdc61" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 08:54:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 711548         </div>`)[0];
+                popup_434519253519a73296d63ac27587f43a.setContent(html_922c5307b4149ac56c95d11c30efdc61);
+            
+        
+
+        marker_136b7cdb8238d2970294dcb7dab35d55.bindPopup(popup_434519253519a73296d63ac27587f43a)
+        ;
+
+        
+    
+    
+            marker_136b7cdb8238d2970294dcb7dab35d55.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_136b7cdb8238d2970294dcb7dab35d55.setIcon(div_icon_a48aa9acacd11075e0af93ba71315540);
+            
+    
+            var marker_279002b690034794182368a8053bb6ec = L.marker(
+                [-12.13828877, -77.02149146],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_a16e0370b3ee46f68a862739635df055 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_9496d1dc9d30a31c7a16436f0b86640f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ca27cdde1b262b44e5ef9c144d3c2ae = $(`<div id="html_0ca27cdde1b262b44e5ef9c144d3c2ae" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 09:15:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 103162         </div>`)[0];
+                popup_9496d1dc9d30a31c7a16436f0b86640f.setContent(html_0ca27cdde1b262b44e5ef9c144d3c2ae);
+            
+        
+
+        marker_279002b690034794182368a8053bb6ec.bindPopup(popup_9496d1dc9d30a31c7a16436f0b86640f)
+        ;
+
+        
+    
+    
+            marker_279002b690034794182368a8053bb6ec.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_279002b690034794182368a8053bb6ec.setIcon(div_icon_a16e0370b3ee46f68a862739635df055);
+            
+    
+            var marker_273a69f0552b8ffd514ae2782e92cb55 = L.marker(
+                [-12.13725422, -77.01933177],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_f23def511ba0c6b58f62be6eb873b058 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8b43db62770ac0922ea9bd4e33c28f77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8272b1a732d816567b13757f6ecefde3 = $(`<div id="html_8272b1a732d816567b13757f6ecefde3" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 09:38:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1774437         </div>`)[0];
+                popup_8b43db62770ac0922ea9bd4e33c28f77.setContent(html_8272b1a732d816567b13757f6ecefde3);
+            
+        
+
+        marker_273a69f0552b8ffd514ae2782e92cb55.bindPopup(popup_8b43db62770ac0922ea9bd4e33c28f77)
+        ;
+
+        
+    
+    
+            marker_273a69f0552b8ffd514ae2782e92cb55.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_273a69f0552b8ffd514ae2782e92cb55.setIcon(div_icon_f23def511ba0c6b58f62be6eb873b058);
+            
+    
+            var marker_aed8630dfe94982113ffddf2419be770 = L.marker(
+                [-12.14192242, -77.01019568],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_16755a1a5b5dccde94d2a7f8e7246007 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b0a3ae3619f0abc9d7d361bf1a6d0ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8f2d33daf542206343e8db2e5780f6b = $(`<div id="html_a8f2d33daf542206343e8db2e5780f6b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 10:06:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1484140         </div>`)[0];
+                popup_b0a3ae3619f0abc9d7d361bf1a6d0ba9.setContent(html_a8f2d33daf542206343e8db2e5780f6b);
+            
+        
+
+        marker_aed8630dfe94982113ffddf2419be770.bindPopup(popup_b0a3ae3619f0abc9d7d361bf1a6d0ba9)
+        ;
+
+        
+    
+    
+            marker_aed8630dfe94982113ffddf2419be770.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aed8630dfe94982113ffddf2419be770.setIcon(div_icon_16755a1a5b5dccde94d2a7f8e7246007);
+            
+    
+            var marker_f370ab7d765b70dda47ab8d19c1442c8 = L.marker(
+                [-12.1430456, -77.01032995],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_7b00bb139407653514b9e5e58fe61bb3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_7e640c735705df28653401c35a4a1d19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab8edb67c8f2a63a11d58f2be14b40e8 = $(`<div id="html_ab8edb67c8f2a63a11d58f2be14b40e8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 10:18:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 2114963         </div>`)[0];
+                popup_7e640c735705df28653401c35a4a1d19.setContent(html_ab8edb67c8f2a63a11d58f2be14b40e8);
+            
+        
+
+        marker_f370ab7d765b70dda47ab8d19c1442c8.bindPopup(popup_7e640c735705df28653401c35a4a1d19)
+        ;
+
+        
+    
+    
+            marker_f370ab7d765b70dda47ab8d19c1442c8.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f370ab7d765b70dda47ab8d19c1442c8.setIcon(div_icon_7b00bb139407653514b9e5e58fe61bb3);
+            
+    
+            var marker_77aecdf07ca77a072f3d75206c2c98d1 = L.marker(
+                [-12.14326625, -77.00974096],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_ae0c6526401352fc5771d6c75dbc5d91 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_befd05785f220d164862021d888ffac0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97bedf4b441158f9a844d63ca8d0d3ce = $(`<div id="html_97bedf4b441158f9a844d63ca8d0d3ce" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 10:32:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1708870         </div>`)[0];
+                popup_befd05785f220d164862021d888ffac0.setContent(html_97bedf4b441158f9a844d63ca8d0d3ce);
+            
+        
+
+        marker_77aecdf07ca77a072f3d75206c2c98d1.bindPopup(popup_befd05785f220d164862021d888ffac0)
+        ;
+
+        
+    
+    
+            marker_77aecdf07ca77a072f3d75206c2c98d1.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77aecdf07ca77a072f3d75206c2c98d1.setIcon(div_icon_ae0c6526401352fc5771d6c75dbc5d91);
+            
+    
+            var marker_311a393f4288dda27d7edfb468ac430c = L.marker(
+                [-12.14275274, -77.00961191],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_cc19c48ade61faad2b7b31772e2e6825 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a02c11ddfb1f88b57e69faa2a658bc7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64b9b001ac2cc435554e6ec63ce11f5b = $(`<div id="html_64b9b001ac2cc435554e6ec63ce11f5b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 10:33:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1699949         </div>`)[0];
+                popup_a02c11ddfb1f88b57e69faa2a658bc7f.setContent(html_64b9b001ac2cc435554e6ec63ce11f5b);
+            
+        
+
+        marker_311a393f4288dda27d7edfb468ac430c.bindPopup(popup_a02c11ddfb1f88b57e69faa2a658bc7f)
+        ;
+
+        
+    
+    
+            marker_311a393f4288dda27d7edfb468ac430c.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_311a393f4288dda27d7edfb468ac430c.setIcon(div_icon_cc19c48ade61faad2b7b31772e2e6825);
+            
+    
+            var marker_df6df8362999ebbba43c67e884255986 = L.marker(
+                [-12.14273497, -77.00960746],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_0272192684a79037f6e234898923b146 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_0c63e02aa98e54ec8b5777297e24e5bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb50d0a7a1436c71bf30db5977710f33 = $(`<div id="html_eb50d0a7a1436c71bf30db5977710f33" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 10:34:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1699914         </div>`)[0];
+                popup_0c63e02aa98e54ec8b5777297e24e5bf.setContent(html_eb50d0a7a1436c71bf30db5977710f33);
+            
+        
+
+        marker_df6df8362999ebbba43c67e884255986.bindPopup(popup_0c63e02aa98e54ec8b5777297e24e5bf)
+        ;
+
+        
+    
+    
+            marker_df6df8362999ebbba43c67e884255986.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df6df8362999ebbba43c67e884255986.setIcon(div_icon_0272192684a79037f6e234898923b146);
+            
+    
+            var marker_b39ac659d3db3d59c9ced9b8528dfec2 = L.marker(
+                [-12.14247195, -77.00955827],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_f36ba144e0a94f75a1b297d49eca4c77 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_783b4f9ad76a8cc92cf9244e680c8089 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d748762dcc7b343aea8fb406170eb7e = $(`<div id="html_2d748762dcc7b343aea8fb406170eb7e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 10:35:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1699773         </div>`)[0];
+                popup_783b4f9ad76a8cc92cf9244e680c8089.setContent(html_2d748762dcc7b343aea8fb406170eb7e);
+            
+        
+
+        marker_b39ac659d3db3d59c9ced9b8528dfec2.bindPopup(popup_783b4f9ad76a8cc92cf9244e680c8089)
+        ;
+
+        
+    
+    
+            marker_b39ac659d3db3d59c9ced9b8528dfec2.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b39ac659d3db3d59c9ced9b8528dfec2.setIcon(div_icon_f36ba144e0a94f75a1b297d49eca4c77);
+            
+    
+            var marker_6bc7f5a0eebc38609cdececdeb6f2642 = L.marker(
+                [-12.1399588, -77.01136664],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_b201acdeea25dd6e905468c37b5efd8b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_83549f2049392ba02d9a6e5d0d11a481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d4ae3614c203935c8249f3912b5cb2f = $(`<div id="html_1d4ae3614c203935c8249f3912b5cb2f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 11:15:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1458076         </div>`)[0];
+                popup_83549f2049392ba02d9a6e5d0d11a481.setContent(html_1d4ae3614c203935c8249f3912b5cb2f);
+            
+        
+
+        marker_6bc7f5a0eebc38609cdececdeb6f2642.bindPopup(popup_83549f2049392ba02d9a6e5d0d11a481)
+        ;
+
+        
+    
+    
+            marker_6bc7f5a0eebc38609cdececdeb6f2642.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bc7f5a0eebc38609cdececdeb6f2642.setIcon(div_icon_b201acdeea25dd6e905468c37b5efd8b);
+            
+    
+            var marker_11cff709e6b18b060c331128e028628d = L.marker(
+                [-12.14245537, -77.01397841],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_3fde4e0fc68e128bb670a1730f1a2a8e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_01315fb7cab9213f1d3757bcb1c5d7e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62f2c9dc8f553eab24e3d3f2d6c61102 = $(`<div id="html_62f2c9dc8f553eab24e3d3f2d6c61102" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 11:35:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 418180         </div>`)[0];
+                popup_01315fb7cab9213f1d3757bcb1c5d7e3.setContent(html_62f2c9dc8f553eab24e3d3f2d6c61102);
+            
+        
+
+        marker_11cff709e6b18b060c331128e028628d.bindPopup(popup_01315fb7cab9213f1d3757bcb1c5d7e3)
+        ;
+
+        
+    
+    
+            marker_11cff709e6b18b060c331128e028628d.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11cff709e6b18b060c331128e028628d.setIcon(div_icon_3fde4e0fc68e128bb670a1730f1a2a8e);
+            
+    
+            var marker_ce0ac4948d872763d3b8afb4ffdc75eb = L.marker(
+                [-12.14738368, -77.01046768],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_b0e5a79c54c1a080d2e7b9b4fb8bd5b4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d78b4a7dcbd612a0e5a5d5f7e08e870b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4686e0a1d723ae8e1b8118ce92a98fb8 = $(`<div id="html_4686e0a1d723ae8e1b8118ce92a98fb8" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 11:59:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 331582         </div>`)[0];
+                popup_d78b4a7dcbd612a0e5a5d5f7e08e870b.setContent(html_4686e0a1d723ae8e1b8118ce92a98fb8);
+            
+        
+
+        marker_ce0ac4948d872763d3b8afb4ffdc75eb.bindPopup(popup_d78b4a7dcbd612a0e5a5d5f7e08e870b)
+        ;
+
+        
+    
+    
+            marker_ce0ac4948d872763d3b8afb4ffdc75eb.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce0ac4948d872763d3b8afb4ffdc75eb.setIcon(div_icon_b0e5a79c54c1a080d2e7b9b4fb8bd5b4);
+            
+    
+            var marker_01c15c2d9ac3ad47d2d0e489a983b4d8 = L.marker(
+                [-12.15168906, -77.00362782],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_fbbc406f90788ad82b422fd67677f828 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a33d28b09c79cca7dca78fbca621392f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcf5fbf1ad9f63373f5c657cc309053a = $(`<div id="html_bcf5fbf1ad9f63373f5c657cc309053a" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 12:15:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 325092         </div>`)[0];
+                popup_a33d28b09c79cca7dca78fbca621392f.setContent(html_bcf5fbf1ad9f63373f5c657cc309053a);
+            
+        
+
+        marker_01c15c2d9ac3ad47d2d0e489a983b4d8.bindPopup(popup_a33d28b09c79cca7dca78fbca621392f)
+        ;
+
+        
+    
+    
+            marker_01c15c2d9ac3ad47d2d0e489a983b4d8.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01c15c2d9ac3ad47d2d0e489a983b4d8.setIcon(div_icon_fbbc406f90788ad82b422fd67677f828);
+            
+    
+            var marker_b0f79cc487a72b33fbcf7a2cdeb8b064 = L.marker(
+                [-12.14911448, -77.00503524],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_98e0d058dd18cad63ab7424d7080af22 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e19\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ed5dd2c20d0d751a0403c2b064ee0e65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4feada80cdd8931fb0402738e398e25 = $(`<div id="html_f4feada80cdd8931fb0402738e398e25" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 19<br>         <b>Hora:</b> 12:35:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1124234         </div>`)[0];
+                popup_ed5dd2c20d0d751a0403c2b064ee0e65.setContent(html_f4feada80cdd8931fb0402738e398e25);
+            
+        
+
+        marker_b0f79cc487a72b33fbcf7a2cdeb8b064.bindPopup(popup_ed5dd2c20d0d751a0403c2b064ee0e65)
+        ;
+
+        
+    
+    
+            marker_b0f79cc487a72b33fbcf7a2cdeb8b064.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0f79cc487a72b33fbcf7a2cdeb8b064.setIcon(div_icon_98e0d058dd18cad63ab7424d7080af22);
+            
+    
+            var marker_874b3dc829f3777465e0d6d91504682c = L.marker(
+                [-12.14233776, -77.00379515],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_21e94b4da9f5d85a896b2184eb2ced4b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e20\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1495e658fac11277ecff9d6d8a7e8d97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38474c7880357c4af6998a7028930ece = $(`<div id="html_38474c7880357c4af6998a7028930ece" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 20<br>         <b>Hora:</b> 12:57:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1224379         </div>`)[0];
+                popup_1495e658fac11277ecff9d6d8a7e8d97.setContent(html_38474c7880357c4af6998a7028930ece);
+            
+        
+
+        marker_874b3dc829f3777465e0d6d91504682c.bindPopup(popup_1495e658fac11277ecff9d6d8a7e8d97)
+        ;
+
+        
+    
+    
+            marker_874b3dc829f3777465e0d6d91504682c.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_874b3dc829f3777465e0d6d91504682c.setIcon(div_icon_21e94b4da9f5d85a896b2184eb2ced4b);
+            
+    
+            var marker_db34fa00cbfb528d16e9fb78ac665c90 = L.marker(
+                [-12.14381541, -77.00094509],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_71bee167072d347063978163e025abaa = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e21\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a172a6acd008804c01e6a6a9ddbcf5c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40bd35cddb4785d261754e1fa17d284b = $(`<div id="html_40bd35cddb4785d261754e1fa17d284b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 21<br>         <b>Hora:</b> 13:12:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1050916         </div>`)[0];
+                popup_a172a6acd008804c01e6a6a9ddbcf5c0.setContent(html_40bd35cddb4785d261754e1fa17d284b);
+            
+        
+
+        marker_db34fa00cbfb528d16e9fb78ac665c90.bindPopup(popup_a172a6acd008804c01e6a6a9ddbcf5c0)
+        ;
+
+        
+    
+    
+            marker_db34fa00cbfb528d16e9fb78ac665c90.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db34fa00cbfb528d16e9fb78ac665c90.setIcon(div_icon_71bee167072d347063978163e025abaa);
+            
+    
+            var marker_a3034c3d00f2562ff549ebdf2dff9c77 = L.marker(
+                [-12.14190037, -76.99454007],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_b9997ad24727f95908e923c391debdb0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e22\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d0c26fa752ed2e08b9f02814a1c08903 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac63e10c6b67be784af0a3dd434293e6 = $(`<div id="html_ac63e10c6b67be784af0a3dd434293e6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 22<br>         <b>Hora:</b> 14:38:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1801683         </div>`)[0];
+                popup_d0c26fa752ed2e08b9f02814a1c08903.setContent(html_ac63e10c6b67be784af0a3dd434293e6);
+            
+        
+
+        marker_a3034c3d00f2562ff549ebdf2dff9c77.bindPopup(popup_d0c26fa752ed2e08b9f02814a1c08903)
+        ;
+
+        
+    
+    
+            marker_a3034c3d00f2562ff549ebdf2dff9c77.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3034c3d00f2562ff549ebdf2dff9c77.setIcon(div_icon_b9997ad24727f95908e923c391debdb0);
+            
+    
+            var marker_e8fc4b536f5996cd0375098058260489 = L.marker(
+                [-12.14156627, -77.00204666],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_54132bc84d590ea923503894df9cf809 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e23\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1e9f8ebb6c4de3c22ca046de7bdf38a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d9f4d768591c5ada72c0c2850c22473 = $(`<div id="html_6d9f4d768591c5ada72c0c2850c22473" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 23<br>         <b>Hora:</b> 15:00:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1965086         </div>`)[0];
+                popup_1e9f8ebb6c4de3c22ca046de7bdf38a3.setContent(html_6d9f4d768591c5ada72c0c2850c22473);
+            
+        
+
+        marker_e8fc4b536f5996cd0375098058260489.bindPopup(popup_1e9f8ebb6c4de3c22ca046de7bdf38a3)
+        ;
+
+        
+    
+    
+            marker_e8fc4b536f5996cd0375098058260489.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8fc4b536f5996cd0375098058260489.setIcon(div_icon_54132bc84d590ea923503894df9cf809);
+            
+    
+            var marker_f988f21c9e70658ef8c7eabd79e2857e = L.marker(
+                [-12.13156098, -76.99952111],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_df1cc174de19a9b687396aa75d5b3305 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e24\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d4c889c7e973f0589a516b266412308c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6b2ab7b89e92c7b87e400086cd672c = $(`<div id="html_5b6b2ab7b89e92c7b87e400086cd672c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 24<br>         <b>Hora:</b> 15:26:00<br>         <b>Acción:</b> 26=CORTE ENCINTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1411416         </div>`)[0];
+                popup_d4c889c7e973f0589a516b266412308c.setContent(html_5b6b2ab7b89e92c7b87e400086cd672c);
+            
+        
+
+        marker_f988f21c9e70658ef8c7eabd79e2857e.bindPopup(popup_d4c889c7e973f0589a516b266412308c)
+        ;
+
+        
+    
+    
+            marker_f988f21c9e70658ef8c7eabd79e2857e.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f988f21c9e70658ef8c7eabd79e2857e.setIcon(div_icon_df1cc174de19a9b687396aa75d5b3305);
+            
+    
+            var marker_fb1f8b101f534bed6b1ad013d276b0f8 = L.marker(
+                [-12.13567394, -77.00477411],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_2be1fcc17e7e0d3f2c556aaf8db71209 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e25\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_aa094f6be184e871f889200e72720c50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edb87760474651dbf5d49ea6cd57bd09 = $(`<div id="html_edb87760474651dbf5d49ea6cd57bd09" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 25<br>         <b>Hora:</b> 15:54:00<br>         <b>Acción:</b> NP=NO PERMITEN<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1156673         </div>`)[0];
+                popup_aa094f6be184e871f889200e72720c50.setContent(html_edb87760474651dbf5d49ea6cd57bd09);
+            
+        
+
+        marker_fb1f8b101f534bed6b1ad013d276b0f8.bindPopup(popup_aa094f6be184e871f889200e72720c50)
+        ;
+
+        
+    
+    
+            marker_fb1f8b101f534bed6b1ad013d276b0f8.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb1f8b101f534bed6b1ad013d276b0f8.setIcon(div_icon_2be1fcc17e7e0d3f2c556aaf8db71209);
+            
+    
+            var marker_3bfcdaabd3b3f0113a92f7366a2de307 = L.marker(
+                [-12.13530566, -77.00887544],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_ed27d553b7d08b49b808fd11ffd4599e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e26\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_34c4dc4f9f4286dc0145c1704b34cd9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4f12dea4f85c1fed81c52a87aec814e = $(`<div id="html_e4f12dea4f85c1fed81c52a87aec814e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 26<br>         <b>Hora:</b> 16:18:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1751306         </div>`)[0];
+                popup_34c4dc4f9f4286dc0145c1704b34cd9a.setContent(html_e4f12dea4f85c1fed81c52a87aec814e);
+            
+        
+
+        marker_3bfcdaabd3b3f0113a92f7366a2de307.bindPopup(popup_34c4dc4f9f4286dc0145c1704b34cd9a)
+        ;
+
+        
+    
+    
+            marker_3bfcdaabd3b3f0113a92f7366a2de307.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bfcdaabd3b3f0113a92f7366a2de307.setIcon(div_icon_ed27d553b7d08b49b808fd11ffd4599e);
+            
+    
+            var marker_aae62e52246d40f5c96866cf6dd8b69a = L.marker(
+                [-12.13715641, -77.00859748],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_8de85386b20970bf1424c40d558058ca = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e27\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5964de2798c2900ddb7e0394aaf1e62f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_705849a4aab047f27ded66ac1e4fe09e = $(`<div id="html_705849a4aab047f27ded66ac1e4fe09e" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 27<br>         <b>Hora:</b> 16:38:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1656034         </div>`)[0];
+                popup_5964de2798c2900ddb7e0394aaf1e62f.setContent(html_705849a4aab047f27ded66ac1e4fe09e);
+            
+        
+
+        marker_aae62e52246d40f5c96866cf6dd8b69a.bindPopup(popup_5964de2798c2900ddb7e0394aaf1e62f)
+        ;
+
+        
+    
+    
+            marker_aae62e52246d40f5c96866cf6dd8b69a.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 27
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aae62e52246d40f5c96866cf6dd8b69a.setIcon(div_icon_8de85386b20970bf1424c40d558058ca);
+            
+    
+            var marker_b76870ce36e6dde6178080b1427206b3 = L.marker(
+                [-12.13614764, -77.00989674],
+                {
+}
+            ).addTo(feature_group_2b402ff78063f6624daf24b3ec9d0616);
+        
+    
+            var div_icon_64bb7f292c34d98c9ef130a494f805c7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : orange; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid orange;\"\u003e28\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_0f9fa954ec989c4ef7abe54fe307c0fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d25651428745575be8015f2428cf9710 = $(`<div id="html_d25651428745575be8015f2428cf9710" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PUENTE BRAVO JOSE ENRIQUE<br>         <b>Orden:</b> 28<br>         <b>Hora:</b> 16:49:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1551578         </div>`)[0];
+                popup_0f9fa954ec989c4ef7abe54fe307c0fd.setContent(html_d25651428745575be8015f2428cf9710);
+            
+        
+
+        marker_b76870ce36e6dde6178080b1427206b3.bindPopup(popup_0f9fa954ec989c4ef7abe54fe307c0fd)
+        ;
+
+        
+    
+    
+            marker_b76870ce36e6dde6178080b1427206b3.bindTooltip(
+                `<div>
+                     PUENTE BRAVO JOSE ENRIQUE - Orden 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b76870ce36e6dde6178080b1427206b3.setIcon(div_icon_64bb7f292c34d98c9ef130a494f805c7);
+            
+    
+            feature_group_2b402ff78063f6624daf24b3ec9d0616.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_9f09d768a1aecb968e5574b8ba357a55 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_8603a9ef193dfd77698354fd25e0f5da = L.polyline.antPath(
+              [[-12.17032479, -77.00894988], [-12.17006695, -77.00862494], [-12.16974715, -77.00829429], [-12.15968035, -77.01036252], [-12.16360052, -77.02335171], [-12.16470251, -77.02288391], [-12.16551231, -77.0235386], [-12.16892798, -77.0250885], [-12.168532, -77.02105591], [-12.17053185, -77.01969423], [-12.17079054, -77.01971685], [-12.19468314, -77.02205229], [-12.19138872, -77.0256713], [-12.18940613, -77.02243639], [-12.17786995, -77.02314249], [-12.17277112, -77.01591988], [-12.18114922, -77.00744511], [-12.19581477, -77.0225343]],
+              {
+  "stroke": true,
+  "color": "purple",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var marker_6ac1d1a0f7293445e076d4a652b1535c = L.marker(
+                [-12.17032479, -77.00894988],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_647d52d2898159410e5045c85c44561c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_91da6a92d2dee4525d5644495ffca37b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac545b2fa06033be3764f3b8ab6da17f = $(`<div id="html_ac545b2fa06033be3764f3b8ab6da17f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 07:47:00<br>         <b>Acción:</b> 10=CORTE FUSIBLE<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1742146         </div>`)[0];
+                popup_91da6a92d2dee4525d5644495ffca37b.setContent(html_ac545b2fa06033be3764f3b8ab6da17f);
+            
+        
+
+        marker_6ac1d1a0f7293445e076d4a652b1535c.bindPopup(popup_91da6a92d2dee4525d5644495ffca37b)
+        ;
+
+        
+    
+    
+            marker_6ac1d1a0f7293445e076d4a652b1535c.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ac1d1a0f7293445e076d4a652b1535c.setIcon(div_icon_647d52d2898159410e5045c85c44561c);
+            
+    
+            var marker_b6a0de064477182c9096176941c4d70e = L.marker(
+                [-12.17006695, -77.00862494],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_a0f2abe4394f93ebb6e1a82ee48f7925 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d36d081b02f92b3b387f97f2750ccdf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_070b0dd1a3e99c7489e6de87193c0c08 = $(`<div id="html_070b0dd1a3e99c7489e6de87193c0c08" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 08:01:00<br>         <b>Acción:</b> 10=CORTE FUSIBLE<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1742211         </div>`)[0];
+                popup_d36d081b02f92b3b387f97f2750ccdf6.setContent(html_070b0dd1a3e99c7489e6de87193c0c08);
+            
+        
+
+        marker_b6a0de064477182c9096176941c4d70e.bindPopup(popup_d36d081b02f92b3b387f97f2750ccdf6)
+        ;
+
+        
+    
+    
+            marker_b6a0de064477182c9096176941c4d70e.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b6a0de064477182c9096176941c4d70e.setIcon(div_icon_a0f2abe4394f93ebb6e1a82ee48f7925);
+            
+    
+            var marker_fa8716d8e1099d27bc5fcca1b0595b73 = L.marker(
+                [-12.16974715, -77.00829429],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_8b20b8203b9f3c979463ef5c4ba438b0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_74dfbf799d071557ec22d93c02a6d2cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88eb247da68ae335c2d126210c998b5b = $(`<div id="html_88eb247da68ae335c2d126210c998b5b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 08:17:00<br>         <b>Acción:</b> 10=CORTE FUSIBLE<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1742266         </div>`)[0];
+                popup_74dfbf799d071557ec22d93c02a6d2cb.setContent(html_88eb247da68ae335c2d126210c998b5b);
+            
+        
+
+        marker_fa8716d8e1099d27bc5fcca1b0595b73.bindPopup(popup_74dfbf799d071557ec22d93c02a6d2cb)
+        ;
+
+        
+    
+    
+            marker_fa8716d8e1099d27bc5fcca1b0595b73.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa8716d8e1099d27bc5fcca1b0595b73.setIcon(div_icon_8b20b8203b9f3c979463ef5c4ba438b0);
+            
+    
+            var marker_a90df3d4961cae3412b4225a94c391cf = L.marker(
+                [-12.15968035, -77.01036252],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_f9821811aeab76bd0c206b539bc9cf6c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_45a9d8ed75337cb1903e00d99073cc62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efbd8c70c25d855760708a931630a33f = $(`<div id="html_efbd8c70c25d855760708a931630a33f" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 09:11:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 594450         </div>`)[0];
+                popup_45a9d8ed75337cb1903e00d99073cc62.setContent(html_efbd8c70c25d855760708a931630a33f);
+            
+        
+
+        marker_a90df3d4961cae3412b4225a94c391cf.bindPopup(popup_45a9d8ed75337cb1903e00d99073cc62)
+        ;
+
+        
+    
+    
+            marker_a90df3d4961cae3412b4225a94c391cf.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a90df3d4961cae3412b4225a94c391cf.setIcon(div_icon_f9821811aeab76bd0c206b539bc9cf6c);
+            
+    
+            var marker_d7316204711bdf3fa30431ab05542c5d = L.marker(
+                [-12.16360052, -77.02335171],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_de137469c62db65a0acb879014c64edf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1a9c2be2704300119184060f87f2b7d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69242f7fbc02736036496045711c9838 = $(`<div id="html_69242f7fbc02736036496045711c9838" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 10:36:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1746036         </div>`)[0];
+                popup_1a9c2be2704300119184060f87f2b7d0.setContent(html_69242f7fbc02736036496045711c9838);
+            
+        
+
+        marker_d7316204711bdf3fa30431ab05542c5d.bindPopup(popup_1a9c2be2704300119184060f87f2b7d0)
+        ;
+
+        
+    
+    
+            marker_d7316204711bdf3fa30431ab05542c5d.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7316204711bdf3fa30431ab05542c5d.setIcon(div_icon_de137469c62db65a0acb879014c64edf);
+            
+    
+            var marker_c7b794cd65e2b4066f5ef868ace09fd5 = L.marker(
+                [-12.16470251, -77.02288391],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_300b3c321f4b37256a8c1084e871c75a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6a9305b0157eb37edf8540eed26ab068 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_902e33bb20670ce1e0538570259b0465 = $(`<div id="html_902e33bb20670ce1e0538570259b0465" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 6<br>         <b>Hora:</b> 10:53:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 953401         </div>`)[0];
+                popup_6a9305b0157eb37edf8540eed26ab068.setContent(html_902e33bb20670ce1e0538570259b0465);
+            
+        
+
+        marker_c7b794cd65e2b4066f5ef868ace09fd5.bindPopup(popup_6a9305b0157eb37edf8540eed26ab068)
+        ;
+
+        
+    
+    
+            marker_c7b794cd65e2b4066f5ef868ace09fd5.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7b794cd65e2b4066f5ef868ace09fd5.setIcon(div_icon_300b3c321f4b37256a8c1084e871c75a);
+            
+    
+            var marker_af2683c88e991b4fb76dcdc184903385 = L.marker(
+                [-12.16551231, -77.0235386],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_7e04b8a2219280b31bd0d1860e1cf0bb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_dea8248510489f11a25dc9de3f2777eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8532bccd0e69c72e1d18dc83e20e1cb = $(`<div id="html_f8532bccd0e69c72e1d18dc83e20e1cb" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 7<br>         <b>Hora:</b> 11:15:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1607486         </div>`)[0];
+                popup_dea8248510489f11a25dc9de3f2777eb.setContent(html_f8532bccd0e69c72e1d18dc83e20e1cb);
+            
+        
+
+        marker_af2683c88e991b4fb76dcdc184903385.bindPopup(popup_dea8248510489f11a25dc9de3f2777eb)
+        ;
+
+        
+    
+    
+            marker_af2683c88e991b4fb76dcdc184903385.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af2683c88e991b4fb76dcdc184903385.setIcon(div_icon_7e04b8a2219280b31bd0d1860e1cf0bb);
+            
+    
+            var marker_80646bd75299b3c4910785695a125aa1 = L.marker(
+                [-12.16892798, -77.0250885],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_da372bc13f1e4e9cee94b593bf60cc23 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_f77d43c983160df8d656d34566a32779 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20a867c38c6cef8da00015566ee9491b = $(`<div id="html_20a867c38c6cef8da00015566ee9491b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 8<br>         <b>Hora:</b> 11:29:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 954334         </div>`)[0];
+                popup_f77d43c983160df8d656d34566a32779.setContent(html_20a867c38c6cef8da00015566ee9491b);
+            
+        
+
+        marker_80646bd75299b3c4910785695a125aa1.bindPopup(popup_f77d43c983160df8d656d34566a32779)
+        ;
+
+        
+    
+    
+            marker_80646bd75299b3c4910785695a125aa1.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80646bd75299b3c4910785695a125aa1.setIcon(div_icon_da372bc13f1e4e9cee94b593bf60cc23);
+            
+    
+            var marker_f146da31f528129031888491a594498c = L.marker(
+                [-12.168532, -77.02105591],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_61c43cb1cddd68bad1e132fe58990907 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8360e9a27a37dc9e2d7edd8b0ed23333 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f436c7c567c1c5a0cbc905d7171042b = $(`<div id="html_2f436c7c567c1c5a0cbc905d7171042b" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 9<br>         <b>Hora:</b> 11:47:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 2151606         </div>`)[0];
+                popup_8360e9a27a37dc9e2d7edd8b0ed23333.setContent(html_2f436c7c567c1c5a0cbc905d7171042b);
+            
+        
+
+        marker_f146da31f528129031888491a594498c.bindPopup(popup_8360e9a27a37dc9e2d7edd8b0ed23333)
+        ;
+
+        
+    
+    
+            marker_f146da31f528129031888491a594498c.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f146da31f528129031888491a594498c.setIcon(div_icon_61c43cb1cddd68bad1e132fe58990907);
+            
+    
+            var marker_faad61e5b441f210d8f3d34b143acc5c = L.marker(
+                [-12.17053185, -77.01969423],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_01d38e6731f9185551d5ca220f734bef = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_07a08629c9de26d584f597105449ddda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70dc97f1f6fe70c60e66ce1ae11ca7a6 = $(`<div id="html_70dc97f1f6fe70c60e66ce1ae11ca7a6" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 10<br>         <b>Hora:</b> 12:00:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1703295         </div>`)[0];
+                popup_07a08629c9de26d584f597105449ddda.setContent(html_70dc97f1f6fe70c60e66ce1ae11ca7a6);
+            
+        
+
+        marker_faad61e5b441f210d8f3d34b143acc5c.bindPopup(popup_07a08629c9de26d584f597105449ddda)
+        ;
+
+        
+    
+    
+            marker_faad61e5b441f210d8f3d34b143acc5c.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_faad61e5b441f210d8f3d34b143acc5c.setIcon(div_icon_01d38e6731f9185551d5ca220f734bef);
+            
+    
+            var marker_452ffd885c8fb3898245da5739b856ce = L.marker(
+                [-12.17079054, -77.01971685],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_35f708195536b2f839e47ec7ca7fefbc = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_0fc7cecf41415e56b5cb9e4d6b766261 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a1f92322bbb694457f1ba463de75264 = $(`<div id="html_0a1f92322bbb694457f1ba463de75264" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 11<br>         <b>Hora:</b> 12:26:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1719400         </div>`)[0];
+                popup_0fc7cecf41415e56b5cb9e4d6b766261.setContent(html_0a1f92322bbb694457f1ba463de75264);
+            
+        
+
+        marker_452ffd885c8fb3898245da5739b856ce.bindPopup(popup_0fc7cecf41415e56b5cb9e4d6b766261)
+        ;
+
+        
+    
+    
+            marker_452ffd885c8fb3898245da5739b856ce.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_452ffd885c8fb3898245da5739b856ce.setIcon(div_icon_35f708195536b2f839e47ec7ca7fefbc);
+            
+    
+            var marker_5e31a5a02d741402a980b2a67f11d6dc = L.marker(
+                [-12.19468314, -77.02205229],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_ea3829411672df26731ff0bca95caa9b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_d52ea1719c5882cc854dfba162d7e37a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6aee8b531fbe6112e5022c072b903aeb = $(`<div id="html_6aee8b531fbe6112e5022c072b903aeb" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 12<br>         <b>Hora:</b> 14:44:00<br>         <b>Acción:</b> NE=NO EJECUTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 997127         </div>`)[0];
+                popup_d52ea1719c5882cc854dfba162d7e37a.setContent(html_6aee8b531fbe6112e5022c072b903aeb);
+            
+        
+
+        marker_5e31a5a02d741402a980b2a67f11d6dc.bindPopup(popup_d52ea1719c5882cc854dfba162d7e37a)
+        ;
+
+        
+    
+    
+            marker_5e31a5a02d741402a980b2a67f11d6dc.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e31a5a02d741402a980b2a67f11d6dc.setIcon(div_icon_ea3829411672df26731ff0bca95caa9b);
+            
+    
+            var marker_a79eb80615c0f0bd91f2562cd5d58253 = L.marker(
+                [-12.19138872, -77.0256713],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_275fc3a80c801e833f9b9e6b5fa2fd91 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_b06402a318a3acc3f2511397cec3c52d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b80c97a94a5c9f139c4f8d52c5e91a0 = $(`<div id="html_7b80c97a94a5c9f139c4f8d52c5e91a0" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 13<br>         <b>Hora:</b> 15:09:00<br>         <b>Acción:</b> 31=CORTE AÉREO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 1108582         </div>`)[0];
+                popup_b06402a318a3acc3f2511397cec3c52d.setContent(html_7b80c97a94a5c9f139c4f8d52c5e91a0);
+            
+        
+
+        marker_a79eb80615c0f0bd91f2562cd5d58253.bindPopup(popup_b06402a318a3acc3f2511397cec3c52d)
+        ;
+
+        
+    
+    
+            marker_a79eb80615c0f0bd91f2562cd5d58253.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a79eb80615c0f0bd91f2562cd5d58253.setIcon(div_icon_275fc3a80c801e833f9b9e6b5fa2fd91);
+            
+    
+            var marker_e0e264bd446de02b7f4f6148da54878b = L.marker(
+                [-12.18940613, -77.02243639],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_8532b6306245d77f5a90775620ad9d4f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_865ce9156c722a793632988d870d83d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_083108c80f7afb6574a0a98d590f9b9c = $(`<div id="html_083108c80f7afb6574a0a98d590f9b9c" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 14<br>         <b>Hora:</b> 15:28:00<br>         <b>Acción:</b> PT=PROBLEMA TECNICO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 2100590         </div>`)[0];
+                popup_865ce9156c722a793632988d870d83d5.setContent(html_083108c80f7afb6574a0a98d590f9b9c);
+            
+        
+
+        marker_e0e264bd446de02b7f4f6148da54878b.bindPopup(popup_865ce9156c722a793632988d870d83d5)
+        ;
+
+        
+    
+    
+            marker_e0e264bd446de02b7f4f6148da54878b.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0e264bd446de02b7f4f6148da54878b.setIcon(div_icon_8532b6306245d77f5a90775620ad9d4f);
+            
+    
+            var marker_ae6e2761b1b6b3ec9da596d6bb35fa19 = L.marker(
+                [-12.17786995, -77.02314249],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_0cba9692a6cfd1704861399d60728146 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8fad64cd4f2ee14cbe8d914d85792727 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed68fa7a9146850dd6b8ae3d1bb35855 = $(`<div id="html_ed68fa7a9146850dd6b8ae3d1bb35855" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 15<br>         <b>Hora:</b> 15:57:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 634858         </div>`)[0];
+                popup_8fad64cd4f2ee14cbe8d914d85792727.setContent(html_ed68fa7a9146850dd6b8ae3d1bb35855);
+            
+        
+
+        marker_ae6e2761b1b6b3ec9da596d6bb35fa19.bindPopup(popup_8fad64cd4f2ee14cbe8d914d85792727)
+        ;
+
+        
+    
+    
+            marker_ae6e2761b1b6b3ec9da596d6bb35fa19.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae6e2761b1b6b3ec9da596d6bb35fa19.setIcon(div_icon_0cba9692a6cfd1704861399d60728146);
+            
+    
+            var marker_de504b7122b9a6149231f0f5eb218027 = L.marker(
+                [-12.17277112, -77.01591988],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_790ad5c62bd7af0def184920c9b2fef4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_eeca86b9ee864d3c99aed651875553dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba76478cd357ef38862ede0fa27a1148 = $(`<div id="html_ba76478cd357ef38862ede0fa27a1148" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 16<br>         <b>Hora:</b> 16:31:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 998709         </div>`)[0];
+                popup_eeca86b9ee864d3c99aed651875553dc.setContent(html_ba76478cd357ef38862ede0fa27a1148);
+            
+        
+
+        marker_de504b7122b9a6149231f0f5eb218027.bindPopup(popup_eeca86b9ee864d3c99aed651875553dc)
+        ;
+
+        
+    
+    
+            marker_de504b7122b9a6149231f0f5eb218027.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de504b7122b9a6149231f0f5eb218027.setIcon(div_icon_790ad5c62bd7af0def184920c9b2fef4);
+            
+    
+            var marker_6dbf39b7955506b7005ae2a78bfb26ff = L.marker(
+                [-12.18114922, -77.00744511],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_1e39e488f0b7f949f39e10b900047209 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e17\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_8991260794db18090b03aaf165b96a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58a10cfd79e6ff1c62cb7c157e931367 = $(`<div id="html_58a10cfd79e6ff1c62cb7c157e931367" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 17<br>         <b>Hora:</b> 16:51:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 939953         </div>`)[0];
+                popup_8991260794db18090b03aaf165b96a18.setContent(html_58a10cfd79e6ff1c62cb7c157e931367);
+            
+        
+
+        marker_6dbf39b7955506b7005ae2a78bfb26ff.bindPopup(popup_8991260794db18090b03aaf165b96a18)
+        ;
+
+        
+    
+    
+            marker_6dbf39b7955506b7005ae2a78bfb26ff.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dbf39b7955506b7005ae2a78bfb26ff.setIcon(div_icon_1e39e488f0b7f949f39e10b900047209);
+            
+    
+            var marker_c5a8ad0a1d65ac7efb600065558104b3 = L.marker(
+                [-12.19581477, -77.0225343],
+                {
+}
+            ).addTo(feature_group_9f09d768a1aecb968e5574b8ba357a55);
+        
+    
+            var div_icon_44afe2b1d112ef63c2f8281b7b736257 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : purple; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid purple;\"\u003e18\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1390d6e4d85b64da634676c7b08f6c55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a96e98d6facd766052edad3ff7bdc748 = $(`<div id="html_a96e98d6facd766052edad3ff7bdc748" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> SAAVEDRA SANTOS JORGE LUIS<br>         <b>Orden:</b> 18<br>         <b>Hora:</b> 17:16:00<br>         <b>Acción:</b> ML=MEDIDOR CON LLAVE<br>         <b>Sucursal:</b> Chorrillos<br>         <b>Suministro:</b> 997437         </div>`)[0];
+                popup_1390d6e4d85b64da634676c7b08f6c55.setContent(html_a96e98d6facd766052edad3ff7bdc748);
+            
+        
+
+        marker_c5a8ad0a1d65ac7efb600065558104b3.bindPopup(popup_1390d6e4d85b64da634676c7b08f6c55)
+        ;
+
+        
+    
+    
+            marker_c5a8ad0a1d65ac7efb600065558104b3.bindTooltip(
+                `<div>
+                     SAAVEDRA SANTOS JORGE LUIS - Orden 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5a8ad0a1d65ac7efb600065558104b3.setIcon(div_icon_44afe2b1d112ef63c2f8281b7b736257);
+            
+    
+            feature_group_9f09d768a1aecb968e5574b8ba357a55.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_dc54abf98d67d69525b736502607b912 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_f72b25bb2d354c49bf66692beb63ccc1 = L.polyline.antPath(
+              [[-12.19280416, -76.95931848], [-12.20747561, -76.95149214], [-12.14065202, -76.97515162], [-12.13884519, -76.97667122], [-12.10640235, -76.95791]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var marker_931084acdee6de08c04c61add171561b = L.marker(
+                [-12.19280416, -76.95931848],
+                {
+}
+            ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var div_icon_9d38b80b632db9772db2a9c7c1a38fef = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ff2a74263ff3b049b9b7707005fb7061 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa1c5f8446f548e747483469920ee2ae = $(`<div id="html_fa1c5f8446f548e747483469920ee2ae" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> LUIS ENRIQUE NAUPARI TAFUR<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 15:32:00<br>         <b>Acción:</b> 31=RCNX AEREO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1217870         </div>`)[0];
+                popup_ff2a74263ff3b049b9b7707005fb7061.setContent(html_fa1c5f8446f548e747483469920ee2ae);
+            
+        
+
+        marker_931084acdee6de08c04c61add171561b.bindPopup(popup_ff2a74263ff3b049b9b7707005fb7061)
+        ;
+
+        
+    
+    
+            marker_931084acdee6de08c04c61add171561b.bindTooltip(
+                `<div>
+                     LUIS ENRIQUE NAUPARI TAFUR - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_931084acdee6de08c04c61add171561b.setIcon(div_icon_9d38b80b632db9772db2a9c7c1a38fef);
+            
+    
+            var marker_0df57db6da4cf0eb156ded89ae0e5d1e = L.marker(
+                [-12.20747561, -76.95149214],
+                {
+}
+            ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var div_icon_315c840927e43b391ae5dcfa363a7ea8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2ea1daf71a1bc70fd9e7b81df99e4bb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68b216e6a6f2ca8a642baec181ec0281 = $(`<div id="html_68b216e6a6f2ca8a642baec181ec0281" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> LUIS ENRIQUE NAUPARI TAFUR<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 15:45:00<br>         <b>Acción:</b> 30=RCNX ENCEMENTADO<br>         <b>Sucursal:</b> Pedro  Miotta<br>         <b>Suministro:</b> 1740190         </div>`)[0];
+                popup_2ea1daf71a1bc70fd9e7b81df99e4bb7.setContent(html_68b216e6a6f2ca8a642baec181ec0281);
+            
+        
+
+        marker_0df57db6da4cf0eb156ded89ae0e5d1e.bindPopup(popup_2ea1daf71a1bc70fd9e7b81df99e4bb7)
+        ;
+
+        
+    
+    
+            marker_0df57db6da4cf0eb156ded89ae0e5d1e.bindTooltip(
+                `<div>
+                     LUIS ENRIQUE NAUPARI TAFUR - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0df57db6da4cf0eb156ded89ae0e5d1e.setIcon(div_icon_315c840927e43b391ae5dcfa363a7ea8);
+            
+    
+            var marker_436164dc7b377bb784930d7e7c964b63 = L.marker(
+                [-12.14065202, -76.97515162],
+                {
+}
+            ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var div_icon_f0c2a5a4d300844a8724b3c9698b92f2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_1c7ed7e9ef9b934553ec09258bd7e53e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0aee67f22c48effd763ff0866d3c674 = $(`<div id="html_c0aee67f22c48effd763ff0866d3c674" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> LUIS ENRIQUE NAUPARI TAFUR<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 16:25:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chacarilla<br>         <b>Suministro:</b> 1385244         </div>`)[0];
+                popup_1c7ed7e9ef9b934553ec09258bd7e53e.setContent(html_c0aee67f22c48effd763ff0866d3c674);
+            
+        
+
+        marker_436164dc7b377bb784930d7e7c964b63.bindPopup(popup_1c7ed7e9ef9b934553ec09258bd7e53e)
+        ;
+
+        
+    
+    
+            marker_436164dc7b377bb784930d7e7c964b63.bindTooltip(
+                `<div>
+                     LUIS ENRIQUE NAUPARI TAFUR - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_436164dc7b377bb784930d7e7c964b63.setIcon(div_icon_f0c2a5a4d300844a8724b3c9698b92f2);
+            
+    
+            var marker_9e1f3b8b621853ef8e51f08790439858 = L.marker(
+                [-12.13884519, -76.97667122],
+                {
+}
+            ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var div_icon_6c0945b5727f996d456b3b9823499836 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_5d04eb76b1829ac7d0107c3feba9fb81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44220cbd91c8250d2479c1cc55c92c10 = $(`<div id="html_44220cbd91c8250d2479c1cc55c92c10" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> LUIS ENRIQUE NAUPARI TAFUR<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 17:12:00<br>         <b>Acción:</b> 30=CORTE ENCEMENTADO<br>         <b>Sucursal:</b> Chacarilla<br>         <b>Suministro:</b> 1941303         </div>`)[0];
+                popup_5d04eb76b1829ac7d0107c3feba9fb81.setContent(html_44220cbd91c8250d2479c1cc55c92c10);
+            
+        
+
+        marker_9e1f3b8b621853ef8e51f08790439858.bindPopup(popup_5d04eb76b1829ac7d0107c3feba9fb81)
+        ;
+
+        
+    
+    
+            marker_9e1f3b8b621853ef8e51f08790439858.bindTooltip(
+                `<div>
+                     LUIS ENRIQUE NAUPARI TAFUR - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e1f3b8b621853ef8e51f08790439858.setIcon(div_icon_6c0945b5727f996d456b3b9823499836);
+            
+    
+            var marker_a279102ac3584e3bcff094b6297dbf31 = L.marker(
+                [-12.10640235, -76.95791],
+                {
+}
+            ).addTo(feature_group_dc54abf98d67d69525b736502607b912);
+        
+    
+            var div_icon_b3bfeeea36d3cf400145d7bbd1e81453 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : darkred; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid darkred;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_2b90809e8cb97c860ee4096ce52f537a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfde24815b8220cac5715a19f92e13ac = $(`<div id="html_dfde24815b8220cac5715a19f92e13ac" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> LUIS ENRIQUE NAUPARI TAFUR<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 17:49:00<br>         <b>Acción:</b> MI=MEDIDOR INTERNO<br>         <b>Sucursal:</b> Chacarilla<br>         <b>Suministro:</b> 1280380         </div>`)[0];
+                popup_2b90809e8cb97c860ee4096ce52f537a.setContent(html_dfde24815b8220cac5715a19f92e13ac);
+            
+        
+
+        marker_a279102ac3584e3bcff094b6297dbf31.bindPopup(popup_2b90809e8cb97c860ee4096ce52f537a)
+        ;
+
+        
+    
+    
+            marker_a279102ac3584e3bcff094b6297dbf31.bindTooltip(
+                `<div>
+                     LUIS ENRIQUE NAUPARI TAFUR - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a279102ac3584e3bcff094b6297dbf31.setIcon(div_icon_b3bfeeea36d3cf400145d7bbd1e81453);
+            
+    
+            feature_group_dc54abf98d67d69525b736502607b912.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var feature_group_338b13cfafce049ddb3c34ce12ea05d3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_99a315279d0522ee3045886195e4b8d2 = L.polyline.antPath(
+              [[-12.12462098, -76.9484358], [-12.13247572, -76.94519059], [-12.13882631, -76.95190195], [-12.13077461, -76.93510928], [-12.15849891, -76.94121956]],
+              {
+  "stroke": true,
+  "color": "cadetblue",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "cadetblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 800,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var marker_7d8eb59b16be760203f8f1f639b4de6c = L.marker(
+                [-12.12462098, -76.9484358],
+                {
+}
+            ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var div_icon_dc5a03bf8af08f48a8803575f58f755f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : cadetblue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid cadetblue;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_420834da955fc3ba4c0a2408acdbf3c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_910d963a1ea6534d7c1ed6727a9758d7 = $(`<div id="html_910d963a1ea6534d7c1ed6727a9758d7" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PEREZ PECHO JAVIER ANIBAL<br>         <b>Orden:</b> 1<br>         <b>Hora:</b> 08:14:51<br>         <b>Acción:</b> Verificación de Lectura<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1905045         </div>`)[0];
+                popup_420834da955fc3ba4c0a2408acdbf3c3.setContent(html_910d963a1ea6534d7c1ed6727a9758d7);
+            
+        
+
+        marker_7d8eb59b16be760203f8f1f639b4de6c.bindPopup(popup_420834da955fc3ba4c0a2408acdbf3c3)
+        ;
+
+        
+    
+    
+            marker_7d8eb59b16be760203f8f1f639b4de6c.bindTooltip(
+                `<div>
+                     PEREZ PECHO JAVIER ANIBAL - Orden 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d8eb59b16be760203f8f1f639b4de6c.setIcon(div_icon_dc5a03bf8af08f48a8803575f58f755f);
+            
+    
+            var marker_eebfdbaf53c92575429adf49339df677 = L.marker(
+                [-12.13247572, -76.94519059],
+                {
+}
+            ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var div_icon_120ec7fe8bfe38e81424fb8c2294cee3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : cadetblue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid cadetblue;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_6b5e5d5f372b65b02ff7146fc4e2ccb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84670f1944b4fe2e7876558db682dc96 = $(`<div id="html_84670f1944b4fe2e7876558db682dc96" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PEREZ PECHO JAVIER ANIBAL<br>         <b>Orden:</b> 2<br>         <b>Hora:</b> 09:19:35<br>         <b>Acción:</b> Verificación de Lectura<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1654648         </div>`)[0];
+                popup_6b5e5d5f372b65b02ff7146fc4e2ccb9.setContent(html_84670f1944b4fe2e7876558db682dc96);
+            
+        
+
+        marker_eebfdbaf53c92575429adf49339df677.bindPopup(popup_6b5e5d5f372b65b02ff7146fc4e2ccb9)
+        ;
+
+        
+    
+    
+            marker_eebfdbaf53c92575429adf49339df677.bindTooltip(
+                `<div>
+                     PEREZ PECHO JAVIER ANIBAL - Orden 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eebfdbaf53c92575429adf49339df677.setIcon(div_icon_120ec7fe8bfe38e81424fb8c2294cee3);
+            
+    
+            var marker_d1dcad6e761916e2dc719809c3a11b88 = L.marker(
+                [-12.13882631, -76.95190195],
+                {
+}
+            ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var div_icon_a642d4f14e04811f58ebeb63589fe0ae = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : cadetblue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid cadetblue;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_29abe5977177ecc9ae12f483e833b5fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7f77ee1efc094df54c26dc6e371a050 = $(`<div id="html_d7f77ee1efc094df54c26dc6e371a050" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PEREZ PECHO JAVIER ANIBAL<br>         <b>Orden:</b> 3<br>         <b>Hora:</b> 09:52:52<br>         <b>Acción:</b> Verificación de Lectura<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 876705         </div>`)[0];
+                popup_29abe5977177ecc9ae12f483e833b5fd.setContent(html_d7f77ee1efc094df54c26dc6e371a050);
+            
+        
+
+        marker_d1dcad6e761916e2dc719809c3a11b88.bindPopup(popup_29abe5977177ecc9ae12f483e833b5fd)
+        ;
+
+        
+    
+    
+            marker_d1dcad6e761916e2dc719809c3a11b88.bindTooltip(
+                `<div>
+                     PEREZ PECHO JAVIER ANIBAL - Orden 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1dcad6e761916e2dc719809c3a11b88.setIcon(div_icon_a642d4f14e04811f58ebeb63589fe0ae);
+            
+    
+            var marker_44b17ce7049242664c62cccf116aceb8 = L.marker(
+                [-12.13077461, -76.93510928],
+                {
+}
+            ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var div_icon_ed24a8d44c496945d6284a553a1a55ac = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : cadetblue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid cadetblue;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_88bf2dcb5b645e07959f1db0ee6197f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea6968d338bacbf8fba565099ec6ac33 = $(`<div id="html_ea6968d338bacbf8fba565099ec6ac33" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PEREZ PECHO JAVIER ANIBAL<br>         <b>Orden:</b> 4<br>         <b>Hora:</b> 10:26:29<br>         <b>Acción:</b> Verificación de Lectura<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1549874         </div>`)[0];
+                popup_88bf2dcb5b645e07959f1db0ee6197f0.setContent(html_ea6968d338bacbf8fba565099ec6ac33);
+            
+        
+
+        marker_44b17ce7049242664c62cccf116aceb8.bindPopup(popup_88bf2dcb5b645e07959f1db0ee6197f0)
+        ;
+
+        
+    
+    
+            marker_44b17ce7049242664c62cccf116aceb8.bindTooltip(
+                `<div>
+                     PEREZ PECHO JAVIER ANIBAL - Orden 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44b17ce7049242664c62cccf116aceb8.setIcon(div_icon_ed24a8d44c496945d6284a553a1a55ac);
+            
+    
+            var marker_51966c004cf9e4d9632b7b7704b7661e = L.marker(
+                [-12.15849891, -76.94121956],
+                {
+}
+            ).addTo(feature_group_338b13cfafce049ddb3c34ce12ea05d3);
+        
+    
+            var div_icon_3346600c00bb9f5bd7ea0feae41763f0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color : cadetblue; background-color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; border: 1px solid cadetblue;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_3f88626e25e0830dcdabdbacf7b35c84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6963ef6693875bb2472ace5e0cc0b01a = $(`<div id="html_6963ef6693875bb2472ace5e0cc0b01a" style="width: 100.0%; height: 100.0%;">         <b>Operador:</b> PEREZ PECHO JAVIER ANIBAL<br>         <b>Orden:</b> 5<br>         <b>Hora:</b> 11:01:24<br>         <b>Acción:</b> Verificación de Lectura<br>         <b>Sucursal:</b> San Juan<br>         <b>Suministro:</b> 1539956         </div>`)[0];
+                popup_3f88626e25e0830dcdabdbacf7b35c84.setContent(html_6963ef6693875bb2472ace5e0cc0b01a);
+            
+        
+
+        marker_51966c004cf9e4d9632b7b7704b7661e.bindPopup(popup_3f88626e25e0830dcdabdbacf7b35c84)
+        ;
+
+        
+    
+    
+            marker_51966c004cf9e4d9632b7b7704b7661e.bindTooltip(
+                `<div>
+                     PEREZ PECHO JAVIER ANIBAL - Orden 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51966c004cf9e4d9632b7b7704b7661e.setIcon(div_icon_3346600c00bb9f5bd7ea0feae41763f0);
+            
+    
+            feature_group_338b13cfafce049ddb3c34ce12ea05d3.addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+        
+    
+            var layer_control_104f09f8efb6bfb5d6725c17b9880c3d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e5919ccff4cf90e8469e9844bc030489,
+                },
+                overlays :  {
+                    "CARLO MAGNO NOGUERIA TORRES" : feature_group_315a36f32962d30583049cf58080f94f,
+                    "F\u00c9LIX CABRAL LENNIN" : feature_group_1f350e298bf414378dd52db047c6c800,
+                    "ABAD HUARINGA MIGUEL ANGEL" : feature_group_f9e5435195e1e0baae4650a07da15a5e,
+                    "PUENTE BRAVO JOSE ENRIQUE" : feature_group_2b402ff78063f6624daf24b3ec9d0616,
+                    "SAAVEDRA SANTOS JORGE LUIS" : feature_group_9f09d768a1aecb968e5574b8ba357a55,
+                    "LUIS ENRIQUE NAUPARI TAFUR" : feature_group_dc54abf98d67d69525b736502607b912,
+                    "PEREZ PECHO JAVIER ANIBAL" : feature_group_338b13cfafce049ddb3c34ce12ea05d3,
+                },
+            };
+            let layer_control_104f09f8efb6bfb5d6725c17b9880c3d = L.control.layers(
+                layer_control_104f09f8efb6bfb5d6725c17b9880c3d_layers.base_layers,
+                layer_control_104f09f8efb6bfb5d6725c17b9880c3d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c45fe0d8d28ef016506899e5e63fbad1);
+
+        
+</script>
+</html>
